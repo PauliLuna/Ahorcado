@@ -112,20 +112,51 @@ class Menu(unittest.TestCase):
         resultado = juego.obtener_nombre()
         self.assertEqual(resultado, "nombre_de_prueba")
 
-     #@patch('builtins.input', side_effect=["1"])
-     #def test_menu_opcion_facil(self, mock_input):
-     #   resultado = juego.menu_opcion()
-     #   self.assertEqual(resultado, "1")
+     ## MENU OPCIONES NIVELES
+     @patch('builtins.input', side_effect=["1"])
+     def test_menu_opcion_facil(self, mock_input):
+        resultado = juego.menu_opcion_niveles()
+        self.assertEqual(resultado, "1")
 
-     #@patch('builtins.input', side_effect=["2"])
-     #def test_menu_opcion_medio(self, mock_input):
-     #   resultado = juego.menu_opcion()
-     #   self.assertEqual(resultado, "2")
+     @patch('builtins.input', side_effect=["2"])
+     def test_menu_opcion_medio(self, mock_input):
+        resultado = juego.menu_opcion_niveles()
+        self.assertEqual(resultado, "2")
 
-     #@patch('builtins.input', side_effect=["3"])
-     #def test_menu_opcion_dificil(self, mock_input):
-     #   resultado = juego.menu_opcion()
-     #   self.assertEqual(resultado, "3") 
+     @patch('builtins.input', side_effect=["3"])
+     def test_menu_opcion_dificil(self, mock_input):
+        resultado = juego.menu_opcion_niveles()
+        self.assertEqual(resultado, "3")
+
+     # Fin Niveles
+
+     ## MENU OPCIONES TEMATICAS
+     @patch('builtins.input', side_effect=["1"])
+     def test_menu_opcion_animales(self, mock_input):
+        resultado = juego.menu_opcion_tematicas()
+        self.assertEqual(resultado, "1")
+
+     @patch('builtins.input', side_effect=["2"])
+     def test_menu_opcion_comida(self, mock_input):
+        resultado = juego.menu_opcion_tematicas()
+        self.assertEqual(resultado, "2")
+
+     @patch('builtins.input', side_effect=["3"])
+     def test_menu_opcion_paises(self, mock_input):
+        resultado = juego.menu_opcion_tematicas()
+        self.assertEqual(resultado, "3") 
+
+     @patch('builtins.input', side_effect=["4"])
+     def test_menu_opcion_profesionales(self, mock_input):
+        resultado = juego.menu_opcion_tematicas()
+        self.assertEqual(resultado, "4")
+
+     @patch('builtins.input', side_effect=["5"])
+     def test_menu_opcion_deportes(self, mock_input):
+        resultado = juego.menu_opcion_tematicas()
+        self.assertEqual(resultado, "5") 
+
+     # Fin Tematicas
 
      def test_entrada_valida(self):
           entrada = "hola"
