@@ -18,11 +18,10 @@ jobs:
       with:
         python-version: 3.11.2
 
-    - name: Run tests
-      run: python -m unittest discover -s tests -p 'test_*.py'
-
     - name: Run tests with coverage
       run: |
         pip install coverage
         coverage run -m unittest discover -s tests -p 'test_*.py'
-        coverage report
+        
+    - name: Test Report
+      run: coverage report
