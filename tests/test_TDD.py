@@ -248,6 +248,19 @@ class Vidas(unittest.TestCase):
             actual = juego.descontar_vida()
             self.assertEqual(actual, esperado)
 
+     def test_si_gano(self):
+          juego.gano=1
+          esperado = True
+          actual = juego.definir_si_gano()
+          self.assertEqual(actual, esperado)
+
+     def test_no_gano(self):
+          juego.gano= 0
+          esperado = False
+          actual = juego.definir_si_gano()
+          self.assertEqual(actual, esperado)
+          
+
 """ class CantidadLetras(unittest.TestCase):
      def test_cantidad(self):
           esperado = 7
