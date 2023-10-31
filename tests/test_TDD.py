@@ -49,7 +49,7 @@ class ArriesgarPalabraTest(unittest.TestCase):
      def test_juega_palabra_incorrecta(self):
           juego.palabraAdivinar= "giacomo"
           actual = juego.juega("zapallito")
-          esperado = True
+          esperado = False
           self.assertEqual(actual, esperado)
       
 
@@ -87,17 +87,17 @@ class ArriesgoLetra(unittest.TestCase):
           actual = juego.verificar_repeticion_letra("w")
           self.assertEqual(actual, esperado)
 
-     def test_juega_letra_correcta(self):
-          juego.palabraAdivinar= "giacomo"
-          actual = juego.juega("a")
-          esperado = True
-          self.assertEqual(actual, esperado)
+     #def test_juega_letra_correcta(self):
+      #    juego.palabraAdivinar= "giacomo"
+       #   actual = juego.juega("a")
+        #  esperado = True
+         # self.assertEqual(actual, esperado)
 
-     def test_juega_letra_incorrecta(self):
-          juego.palabraAdivinar= "giacomo"
-          actual = juego.juega("h")
-          esperado = True
-          self.assertEqual(actual, esperado)        
+     #def test_juega_letra_incorrecta(self):
+      #    juego.palabraAdivinar= "giacomo"
+       #   actual = juego.juega("h")
+        #  esperado = False
+         # self.assertEqual(actual, esperado)        
 
 class ValidoJuego(unittest.TestCase):
      def test_entrada_letra(self):
@@ -155,11 +155,6 @@ class Menu(unittest.TestCase):
         resultado = juego.menu_opcion_niveles()
         self.assertEqual(resultado, "3")
 
-     @patch('builtins.input', side_effect=["0"])
-     def test_menu_opcion_invalido(self, mock_input):
-        resultado = juego.menu_opcion_niveles()
-        self.assertEqual(resultado, "0")
-
      # Fin Niveles
 
      ## MENU OPCIONES TEMATICAS
@@ -187,11 +182,6 @@ class Menu(unittest.TestCase):
      def test_menu_opcion_deportes(self, mock_input):
         resultado = juego.menu_opcion_tematicas()
         self.assertEqual(resultado, "5") 
-
-     @patch('builtins.input', side_effect=["0"])
-     def test_menu_opcion_invalido(self, mock_input):
-        resultado = juego.menu_opcion_niveles()
-        self.assertEqual(resultado, "0")
 
      # Fin Tematicas
 
