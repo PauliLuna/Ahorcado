@@ -140,6 +140,7 @@ class Ahorcado():
                 palabra_mostrar += "_ "
         return palabra_mostrar
     
+    #PARA MI NO VA ESTE
     def imprimo_palabra_ganadora(self, palabra):
         palabra_mostrar = ""
         for letra in palabra:

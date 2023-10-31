@@ -130,6 +130,11 @@ class ImprimoPalabra(unittest.TestCase):
             actual = juego.imprimo_palabra()
             self.assertEqual(actual, esperado)
 
+     def test_imprimo_palabra_ganadora(self):
+            esperado = "g i a c o m o "
+            actual = juego.imprimo_palabra_ganadora("giacomo")
+            self.assertEqual(actual, esperado)
+
 
 # HISTORIA DE USUARIO 4
 class Menu(unittest.TestCase):
