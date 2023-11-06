@@ -1,0 +1,29 @@
+name: SonarQube Analysis
+
+on:
+  push:
+    branches:
+      - main  # Ajusta la rama según tu configuración
+
+jobs:
+  sonarqube:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up JDK
+      uses: actions/setup-java@v1
+      with:
+        java-version: 11
+
+    - name: SonarQube Scanner
+      env:
+        SONARQUBE_TOKEN: ${{ secrets.SONARQUBE_TOKEN }}
+      run: |
+        sonar-scanner \
+          -Dsonar.projectKey=Ahorcado \
+          -Dsonar.sources=src \
+          -Dsonar.host.url=http://localhost:9000 \
+          -Dsonar.login=$SONARQUBE_TOKEN
