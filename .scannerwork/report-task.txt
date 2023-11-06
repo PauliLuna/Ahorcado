@@ -2,5 +2,5 @@ projectKey=Ahorcado
 serverUrl=http://localhost:9000
 serverVersion=10.2.1.78527
 dashboardUrl=http://localhost:9000/dashboard?id=Ahorcado
-ceTaskId=AYuDBCzhiHu5s4wqpXp9
-ceTaskUrl=http://localhost:9000/api/ce/task?id=AYuDBCzhiHu5s4wqpXp9
+ceTaskId=AYum_7fIs2FSxK8RCxZr
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AYum_7fIs2FSxK8RCxZr
