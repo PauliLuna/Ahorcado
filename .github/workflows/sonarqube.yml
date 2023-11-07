@@ -35,6 +35,6 @@ jobs:
       run: |
         sonar-scanner \
           -Dsonar.projectKey=Ahorcado \
-          -Dsonar.sources=/usr/local/bin \
+          -Dsonar.sources=src/ahorcado.py \
           -Dsonar.host.url=http://localhost:9000 \
           -Dsonar.login=$SONARQUBE_TOKEN
