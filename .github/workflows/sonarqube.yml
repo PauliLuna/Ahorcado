@@ -11,12 +11,23 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
 
     - name: Set up JDK
       uses: actions/setup-java@v1
       with:
         java-version: 11
+
+    - name: Install SonarQube Scanner
+      run: |
+        wget https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-4.6.2.2472-linux.zip
+        unzip sonar-scanner-cli-4.6.2.2472-linux.zip
+        export PATH=$PATH:$(pwd)/sonar-scanner-4.6.2.2472-linux/bin
+      working-directory: /usr/local/bin
+
+    - name: Add SonarScanner to PATH
+      run: |
+       setx PATH "%PATH%;src"
 
     - name: SonarQube Scanner
       env:
