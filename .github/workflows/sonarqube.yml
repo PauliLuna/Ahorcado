@@ -23,7 +23,7 @@ jobs:
         wget https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-4.6.2.2472-linux.zip
         unzip sonar-scanner-cli-4.6.2.2472-linux.zip
         export PATH=$PATH:$(pwd)/sonar-scanner-4.6.2.2472-linux/bin
-      working-directory: /src
+      working-directory: /usr/local/bin
 
     - name: Add src to PATH
       run: |
@@ -35,6 +35,6 @@ jobs:
       run: |
         sonar-scanner \
           -Dsonar.projectKey=Ahorcado \
-          -Dsonar.sources=src \
+          -Dsonar.sources=/usr/local/bin \
           -Dsonar.host.url=http://localhost:9000 \
           -Dsonar.login=$SONARQUBE_TOKEN
