@@ -19,12 +19,19 @@ jobs:
           distribution: 'adopt'
           java-version: '11'
 
+      - name: Download SonarScanner
+        run: |
+          curl -o sonar-scanner-cli.zip -L https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-4.6.2.2472-linux.zip
+          unzip sonar-scanner-cli.zip
+          export PATH=$PATH:$(pwd)/sonar-scanner-4.6.2.2472-linux/bin
+        shell: bash
+
       - name: SonarQube Scan
         run: |
-          ./gradlew sonarqube \
+          sonar-scanner \
             -Dsonar.projectKey=Ahorcado \
-            # -Dsonar.organization=my_organization_key \
             -Dsonar.host.url=${{ secrets.SONAR_HOST_URL }} \
             -Dsonar.login=${{ secrets.SONAR_TOKEN }}
+
         env:
-          SONARQUBE_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          SONARQUBE_TOKEN: ${{ secrets.SONARQUBE_TOKEN }}
