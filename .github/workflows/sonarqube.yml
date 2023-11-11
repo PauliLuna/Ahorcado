@@ -21,9 +21,10 @@ jobs:
 
       - name: Download SonarScanner
         run: |
-          curl -o sonar-scanner-cli.zip -L https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-5.0.1-linux.zip
-          unzip sonar-scanner-cli.zip
-          export PATH=$PATH:$(pwd)/sonar-scanner-5.0.1-linux/bin
+          sonarSourceDownloads="https://binaries.sonarsource.com"
+          sonarSourceBucket=$(curl -sSL ${sonarSourceDownloads} | awk -F\' '/BUCKET_URL/{print $2}')
+          sonarScannerPath=$(curl -sSL ${sonarSourceBucket}\?prefix=Distribution/sonar-scanner-cli/ | xq -r '.ListBucketResult.Contents[].Key' | grep linux.zip\$ | tail -1)
+          curl -sS -O ${sonarSourceDownloads}/${sonarScannerPath}
         shell: bash
 
       - name: SonarQube Scan
