@@ -23,9 +23,13 @@ jobs:
         run: |
           sonarSourceDownloads="https://binaries.sonarsource.com"
           sonarSourceBucket=$(curl -sSL ${sonarSourceDownloads} | awk -F\' '/BUCKET_URL/{print $2}')
-          sonarScannerPath=$(curl -sSL ${sonarSourceBucket}\?prefix=Distribution/sonar-scanner-cli/ | xq -r '.ListBucketResult.Contents[].Key' | grep linux.zip\$ | tail -1)
+          sudo apt-get update && sudo apt-get install -y jq
+          sonarScannerPath=$(curl -sSL ${sonarSourceBucket}\?prefix=Distribution/sonar-scanner-cli/ | jq -r '.ListBucketResult.Contents[].Key' | grep linux.zip\$ | tail -1)
           curl -sS -O ${sonarSourceDownloads}/${sonarScannerPath}
-        shell: bash
+          shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+          env:
+            JAVA_HOME: /opt/hostedtoolcache/Java_Adopt_jdk/11.0.21-9/x64
+            JAVA_HOME_11_X64: /opt/hostedtoolcache/Java_Adopt_jdk/11.0.21-9/x64
 
       - name: SonarQube Scan
         run: |
