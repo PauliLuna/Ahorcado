@@ -21,9 +21,9 @@ jobs:
 
       - name: Download SonarScanner
         run: |
-          curl -o sonar-scanner-cli.zip -L https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-4.6.2.2472-linux.zip
+          curl -o sonar-scanner-cli.zip -L https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-5.0.1-linux.zip
           unzip sonar-scanner-cli.zip
-          export PATH=$PATH:$(pwd)/sonar-scanner-4.6.2.2472-linux/bin
+          export PATH=$PATH:$(pwd)/sonar-scanner-5.0.1-linux/bin
         shell: bash
 
       - name: SonarQube Scan
@@ -34,4 +34,6 @@ jobs:
             -Dsonar.login=${{ secrets.SONAR_TOKEN }}
 
         env:
-          SONARQUBE_TOKEN: ${{ secrets.SONARQUBE_TOKEN }}
+          SONARQUBE_TOKEN: ${{ secrets.SONAR_TOKEN }}
+
+  
