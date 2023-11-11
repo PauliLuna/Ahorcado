@@ -17,6 +17,7 @@ jobs:
         uses: actions/setup-java@v2
         with:
           java-version: 17
+          distribution: 'adopt'  # Agrega esta línea con la distribución que necesitas
       - name: Cache SonarQube packages
         uses: actions/cache@v1
         with:
