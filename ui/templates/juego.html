@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego del Ahorcado</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            margin: 50px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        input[type="text"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="hidden"] {
+            display: none;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .reset {
+            background-color: #3498db;
+        }
+
+        .home {
+            background-color: #e74c3c;
+        }
+    </style>
+</head>
+<body>
+    <h1>Juego del Ahorcado</h1>
+
+    <p>Palabra oculta: {{ resultado.palabra_oculta }}</p>
+    
+    <p>Vidas restantes: {{ resultado.vidas_restantes }}</p>
+
+    {% if resultado.mensaje %}
+        <p>{{ resultado.mensaje }}</p>
+    {% endif %}
+
+    {% if resultado.vidas_restantes > 0 and '_' in resultado.palabra_oculta %}
+        <form action="/jugar_letra" method="post">
+            <label for="letra">Ingresar letra:</label>
+            <input type="text" name="letra" maxlength="1" required>
+            <input type="hidden" name="opcion" value="1">
+            <button type="submit">Adivinar letra</button>
+        </form>
+    {% endif %}
+
+    <div class="button-container">
+        <button class="reset" onclick="location.href='/jugar_nuevamente'">Jugar nuevamente</button>
+        <button class="home" onclick="location.href='/'">Volver a inicio</button>  
+    </div>
+
+    {% if resultado.gano is defined and resultado.gano == 1 %}
+        <p style="color: #4caf50; font-weight: bold;">¡Felicidades! Ganaste.</p>
+    {% endif %}
+
+    {% if resultado.vidas_restantes == 0 %}
+        <p style="color: #d9534f; font-weight: bold;">Agotaste todas las vidas. La palabra a adivinar era: {{ resultado.palabra_oculta }}</p>
+        <p style="color: #d9534f; font-weight: bold;">¡Game over!</p>
+    {% endif %}
+
+    
+</body>
+</html>
+

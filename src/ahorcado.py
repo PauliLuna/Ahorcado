@@ -5,25 +5,59 @@ import os
 abecedario = list("abcdefghijklmnopqrstuvwxyz")
 
 #Palabras con tematica
-palabras_animales = ["gato", "perro", "oso" ,"elefante", "jirafa", "tigre", "delfín"]
-palabras_comida = ["pizza", "hamburguesa", "fideos", "ensalada", "helado", "sushi"]
-palabras_paises = ["italia", "españa", "francia", "canada", "japon", "australia"]
-palabras_profesiones = ["doctor", "profesor", "ingeniero", "policia", "bombero", "musico"]
-palabras_deportes = ["futbol", "baloncesto", "tenis", "natacion", "atletismo","ciclismo"]
+# palabras_animales = ["gato", "perro", "oso" ,"elefante", "jirafa", "tigre", "delfín"]
+# palabras_comida = ["pizza", "hamburguesa", "fideos", "ensalada", "helado", "sushi"]
+# palabras_paises = ["italia", "españa", "francia", "canada", "japon", "australia"]
+# palabras_profesiones = ["doctor", "profesor", "ingeniero", "policia", "bombero", "musico"]
+# palabras_deportes = ["futbol", "baloncesto", "tenis", "natacion", "atletismo","ciclismo"]
 
 #Palabra con niveles de dificultad
-palabras_faciles = ["gato", "sol", "flor", "casa", "libro", "rio", "lago","oso","nube"]
-palabras_medias = ["coche", "ciudad", "invierno", "perro", "montaña", "verano"]
-palabras_dificiles = ["anticonstitucionalidad", "anacronismo", "paradigma", "quimera", "efervescente","electroencefalografista", "esternocleidomastoideo"]
+# palabras_faciles = ["gato", "sol", "flor", "casa", "libro", "rio", "lago","oso","nube"]
+# palabras_medias = ["coche", "ciudad", "invierno", "perro", "montaña", "verano"]
+# palabras_dificiles = ["anticonstitucionalidad", "anacronismo", "paradigma", "quimera", "efervescente","electroencefalografista", "esternocleidomastoideo"]
 
 
 class Ahorcado():
-    def __init__(self):
+    def __init__(self, tema=None, nivel=None):
         self.vidas = 7
         self.letrasAdivinadas = []
         self.letrasIncorrectas = []
         self.palabrasIncorrectas = []
         self.gano = 0
+        self.palabraAdivinar = self.elegir_palabra(tema, nivel)
+    
+    #El siguiente codigo es para que flask pueda mandar  el objeto al navegador
+    def to_dict(self):
+        return {
+            'vidas': self.vidas,
+            'letrasAdivinadas': self.letrasAdivinadas,
+            'letrasIncorrectas': self.letrasIncorrectas,
+            'palabrasIncorrectas': self.palabrasIncorrectas,
+            'gano': self.gano,
+            'palabraAdivinar': self.palabraAdivinar
+        }
+
+    def elegir_palabra(self, tema, nivel):
+        palabras_temas = {
+            'animales': ["gato", "perro", "oso", "elefante", "jirafa", "tigre", "delfin"],
+            'comida': ["pizza", "hamburguesa", "fideos", "ensalada", "helado", "sushi"],
+            'paises': ["italia", "españa", "francia", "canada", "japon", "australia"],
+            'profesiones': ["doctor", "profesor", "ingeniero", "policia", "bombero", "musico"],
+            'deportes': ["futbol", "baloncesto", "tenis", "natacion", "atletismo", "ciclismo"]
+        }
+
+        palabras_niveles = {
+            'facil': ["gato", "sol", "flor", "casa", "libro", "rio", "lago", "oso", "nube"],
+            'medio': ["coche", "ciudad", "invierno", "perro", "montaña", "verano"],
+            'dificil': ["anticonstitucionalidad", "anacronismo", "paradigma", "quimera", "efervescente", "electroencefalografista", "esternocleidomastoideo"]
+        }
+
+        if tema:
+            return random.choice(palabras_temas.get(tema, []))
+        elif nivel:
+            return random.choice(palabras_niveles.get(nivel, []))
+        else:
+            return "ahorcado"  # Palabra predeterminada para el ejemplo
     
     def obtener_nombre(self):
         jugador = input("Bienvenido al juego ahorcado, ¿Cuál es tu nombre? ")
@@ -163,6 +197,32 @@ class Ahorcado():
             return False
 
         #print("")
+
+#Los siguientes metodos son para mostrar mejs que flask consuma:
+    def mensaje_letra_incorrecta(self, letra):
+        return f"La letra {letra} es incorrecta. Perdiste 1 vida."
+
+    def mensaje_letra_repetida(self, letra):
+        return f"La letra {letra} ya fue ingresada anteriormente."
+
+    def mensaje_perdio(self):
+        return "Agotaste todas las vidas. La palabra a adivinar era: {}".format(self.palabraAdivinar)
+
+    def mensaje_gano(self):
+        return "¡Felicidades! Ganaste."
+
+    def obtener_mensaje_actual(self, letra):
+        if letra in self.letrasIncorrectas:
+            return self.mensaje_letra_incorrecta(letra)
+        elif letra in self.letrasAdivinadas:
+            return self.mensaje_letra_repetida(letra)
+        elif self.vidas == 0:
+            return self.mensaje_perdio()
+        elif self.gano == 1:
+            return self.mensaje_gano()
+        else:
+            return ""
+
 
 # JUEGO
 # Comentar: Ctrl + K + Ctrl + C

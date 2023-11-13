@@ -40,6 +40,10 @@
             box-sizing: border-box;
         }
 
+        input[type="hidden"] {
+            display: none; /* Oculta el campo oculto */
+        }
+
         button {
             background-color: #4caf50;
             color: white;
@@ -58,14 +62,19 @@
 <body>
     <h1>Juego del Ahorcado</h1>
     
-    <form action="/elegir_opcion" method="post">
-        <label for="opcion">Elegir opción:</label>
-        <select name="opcion" id="opcion">
-            <option value="1">Jugar por temáticas</option>
-            <option value="2">Jugar por nivel de dificultad</option>
+    <form action="/jugar" method="post">
+        <label for="seleccion">Elegir temática:</label>
+        <select name="seleccion" id="seleccion">
+            <option value="a">Animales</option>
+            <option value="b">Comida</option>
+            <option value="c">Paises</option>
+            <option value="d">Profesiones</option>
+            <option value="e">Deportes</option>
         </select>
+        <input type="hidden" name="opcion" value="1">
         <br>
-        <button type="submit">Continuar</button>
+        <button type="submit">Comenzar Juego</button>
     </form>
 </body>
 </html>
+
