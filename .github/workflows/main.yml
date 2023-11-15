@@ -36,22 +36,9 @@ jobs:
         
     - name: Test Report
       run: coverage report
-
-    - name: Build and analyze with SonarCloud
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-      run: |
-        # Install SonarScanner
-        wget https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-4.6.2.2472-linux.zip
-        unzip sonar-scanner-cli-4.6.2.2472-linux.zip
-        export PATH=$PATH:$PWD/sonar-scanner-4.6.2.2472-linux/bin
-
-        # Run SonarScanner
-        sonar-scanner
           
-    #- name: SonarCloud Scan
-     # uses: SonarSource/sonarcloud-github-action@master
-     # env:
-      #    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
-       #   SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+    - name: SonarCloud Scan
+      uses: SonarSource/sonarcloud-github-action@master
+      env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
