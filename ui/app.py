@@ -5,7 +5,7 @@ from flask import Flask, redirect, url_for,render_template, request, jsonify, se
 from ahorcado import Ahorcado
 
 app = Flask(__name__)
-app.secret_key = 'mi_clave_secreta'
+#app.secret_key = 'mi_clave_secreta'
 juegoActual= Ahorcado()
 
 @app.route("/")
@@ -94,6 +94,7 @@ def jugar_nuevamente():
 
     return redirect('/')
 
+#hacer que el diccionario de elecciones este en ahorcado.py, aca se realice la selecion
 def obtener_tema(seleccion):
     temas = {
         'a': 'animales',
@@ -104,6 +105,7 @@ def obtener_tema(seleccion):
     }
     return temas.get(seleccion, 'animales')  # Valor predeterminado 'animales' si no se encuentra la selección
 
+#hacer que el diccionario de elecciones este en ahorcado.py, aca se realice la selecion
 def obtener_nivel(seleccion):
     niveles = {
         'a': 'facil',

@@ -2,21 +2,6 @@ import random
 import re
 import os
 
-abecedario = list("abcdefghijklmnopqrstuvwxyz")
-
-#Palabras con tematica
-# palabras_animales = ["gato", "perro", "oso" ,"elefante", "jirafa", "tigre", "delfín"]
-# palabras_comida = ["pizza", "hamburguesa", "fideos", "ensalada", "helado", "sushi"]
-# palabras_paises = ["italia", "españa", "francia", "canada", "japon", "australia"]
-# palabras_profesiones = ["doctor", "profesor", "ingeniero", "policia", "bombero", "musico"]
-# palabras_deportes = ["futbol", "baloncesto", "tenis", "natacion", "atletismo","ciclismo"]
-
-#Palabra con niveles de dificultad
-# palabras_faciles = ["gato", "sol", "flor", "casa", "libro", "rio", "lago","oso","nube"]
-# palabras_medias = ["coche", "ciudad", "invierno", "perro", "montaña", "verano"]
-# palabras_dificiles = ["anticonstitucionalidad", "anacronismo", "paradigma", "quimera", "efervescente","electroencefalografista", "esternocleidomastoideo"]
-
-
 class Ahorcado():
     def __init__(self, tema=None, nivel=None):
         self.vidas = 7
@@ -26,7 +11,7 @@ class Ahorcado():
         self.gano = 0
         self.palabraAdivinar = self.elegir_palabra(tema, nivel)
     
-    #El siguiente codigo es para que flask pueda mandar  el objeto al navegador
+    #El siguiente codigo es para que flask pueda mandar el objeto al navegador
     def to_dict(self):
         return {
             'vidas': self.vidas,
@@ -59,16 +44,13 @@ class Ahorcado():
         else:
             return "ahorcado"  # Palabra predeterminada para el ejemplo
     
+    #Las siguientes 3 funciones era para probar desde consola
     def obtener_nombre(self):
         jugador = input("Bienvenido al juego ahorcado, ¿Cuál es tu nombre? ")
         return jugador
     
     def menu_opcion_niveles(self):
         while True:
-                #print("Opciones de juego:")
-                #print("1- Nivel 1 (Fácil)")
-                #print("2- Nivel 2 (Medio)")
-                #print("3- Nivel 3 (Difícil)")
                 opcion = input("Ingrese opción: ")
 
                 if opcion in ["1", "2", "3"]:
@@ -76,18 +58,11 @@ class Ahorcado():
                     break
                 else:
                     os.system('cls')
-                    #print("Opción incorrecta. Por favor, ingrese una opción válida (1, 2 o 3).")        
-
+                   
         return opcion
 
     def menu_opcion_tematicas(self):
         while True:
-            #print("Seleccione una temática: ")
-            #print("1- Animales")
-            #print("2- Comida")
-            #print("3- Paises")
-            #print("4- Profesionales")
-            #print("5- Deportes")
             opcion = input("Ingrese opción: ")
             
             if opcion in ["1", "2", "3", "4", "5"]:
@@ -95,8 +70,7 @@ class Ahorcado():
                 break
             else:
                 os.system('cls')
-                #print("Opción incorrecta. Por favor, ingrese una opción válida (1, 2, 3, 4 o 5).")
-        
+                
         return opcion
     
     def juega(self,input):
@@ -119,7 +93,6 @@ class Ahorcado():
         if not repite:
             if letra in self.palabraAdivinar:
                 self.letrasAdivinadas.append(letra)
-                #print("Letra correcta!")
                 if "_" in self.imprimo_palabra():
                     self.gano = 0
                 else:
@@ -128,12 +101,10 @@ class Ahorcado():
             else:
                 self.descontar_vida()
                 self.letrasIncorrectas.append(letra)
-                #print("Letra incorrecta. Perdiste 1 vida")
                 return False
 
     def verificar_repeticion_letra(self,letra):
         if letra in self.letrasIncorrectas or letra in self.letrasAdivinadas:
-            #print("La letra {} ya fué ingresada!".format(letra))
             return True
         else:
             return False
@@ -148,7 +119,6 @@ class Ahorcado():
                 self.descontar_vida()
                 self.gano= 0
                 self.palabrasIncorrectas.append(word)
-                #print("La palabra ingresada es incorrecta! Perdiste 1 vida")
                 return False
 
     def descontar_vida(self):
@@ -160,7 +130,6 @@ class Ahorcado():
 
     def verificar_repeticion(self,A):
         if A in self.palabrasIncorrectas:
-            #print("La palabra {} ya fue ingresada!".format(A))
             return True
         else:
             return False
@@ -174,31 +143,13 @@ class Ahorcado():
                 palabra_mostrar += "_ "
         return palabra_mostrar
     
-    #PARA MI NO VA ESTE
-    def imprimo_palabra_ganadora(self, palabra):
-        palabra_mostrar = ""
-        for letra in palabra:
-            palabra_mostrar += letra+" "
-        return palabra_mostrar
-    
     def definir_si_gano(self):
         if self.gano==1:
-            #print("La palabra ingresada es correcta!")
-            #print(juegoActual.imprimo_palabra_ganadora(ingreso))
-            #print(" ")
-            #print("GANASTE!")
-            #print(" ")
             return True
         else:
-            #print("Agotaste todas las vidas! La palabra a adivinar era: {}".format(juegoActual.palabraAdivinar))
-            #print(" ")
-            #print("---GAME OVER----")
-            #print(" ")
             return False
 
-        #print("")
-
-#Los siguientes metodos son para mostrar mejs que flask consuma:
+#Los siguientes metodos son para mostrar mensajes que flask consuma:
     def mensaje_letra_incorrecta(self, letra):
         return f"La letra {letra} es incorrecta. Perdiste 1 vida."
 
@@ -227,157 +178,6 @@ class Ahorcado():
 # JUEGO
 # Comentar: Ctrl + K + Ctrl + C
 # Descomentar: Ctrl + K + Ctrl + U
-
-# if __name__ == '__main__':
-#     while True:
-#         juegoActual = Ahorcado()
-#         juegoActual.jugador = juegoActual.obtener_nombre()
-#         print("¡Bienvenido {}! --> Vamos a jugar!".format(juegoActual.jugador))
-#         print("--------------------------------------------------------")
-#         print("Seleccione un tipo de juego: ")
-#         print("1- Jugar por nivel de dificultad")
-#         print("2- Jugar por temática")
-#         opcion = input("Ingrese opción: ")
-#         if opcion == "1":
-#             op = juegoActual.menu_opcion_niveles()
-#             if op == "1":
-#                 juegoActual.palabraAdivinar = random.choice(palabras_faciles)
-#                 print("-----Bienvenido al nivel FACIL-----")
-#                 print ("           Mucha suerte!")
-#                 print("Vidas: {}".format(juegoActual.vidas))
-#                 print("La palabra a adivinar tiene {} letras".format(len(juegoActual.palabraAdivinar)))
-#                 print(juegoActual.imprimo_palabra())
-#                 print("")
-#                 while juegoActual.vidas > 0 and juegoActual.gano !=1:
-#                     ingreso = input("Ingresa una letra o palabra: ").lower()
-#                     juegoActual.juega(ingreso)
-#                     print("Vidas: {}".format(juegoActual.vidas))
-#                     print("")
-#                     print(juegoActual.imprimo_palabra())
-
-#                 juegoActual.definir_si_gano()
-
-#             if op == "2":
-#                 juegoActual.palabraAdivinar = random.choice(palabras_medias)
-#                 print("-----Bienvenido al nivel MEDIO-----")
-#                 print ("           Mucha suerte!")
-#                 print("Vidas: {}".format(juegoActual.vidas))
-#                 print("La palabra a adivinar tiene {} letras".format(len(juegoActual.palabraAdivinar)))
-#                 print(juegoActual.imprimo_palabra())
-#                 print("")
-#                 while juegoActual.vidas > 0 and juegoActual.gano !=1:
-#                     ingreso = input("Ingresa una letra o palabra: ").lower()
-#                     juegoActual.juega(ingreso)
-#                     print("Vidas: {}".format(juegoActual.vidas))
-#                     print("")
-#                     print(juegoActual.imprimo_palabra())
-
-#                 juegoActual.definir_si_gano()
-
-#             if op == "3":
-#                 juegoActual.palabraAdivinar = random.choice(palabras_dificiles)
-#                 print("-----Bienvenido al nivel DIFICIL-----")
-#                 print ("           Mucha suerte!")
-#                 print("Vidas: {}".format(juegoActual.vidas))
-#                 print("La palabra a adivinar tiene {} letras".format(len(juegoActual.palabraAdivinar)))
-#                 print(juegoActual.imprimo_palabra())
-#                 print("")
-#                 while juegoActual.vidas > 0 and juegoActual.gano !=1:
-#                     ingreso = input("Ingresa una letra o palabra: ").lower()
-#                     juegoActual.juega(ingreso)
-#                     print("Vidas: {}".format(juegoActual.vidas))
-#                     print("")
-#                     print(juegoActual.imprimo_palabra())
-
-#                 juegoActual.definir_si_gano()
-        
-#         if opcion == "2":
-#             op = juegoActual.menu_opcion_tematicas()
-#             if op == "1":
-#                 juegoActual.palabraAdivinar = random.choice(palabras_animales)
-#                 print("-----Bienvenido a la temática ANIMALES-----")
-#                 print ("           Mucha suerte!")
-#                 print("Vidas: {}".format(juegoActual.vidas))
-#                 print("La palabra a adivinar tiene {} letras".format(len(juegoActual.palabraAdivinar)))
-#                 print(juegoActual.imprimo_palabra())
-#                 print("")
-#                 while juegoActual.vidas > 0 and juegoActual.gano !=1:
-#                     ingreso = input("Ingresa una letra o palabra: ").lower()
-#                     juegoActual.juega(ingreso)
-#                     print("Vidas: {}".format(juegoActual.vidas))
-#                     print("")
-#                     print(juegoActual.imprimo_palabra())
-
-#                 juegoActual.definir_si_gano()
-                
-#             if op == "2":
-#                 juegoActual.palabraAdivinar = random.choice(palabras_comida)
-#                 print("-----Bienvenido a la temática COMIDA-----")
-#                 print ("           Mucha suerte!")
-#                 print("Vidas: {}".format(juegoActual.vidas))
-#                 print("La palabra a adivinar tiene {} letras".format(len(juegoActual.palabraAdivinar)))
-#                 print(juegoActual.imprimo_palabra())
-#                 print("")
-#                 while juegoActual.vidas > 0 and juegoActual.gano !=1:
-#                     ingreso = input("Ingresa una letra o palabra: ").lower()
-#                     juegoActual.juega(ingreso)
-#                     print("Vidas: {}".format(juegoActual.vidas))
-#                     print("")
-#                     print(juegoActual.imprimo_palabra())
-
-#                 juegoActual.definir_si_gano()
-
-#             if op == "3":
-#                 juegoActual.palabraAdivinar = random.choice(palabras_paises)
-#                 print("-----Bienvenido a la temática PAISES-----")
-#                 print ("           Mucha suerte!")
-#                 print("Vidas: {}".format(juegoActual.vidas))
-#                 print("La palabra a adivinar tiene {} letras".format(len(juegoActual.palabraAdivinar)))
-#                 print(juegoActual.imprimo_palabra())
-#                 print("")
-#                 while juegoActual.vidas > 0 and juegoActual.gano !=1:
-#                     ingreso = input("Ingresa una letra o palabra: ").lower()
-#                     juegoActual.juega(ingreso)
-#                     print("Vidas: {}".format(juegoActual.vidas))
-#                     print("")
-#                     print(juegoActual.imprimo_palabra())
-
-#                 juegoActual.definir_si_gano()
-
-#             if op == "4":
-#                 juegoActual.palabraAdivinar = random.choice(palabras_profesiones)
-#                 print("-----Bienvenido a la temática PROFESIONES-----")
-#                 print ("           Mucha suerte!")
-#                 print("Vidas: {}".format(juegoActual.vidas))
-#                 print("La palabra a adivinar tiene {} letras".format(len(juegoActual.palabraAdivinar)))
-#                 print(juegoActual.imprimo_palabra())
-#                 print("")
-#                 while juegoActual.vidas > 0 and juegoActual.gano !=1:
-#                     ingreso = input("Ingresa una letra o palabra: ").lower()
-#                     juegoActual.juega(ingreso)
-#                     print("Vidas: {}".format(juegoActual.vidas))
-#                     print("")
-#                     print(juegoActual.imprimo_palabra())
-
-#                 juegoActual.definir_si_gano()
-
-#             if op == "5":
-#                 juegoActual.palabraAdivinar = random.choice(palabras_deportes)
-#                 print("-----Bienvenido a la temática DEPORTES-----")
-#                 print ("           Mucha suerte!")
-#                 print("Vidas: {}".format(juegoActual.vidas))
-#                 print("La palabra a adivinar tiene {} letras".format(len(juegoActual.palabraAdivinar)))
-#                 print(juegoActual.imprimo_palabra())
-#                 print("")
-#                 while juegoActual.vidas > 0 and juegoActual.gano !=1:
-#                     ingreso = input("Ingresa una letra o palabra: ").lower()
-#                     juegoActual.juega(ingreso)
-#                     print("Vidas: {}".format(juegoActual.vidas))
-#                     print("")
-#                     print(juegoActual.imprimo_palabra())
-
-#                 juegoActual.definir_si_gano()
-
 
 
 ## NOTAS:
