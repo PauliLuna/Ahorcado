@@ -37,6 +37,11 @@ jobs:
     - name: Test Report
       run: coverage report
 
+    - name: Build wrapper
+      run: |
+          curl -LJO https://sonarcloud.io/static/cpp/build-wrapper-linux-x86.zip
+          unzip build-wrapper-linux-x86.zip
+          
     - name: SonarCloud Scan
       uses: SonarSource/sonarcloud-github-action@master
       env:
