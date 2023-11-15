@@ -37,10 +37,11 @@ jobs:
     - name: Test Report
       run: coverage report
 
-    - name: Build wrapper
+    - name: Set SonarCloud Environment Variables
       run: |
-          curl -LJO https://sonarcloud.io/static/cpp/build-wrapper-linux-x86.zip
-          unzip build-wrapper-linux-x86.zip
+          echo "sonar.c.file.suffixes=-" >> $GITHUB_ENV
+          echo "sonar.cpp.file.suffixes=-" >> $GITHUB_ENV
+          echo "sonar.objc.file.suffixes=-" >> $GITHUB_ENV
           
     - name: SonarCloud Scan
       uses: SonarSource/sonarcloud-github-action@master
