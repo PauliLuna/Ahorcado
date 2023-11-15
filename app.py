@@ -9,9 +9,9 @@ app.secret_key = 'mi_clave_secreta' #Sino da error
 juegoActual= Ahorcado()
 
 # Ruta para servir archivos estáticos (CSS en este caso)
-@app.route('/static/<path:filename>')
+@app.route('/ui/static/<path:filename>')
 def serve_static(filename):
-    return send_from_directory('ui/static', filename)
+    return send_from_directory('static', filename)
 
 @app.route("/")
 def index():
