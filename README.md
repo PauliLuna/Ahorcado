@@ -22,4 +22,4 @@ Fin del Juego: El juego termina cuando el jugador adivina correctamente todas la
 
 ## ¡Diviértete creando tu versión del juego del ahorcado!
 
-[Aquí está el enlace del juego](https://pauliluna.github.io/Ahorcado/ui/templates/)
+[Aquí está el enlace del juego](https://metodologias-agiles-juego-ahorcado.onrender.com/)
