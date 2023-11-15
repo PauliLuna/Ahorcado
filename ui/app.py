@@ -1,12 +1,17 @@
 import sys
 sys.path.append('src')
 
-from flask import Flask, redirect, url_for,render_template, request, jsonify, session
+from flask import Flask, redirect, url_for,render_template, request, jsonify, session, send_from_directory
 from ahorcado import Ahorcado
 
 app = Flask(__name__)
-#app.secret_key = 'mi_clave_secreta'
+app.secret_key = 'mi_clave_secreta' #Sino da error
 juegoActual= Ahorcado()
+
+# Ruta para servir archivos estáticos (CSS en este caso)
+@app.route('/static/<path:filename>')
+def serve_static(filename):
+    return send_from_directory('ui/static', filename)
 
 @app.route("/")
 def index():
@@ -116,4 +121,4 @@ def obtener_nivel(seleccion):
 
 
 if __name__ == "__main__":
-    app.run(debug=False, host='0.0.0.0')#(debug=True)
+    app.run(debug=True)
