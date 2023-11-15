@@ -37,29 +37,18 @@ jobs:
     - name: Test Report
       run: coverage report
 
-    - name: Set SonarCloud Environment Variables
-      run: |
-          echo "sonar.c.file.suffixes=-" >> $GITHUB_ENV
-          echo "sonar.cpp.file.suffixes=-" >> $GITHUB_ENV
-          echo "sonar.objc.file.suffixes=-" >> $GITHUB_ENV
-
-    - name: Install SonarScanner
-      run: |
-          sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 40976EAF437D05B5
-          sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3B4FE6ACC0B21F32
-          sudo apt-get install software-properties-common
-          sudo add-apt-repository ppa:openjdk-r/ppa
-          sudo apt-get update
-          sudo apt-get install openjdk-11-jre
-          wget https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-4.6.2.2472-linux.zip
-          unzip sonar-scanner-cli-4.6.2.2472-linux.zip
-          export PATH=$PATH:$PWD/sonar-scanner-4.6.2.2472-linux/bin
-
-    - name: SonarCloud Scan with Debug Logging
-      run: sonar-scanner -X
+    - name: Build and analyze with SonarCloud
       env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+      run: |
+        # Install SonarScanner
+        wget https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-4.6.2.2472-linux.zip
+        unzip sonar-scanner-cli-4.6.2.2472-linux.zip
+        export PATH=$PATH:$PWD/sonar-scanner-4.6.2.2472-linux/bin
+
+        # Run SonarScanner
+        sonar-scanner
           
     #- name: SonarCloud Scan
      # uses: SonarSource/sonarcloud-github-action@master
