@@ -42,9 +42,15 @@ jobs:
           echo "sonar.c.file.suffixes=-" >> $GITHUB_ENV
           echo "sonar.cpp.file.suffixes=-" >> $GITHUB_ENV
           echo "sonar.objc.file.suffixes=-" >> $GITHUB_ENV
-          
-    - name: SonarCloud Scan
-      uses: SonarSource/sonarcloud-github-action@master
+
+    - name: SonarCloud Scan with Debug Logging
+      run: sonar-scanner -X
       env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          
+    #- name: SonarCloud Scan
+     # uses: SonarSource/sonarcloud-github-action@master
+     # env:
+      #    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
+       #   SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
