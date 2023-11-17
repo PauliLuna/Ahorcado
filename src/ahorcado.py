@@ -178,8 +178,6 @@ class Ahorcado():
         else:
             return ""
 
-
-# JUEGO
 # Comentar: Ctrl + K + Ctrl + C
 # Descomentar: Ctrl + K + Ctrl + U
 
