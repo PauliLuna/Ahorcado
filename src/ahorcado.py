@@ -135,13 +135,16 @@ class Ahorcado():
             return False
         
     def imprimo_palabra(self):
-        palabra_mostrar = ""
-        for letra in self.palabraAdivinar:
-            if letra in self.letrasAdivinadas:
-                palabra_mostrar += letra+" "
-            else:
-                palabra_mostrar += "_ "
-        return palabra_mostrar
+        if self.vidas > 0:
+            palabra_mostrar = ""
+            for letra in self.palabraAdivinar:
+                if letra in self.letrasAdivinadas:
+                    palabra_mostrar += letra+" "
+                else:
+                    palabra_mostrar += "_ "
+            return palabra_mostrar
+        else:
+            return self.palabraAdivinar
     
     def definir_si_gano(self):
         if self.gano==1:
