@@ -33,7 +33,7 @@ jobs:
       run: |
         pip install coverage
         coverage run -m unittest discover -s tests -p 'test_*.py'
-        coverage xml -i -o coverage.xml  # Coverage para SonarCloud
+        coverage xml -i -o coverage.xml
         
     - name: Test Report
       run: coverage report
@@ -46,4 +46,4 @@ jobs:
       with:
         args: >
          -Dsonar.exclusions=**/venv/**
-         -Dsonar.python.coverage.reportPaths=coverage.xml  # Coverage para SonarCloud
+         -Dsonar.python.coverage.reportPaths=coverage.xml
