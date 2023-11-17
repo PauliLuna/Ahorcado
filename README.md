@@ -1,6 +1,6 @@
 # Ahorcado
 
-¡Bienvenido al juego del Ahorcado!
+¡Bienvenido al juego del Ahorcado! 🎉
 
 Estás a punto de embarcarte en una aventura llena de palabras intrigantes y desafíos emocionantes. Prepárate para poner a prueba tu destreza con las letras mientras te sumerges en el misterioso mundo de las palabras ocultas.
 
@@ -22,4 +22,6 @@ Fin del Juego: El juego termina cuando el jugador adivina correctamente todas la
 
 ## ¡Diviértete creando tu versión del juego del ahorcado!
 
-[Aquí está el enlace del juego](https://metodologias-agiles-juego-ahorcado.onrender.com/)
+¿Listo para el desafío? ¡Que comience el juego! 🚀
+
+¡Buena suerte y que las letras estén siempre a tu favor! 🌟 [Aquí está el enlace del juego](https://metodologias-agiles-juego-ahorcado.onrender.com/)
