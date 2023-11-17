@@ -165,7 +165,8 @@ class Ahorcado():
     def mensaje_gano(self):
         return "¡Felicidades! Ganaste."
 
-    def obtener_mensaje_actual(self, letra):
+    def obtener_mensaje_actual(self, letraU):
+        letra = letraU.lower()
         if letra in self.letrasIncorrectas:
             return self.mensaje_letra_incorrecta(letra)
         elif letra in self.letrasAdivinadas:
