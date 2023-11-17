@@ -76,9 +76,9 @@ class Ahorcado():
     def juega(self,input):
        if self.validaEntrada(input):
             if len(input) == 1:
-                self.arriesgoLetra(input)
+                self.arriesgoLetra(input.lower())
             else:
-                if self.arriesgoPalabra(input):
+                if self.arriesgoPalabra(input.lower()):
                     return True
                 else:
                     return False
