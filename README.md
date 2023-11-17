@@ -10,15 +10,15 @@ Estás a punto de embarcarte en una aventura llena de palabras intrigantes y des
 El objetivo del juego es adivinar una palabra oculta. Cada letra de la palabra se revela a medida que el jugador adivina correctamente, y un dibujo del ahorcado se desarrolla con cada conjetura incorrecta.
 
 ## Reglas del Juego
-Palabra Oculta: Se elige una palabra que el jugador debe adivinar. Puede ser una palabra relacionada con un tema específico o seleccionada de acuerdo a niveles de dificultad.
+**1. Palabra Oculta:** Se elige una palabra que el jugador debe adivinar. Puede ser una palabra relacionada con un tema específico o seleccionada de acuerdo a niveles de dificultad.
 
-Representación Gráfica: Se dibuja una serie de guiones o espacios en blanco en el lugar de cada letra de la palabra oculta. Estos representan las letras aún no adivinadas.
+**2. Representación Gráfica:**  Se dibuja una serie de guiones o espacios en blanco en el lugar de cada letra de la palabra oculta. Estos representan las letras aún no adivinadas.
 
-Intentos Limitados: El jugador tiene un número limitado de 7 intentos para adivinar letras. Por cada letra incorrecta, se descuenta una vida.
+**3. Intentos Limitados:**  El jugador tiene un número limitado de 7 intentos para adivinar letras. Por cada letra incorrecta, se descuenta una vida.
 
-Adivinanzas: El jugador propone letras como conjeturas. Si la letra está en la palabra, se revela en su lugar correspondiente. Si no está en la palabra, se descuenta una vida. En caso de repetir una letra ya ingresada, las vidas no son descontadas y se informa al jugador.
+**4. Adivinanzas:**  El jugador propone letras como conjeturas. Si la letra está en la palabra, se revela en su lugar correspondiente. Si no está en la palabra, se descuenta una vida. En caso de repetir una letra ya ingresada, las vidas no son descontadas y se informa al jugador.
 
-Fin del Juego: El juego termina cuando el jugador adivina correctamente todas las letras de la palabra o por haber agotado todos los intentos.
+**5. Fin del Juego:** El juego termina cuando el jugador adivina correctamente todas las letras de la palabra o por haber agotado todos los intentos.
 
 ## ¡Diviértete creando tu versión del juego del ahorcado!
 
