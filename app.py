@@ -6,16 +6,18 @@ from ahorcado import Ahorcado
 
 app = Flask(__name__)
 app.secret_key = 'mi_clave_secreta' #Sino da error
-juegoActual= Ahorcado()
+# juegoActual= Ahorcado() SACAR
 
 # Ruta para servir archivos estáticos (CSS en este caso)
 @app.route('/ui/static/<path:filename>')
 def serve_static(filename):
     return send_from_directory('static', filename)
 
+#Cargar pagina de inicio
 @app.route("/")
 def index():
     return render_template('index.html')
+
 
 @app.route('/elegir_opcion', methods=['POST'])
 def elegir_opcion():
@@ -80,8 +82,8 @@ def jugar_nuevamente():
     if juego_anterior:
         # Crea un nuevo objeto Ahorcado con la configuración anterior
         juego_nuevo = Ahorcado(
-            tema=None,
-            nivel=None
+            tema=juego_anterior.get('tema'),
+            nivel=juego_anterior.get('nivel')
         )
 
         # Reinicia el juego con una palabra aleatoria

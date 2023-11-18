@@ -9,6 +9,8 @@ class Ahorcado():
         self.letrasIncorrectas = []
         self.palabrasIncorrectas = []
         self.gano = 0
+        self.tema = tema
+        self.nivel = nivel
         self.palabraAdivinar = self.elegir_palabra(tema, nivel)
     
     #El siguiente codigo es para que flask pueda mandar el objeto al navegador
@@ -19,6 +21,8 @@ class Ahorcado():
             'letrasIncorrectas': self.letrasIncorrectas,
             'palabrasIncorrectas': self.palabrasIncorrectas,
             'gano': self.gano,
+            'tema': self.tema,
+            'nivel': self.nivel,
             'palabraAdivinar': self.palabraAdivinar
         }
 
