@@ -26,6 +26,12 @@
         </form>
     {% endif %}
 
+    <p></p>
+    
+    {% if resultado.vidas_restantes < 7 %}
+        <img src="{{ url_for('static', filename='images/ahorcado_' ~ (6 - resultado.vidas_restantes) ~ '.png') }}" alt="Ahorcado" style="max-width: 200px;">
+    {% endif %}
+
     <div class="button-container">
         <button class="reset" onclick="location.href='/jugar_nuevamente'">Jugar nuevamente</button>
         <button class="home" onclick="location.href='/'">Volver a inicio</button>  

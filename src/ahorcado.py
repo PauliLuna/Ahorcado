@@ -76,9 +76,9 @@ class Ahorcado():
     def juega(self,input):
        if self.validaEntrada(input):
             if len(input) == 1:
-                self.arriesgoLetra(input)
+                self.arriesgoLetra(input.lower())
             else:
-                if self.arriesgoPalabra(input):
+                if self.arriesgoPalabra(input.lower()):
                     return True
                 else:
                     return False
@@ -135,13 +135,16 @@ class Ahorcado():
             return False
         
     def imprimo_palabra(self):
-        palabra_mostrar = ""
-        for letra in self.palabraAdivinar:
-            if letra in self.letrasAdivinadas:
-                palabra_mostrar += letra+" "
-            else:
-                palabra_mostrar += "_ "
-        return palabra_mostrar
+        if self.vidas > 0:
+            palabra_mostrar = ""
+            for letra in self.palabraAdivinar:
+                if letra in self.letrasAdivinadas:
+                    palabra_mostrar += letra+" "
+                else:
+                    palabra_mostrar += "_ "
+            return palabra_mostrar
+        else:
+            return self.palabraAdivinar
     
     def definir_si_gano(self):
         if self.gano==1:
@@ -162,7 +165,8 @@ class Ahorcado():
     def mensaje_gano(self):
         return "¡Felicidades! Ganaste."
 
-    def obtener_mensaje_actual(self, letra):
+    def obtener_mensaje_actual(self, letraU):
+        letra = letraU.lower()
         if letra in self.letrasIncorrectas:
             return self.mensaje_letra_incorrecta(letra)
         elif letra in self.letrasAdivinadas:
@@ -174,8 +178,6 @@ class Ahorcado():
         else:
             return ""
 
-
-# JUEGO
 # Comentar: Ctrl + K + Ctrl + C
 # Descomentar: Ctrl + K + Ctrl + U
 
