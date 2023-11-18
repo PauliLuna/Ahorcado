@@ -6,7 +6,6 @@ from ahorcado import Ahorcado
 
 app = Flask(__name__)
 app.secret_key = 'mi_clave_secreta' #Sino da error
-# juegoActual= Ahorcado() SACAR
 
 # Ruta para servir archivos estáticos (CSS en este caso)
 @app.route('/ui/static/<path:filename>')

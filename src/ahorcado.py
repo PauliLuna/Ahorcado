@@ -48,35 +48,6 @@ class Ahorcado():
         else:
             return "ahorcado"  # Palabra predeterminada para el ejemplo
     
-    #Las siguientes 3 funciones era para probar desde consola
-    def obtener_nombre(self):
-        jugador = input("Bienvenido al juego ahorcado, ¿Cuál es tu nombre? ")
-        return jugador
-    
-    def menu_opcion_niveles(self):
-        while True:
-                opcion = input("Ingrese opción: ")
-
-                if opcion in ["1", "2", "3"]:
-                    os.system('cls')
-                    break
-                else:
-                    os.system('cls')
-                   
-        return opcion
-
-    def menu_opcion_tematicas(self):
-        while True:
-            opcion = input("Ingrese opción: ")
-            
-            if opcion in ["1", "2", "3", "4", "5"]:
-                os.system('cls')
-                break
-            else:
-                os.system('cls')
-                
-        return opcion
-    
     def juega(self,input):
        if self.validaEntrada(input):
             if len(input) == 1:
