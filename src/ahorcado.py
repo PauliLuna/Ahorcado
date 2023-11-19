@@ -151,15 +151,3 @@ class Ahorcado():
             return self.mensaje_gano()
         else:
             return ""
-
-# Comentar: Ctrl + K + Ctrl + C
-# Descomentar: Ctrl + K + Ctrl + U
-
-
-## NOTAS:
-# En Python, cuando importas un módulo, todas las declaraciones en ese módulo se ejecutan una vez,
-#  incluyendo las declaraciones que no están dentro de funciones o clases.
-#  En este caso, la línea juegoActual.obtener_nombre() se ejecuta inmediatamente cuando se importa el módulo
-#  ahorcado.py, antes de que se ejecuten las pruebas en el archivo test_TDD.py.
-# Para solucionar esto, puedes mover la línea juegoActual.obtener_nombre()
-#  dentro de una función o un bloque if __name__ == '__main__':
