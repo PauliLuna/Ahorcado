@@ -24,7 +24,7 @@ class Ahorcado():
         self.gano = 0
         self.tema = tema
         self.nivel = nivel
-        self.palabraAdivinar = self.elegir_palabra(tema, nivel)
+        self.palabra_adivinar = self.elegir_palabra(tema, nivel)
     
     #El siguiente codigo es para que flask pueda mandar el objeto al navegador
     def to_dict(self):
@@ -36,7 +36,7 @@ class Ahorcado():
             'gano': self.gano,
             'tema': self.tema,
             'nivel': self.nivel,
-            'palabraAdivinar': self.palabraAdivinar
+            'palabra_adivinar': self.palabra_adivinar
         }
 
     def elegir_palabra(self, tema, nivel):
@@ -50,34 +50,34 @@ class Ahorcado():
     def imprimo_palabra(self):
         if self.vidas > 0:
             palabra_mostrar = ""
-            for letra in self.palabraAdivinar:
+            for letra in self.palabra_adivinar:
                 if letra in self.letras_adivinadas:
                     palabra_mostrar += letra+" "
                 else:
                     palabra_mostrar += "_ "
             return palabra_mostrar
         else:
-            return self.palabraAdivinar
+            return self.palabra_adivinar
 
     def juega(self,input):
-       if self.validaEntrada(input):
+       if self.valida_entrada(input):
             if len(input) == 1:
-                self.arriesgoLetra(input.lower())
+                self.arriesgo_letra(input.lower())
             else:
-                if self.arriesgoPalabra(input.lower()):
+                if self.arriesgo_palabra(input.lower()):
                     return True
                 else:
                     return False
 
-    def validaEntrada(self,input):
+    def valida_entrada(self,input):
     # Usamos una expresión regular para verificar si la cadena contiene solo letras
         patron = r'^[a-zA-Z]+$'
         return bool(re.match(patron,input))
     
-    def arriesgoLetra(self, letra):
+    def arriesgo_letra(self, letra):
         repite = self.verificar_repeticion_letra(letra)
         if not repite:
-            if letra in self.palabraAdivinar:
+            if letra in self.palabra_adivinar:
                 self.letras_adivinadas.append(letra)
                 if "_" in self.imprimo_palabra():
                     self.gano = 0
@@ -95,10 +95,10 @@ class Ahorcado():
         else:
             return False
 
-    def arriesgoPalabra(self, word):
+    def arriesgo_palabra(self, word):
         repite = self.verificar_repeticion(word)
         if not repite:
-            if word == self.palabraAdivinar:
+            if word == self.palabra_adivinar:
                 self.gano= 1
                 return True
             else:
@@ -114,8 +114,8 @@ class Ahorcado():
         else:
             return 0
 
-    def verificar_repeticion(self,A):
-        if A in self.palabras_incorrectas:
+    def verificar_repeticion(self,a):
+        if a in self.palabras_incorrectas:
             return True
         else:
             return False
@@ -134,7 +134,7 @@ class Ahorcado():
         return f"La letra {letra} ya fue ingresada anteriormente."
 
     def mensaje_perdio(self):
-        return "Agotaste todas las vidas. La palabra a adivinar era: {}".format(self.palabraAdivinar)
+        return "Agotaste todas las vidas. La palabra a adivinar era: {}".format(self.palabra_adivinar)
 
     def mensaje_gano(self):
         return "¡Felicidades! Ganaste."

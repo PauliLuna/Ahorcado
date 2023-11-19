@@ -86,7 +86,7 @@ def jugar_nuevamente():
         )
 
         # Reinicia el juego con una palabra aleatoria
-        juego_nuevo.palabraAdivinar = juego_nuevo.elegir_palabra(juego_anterior.get('tema'), juego_anterior.get('nivel'))
+        juego_nuevo.palabra_adivinar = juego_nuevo.elegir_palabra(juego_anterior.get('tema'), juego_anterior.get('nivel'))
 
         # Actualiza la sesión con el nuevo juego
         session['juego_actual'] = juego_nuevo.to_dict()

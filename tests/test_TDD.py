@@ -24,73 +24,73 @@ juego = Ahorcado()
 class ArriesgarPalabraTest(unittest.TestCase):
 
      def test_adivino_palabra(self):
-        juego.palabraAdivinar = "giacomo"
+        juego.palabra_adivinar = "giacomo"
         esperado = True
-        actual = juego.arriesgoPalabra("giacomo")
+        actual = juego.arriesgo_palabra("giacomo")
         self.assertEqual(actual, esperado)
 
      def test_adivino_palabra_flag(self):
-        juego.palabraAdivinar = "giacomo"
+        juego.palabra_adivinar = "giacomo"
         esperado = 1
-        juego.arriesgoPalabra("giacomo")
+        juego.arriesgo_palabra("giacomo")
         self.assertEqual(juego.gano, esperado)
 
      def test_pierdo_palabra(self):
-        juego.palabraAdivinar = "giacomo"
+        juego.palabra_adivinar = "giacomo"
         esperado = False 
-        actual = juego.arriesgoPalabra("nogiacomo")
+        actual = juego.arriesgo_palabra("nogiacomo")
         self.assertEqual(actual, esperado)
 
      def test_pierdo_palabra_flag(self):
-        juego.palabraAdivinar = "giacomo"
+        juego.palabra_adivinar = "giacomo"
         esperado = 0
-        juego.arriesgoPalabra("nogiacomo")
+        juego.arriesgo_palabra("nogiacomo")
         self.assertEqual(juego.gano, esperado)
      
      def test_no_repetir_palabras(self):
-        juego.palabraAdivinar = "giacomo"
+        juego.palabra_adivinar = "giacomo"
         juego.palabras_incorrectas.append("tirabuzones")
         esperado = False 
         actual = juego.verificar_repeticion("giacomo2")
         self.assertEqual(actual, esperado)
 
      def test_repetir_palabras(self):
-        juego.palabraAdivinar = "giacomo"
+        juego.palabra_adivinar = "giacomo"
         juego.palabras_incorrectas.append("tirabuzones")
         esperado = True 
         actual = juego.verificar_repeticion("tirabuzones")
         self.assertEqual(actual, esperado)
 
      def test_juega_palabra_correcta(self):
-          juego.palabraAdivinar= "giacomo"
+          juego.palabra_adivinar= "giacomo"
           actual = juego.juega("giacomo")
           esperado = True
           self.assertEqual(actual, esperado)
 
      def test_juega_palabra_incorrecta(self):
-          juego.palabraAdivinar= "giacomo"
+          juego.palabra_adivinar= "giacomo"
           actual = juego.juega("zapallito")
           esperado = False
           self.assertEqual(actual, esperado)
       
 # HISTORIA DE USUARIO 2
-class ArriesgoLetra(unittest.TestCase):
+class arriesgo_letra(unittest.TestCase):
      def test_adivino_letra(self):
-          juego.palabraAdivinar = "giacomo"
+          juego.palabra_adivinar = "giacomo"
           esperado = True
-          actual = juego.arriesgoLetra("a")
+          actual = juego.arriesgo_letra("a")
           self.assertEqual(actual, esperado)
 
      def test_pierdo_letra(self):
-        juego.palabraAdivinar = "giacomo"
+        juego.palabra_adivinar = "giacomo"
         esperado = False 
-        actual = juego.arriesgoLetra("x")
+        actual = juego.arriesgo_letra("x")
         self.assertEqual(actual, esperado)
 
      
 
      def test_no_repetir_letra(self):
-          juego.palabraAdivinar = "giacomo"
+          juego.palabra_adivinar = "giacomo"
           juego.letras_adivinadas = ["g", "a"]
           juego.letras_incorrectas = ["w"]
           esperado = False
@@ -98,7 +98,7 @@ class ArriesgoLetra(unittest.TestCase):
           self.assertEqual(actual, esperado)
     
      def test_repetir_letra_adivinada(self):
-          juego.palabraAdivinar = "giacomo"
+          juego.palabra_adivinar = "giacomo"
           juego.letras_adivinadas = ["g", "a"]
           juego.letras_incorrectas = ["w"]
           esperado = True
@@ -106,7 +106,7 @@ class ArriesgoLetra(unittest.TestCase):
           self.assertEqual(actual, esperado)
     
      def test_repetir_letra_incorrecta(self):
-          juego.palabraAdivinar = "giacomo"
+          juego.palabra_adivinar = "giacomo"
           juego.letras_adivinadas = ["g", "a"]
           juego.letras_incorrectas = ["w"]
           esperado = True
@@ -115,22 +115,22 @@ class ArriesgoLetra(unittest.TestCase):
 
 class ValidoJuego(unittest.TestCase):
      def test_entrada_letra(self):
-          juego.palabraAdivinar = "giacomo"
+          juego.palabra_adivinar = "giacomo"
           entrada = "g"
           esperado = True
-          actual = juego.validaEntrada(entrada)
+          actual = juego.valida_entrada(entrada)
           self.assertEqual(actual, esperado)
 
      def test_entrada_palabra(self):
           entrada = "hola"
           esperado = True
-          actual = juego.validaEntrada(entrada)
+          actual = juego.valida_entrada(entrada)
           self.assertEqual(actual, esperado)
 
      def test_entrada_no_valida(self):
           entrada = "#hola"
           esperado = False
-          actual = juego.validaEntrada(entrada)
+          actual = juego.valida_entrada(entrada)
           self.assertEqual(actual, esperado)
      
      # Elegir palabras
@@ -171,7 +171,7 @@ class ValidoJuego(unittest.TestCase):
 # HISTORIA DE USUARIO 3
 class ImprimoPalabra(unittest.TestCase):
      def test_imprimo(self):
-            juego.palabraAdivinar = "giacomo"
+            juego.palabra_adivinar = "giacomo"
             juego.letras_adivinadas = ["a", "o"]
             esperado = "_ _ a _ o _ o "
             actual = juego.imprimo_palabra()
@@ -197,11 +197,11 @@ class ImprimoPalabra(unittest.TestCase):
      
      def test_mensaje_perdio(self):
           letra = "n"
-          juego.palabraAdivinar = "prueba"
+          juego.palabra_adivinar = "prueba"
           juego.letras_incorrectas = ["m"]
           juego.letras_adivinadas = ["a", "w"]
           juego.vidas = 0
-          esperado = f"Agotaste todas las vidas. La palabra a adivinar era: {juego.palabraAdivinar}"
+          esperado = f"Agotaste todas las vidas. La palabra a adivinar era: {juego.palabra_adivinar}"
           actual = juego.obtener_mensaje_actual(letra)
           self.assertEqual(actual, esperado)
      
@@ -221,13 +221,13 @@ class Menu(unittest.TestCase):
      def test_entrada_valida(self): 
           entrada = "hola"
           esperado = True
-          actual = juego.validaEntrada(entrada)
+          actual = juego.valida_entrada(entrada)
           self.assertEqual(actual, esperado)
 
      def test_entrada_no_valida(self):
           entrada = "?hola%123!"
           esperado = False
-          actual = juego.validaEntrada(entrada)
+          actual = juego.valida_entrada(entrada)
           self.assertEqual(actual, esperado)
 
 
