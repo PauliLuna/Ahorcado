@@ -2,9 +2,24 @@ import unittest
 from src.ahorcado import Ahorcado
 from unittest.mock import patch
 
+palabras_temas = {
+    'animales': ["gato", "perro", "oso", "elefante", "jirafa", "tigre", "delfin"],
+    'comida': ["pizza", "hamburguesa", "fideos", "ensalada", "helado", "sushi"],
+    'paises': ["italia", "españa", "francia", "canada", "japon", "australia"],
+    'profesiones': ["doctor", "profesor", "ingeniero", "policia", "bombero", "musico"],
+    'deportes': ["futbol", "baloncesto", "tenis", "natacion", "atletismo", "ciclismo"]
+}
+
+palabras_niveles = {
+    'facil': ["gato", "sol", "flor", "casa", "libro", "rio", "lago", "oso", "nube"],
+    'medio': ["coche", "ciudad", "invierno", "perro", "montaña", "verano"],
+    'dificil': ["anticonstitucionalidad", "anacronismo", "paradigma", "quimera", "efervescente", "electroencefalografista", "esternocleidomastoideo"]
+}
+
 # Creo una instancia del Ahorcado
 juego = Ahorcado()
  
+
 # HISTORIA DE USUARIO 1
 class ArriesgarPalabraTest(unittest.TestCase):
 
@@ -58,7 +73,6 @@ class ArriesgarPalabraTest(unittest.TestCase):
           esperado = False
           self.assertEqual(actual, esperado)
       
-
 # HISTORIA DE USUARIO 2
 class ArriesgoLetra(unittest.TestCase):
      def test_adivino_letra(self):
@@ -72,6 +86,8 @@ class ArriesgoLetra(unittest.TestCase):
         esperado = False 
         actual = juego.arriesgoLetra("x")
         self.assertEqual(actual, esperado)
+
+     
 
      def test_no_repetir_letra(self):
           juego.palabraAdivinar = "giacomo"
@@ -116,9 +132,27 @@ class ValidoJuego(unittest.TestCase):
           esperado = False
           actual = juego.validaEntrada(entrada)
           self.assertEqual(actual, esperado)
+     
+     # Elegir palabras
+      ## Temas
+     def test_elegir_palabra_tema(self):
+          actual = juego.elegir_palabra(tema='animales', nivel=None)
+          self.assertIn(actual,palabras_temas["animales"])
+     
+      ## Niveles
+     def test_elegir_palabra_nivel(self):
+          actual = juego.elegir_palabra(tema=None, nivel='facil')
+          self.assertIn(actual,palabras_niveles["facil"])
 
-   
-# HISTORIA DE USUARIO 3 -- agregar tests
+     def test_elegir_palabra_nivel(self):
+               actual = juego.elegir_palabra(tema=None, nivel='medio')
+               self.assertIn(actual,palabras_niveles["medio"])
+     
+     def test_elegir_palabra_nivel(self):
+          actual = juego.elegir_palabra(tema=None, nivel='dificil')
+          self.assertIn(actual,palabras_niveles["dificil"])
+     
+# HISTORIA DE USUARIO 3
 class ImprimoPalabra(unittest.TestCase):
      def test_imprimo(self):
             juego.palabraAdivinar = "giacomo"

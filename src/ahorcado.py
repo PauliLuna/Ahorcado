@@ -1,6 +1,19 @@
 import random
 import re
-import os
+
+palabras_temas = {
+    'animales': ["gato", "perro", "oso", "elefante", "jirafa", "tigre", "delfin"],
+    'comida': ["pizza", "hamburguesa", "fideos", "ensalada", "helado", "sushi"],
+    'paises': ["italia", "españa", "francia", "canada", "japon", "australia"],
+    'profesiones': ["doctor", "profesor", "ingeniero", "policia", "bombero", "musico"],
+    'deportes': ["futbol", "baloncesto", "tenis", "natacion", "atletismo", "ciclismo"]
+}
+
+palabras_niveles = {
+    'facil': ["gato", "sol", "flor", "casa", "libro", "rio", "lago", "oso", "nube"],
+    'medio': ["coche", "ciudad", "invierno", "perro", "montaña", "verano"],
+    'dificil': ["anticonstitucionalidad", "anacronismo", "paradigma", "quimera", "efervescente", "electroencefalografista", "esternocleidomastoideo"]
+}
 
 class Ahorcado():
     def __init__(self, tema=None, nivel=None):
@@ -27,20 +40,6 @@ class Ahorcado():
         }
 
     def elegir_palabra(self, tema, nivel):
-        palabras_temas = {
-            'animales': ["gato", "perro", "oso", "elefante", "jirafa", "tigre", "delfin"],
-            'comida': ["pizza", "hamburguesa", "fideos", "ensalada", "helado", "sushi"],
-            'paises': ["italia", "españa", "francia", "canada", "japon", "australia"],
-            'profesiones': ["doctor", "profesor", "ingeniero", "policia", "bombero", "musico"],
-            'deportes': ["futbol", "baloncesto", "tenis", "natacion", "atletismo", "ciclismo"]
-        }
-
-        palabras_niveles = {
-            'facil': ["gato", "sol", "flor", "casa", "libro", "rio", "lago", "oso", "nube"],
-            'medio': ["coche", "ciudad", "invierno", "perro", "montaña", "verano"],
-            'dificil': ["anticonstitucionalidad", "anacronismo", "paradigma", "quimera", "efervescente", "electroencefalografista", "esternocleidomastoideo"]
-        }
-
         if tema:
             return random.choice(palabras_temas.get(tema, []))
         elif nivel:
@@ -48,6 +47,18 @@ class Ahorcado():
         else:
             return "ahorcado"  # Palabra predeterminada para el ejemplo
     
+    def imprimo_palabra(self):
+        if self.vidas > 0:
+            palabra_mostrar = ""
+            for letra in self.palabraAdivinar:
+                if letra in self.letrasAdivinadas:
+                    palabra_mostrar += letra+" "
+                else:
+                    palabra_mostrar += "_ "
+            return palabra_mostrar
+        else:
+            return self.palabraAdivinar
+
     def juega(self,input):
        if self.validaEntrada(input):
             if len(input) == 1:
@@ -108,18 +119,6 @@ class Ahorcado():
             return True
         else:
             return False
-        
-    def imprimo_palabra(self):
-        if self.vidas > 0:
-            palabra_mostrar = ""
-            for letra in self.palabraAdivinar:
-                if letra in self.letrasAdivinadas:
-                    palabra_mostrar += letra+" "
-                else:
-                    palabra_mostrar += "_ "
-            return palabra_mostrar
-        else:
-            return self.palabraAdivinar
     
     def definir_si_gano(self):
         if self.gano==1:
