@@ -135,20 +135,36 @@ class ValidoJuego(unittest.TestCase):
      
      # Elegir palabras
       ## Temas
-     def test_elegir_palabra_tema(self):
+     def test_elegir_palabra_tema_animales(self):
           actual = juego.elegir_palabra(tema='animales', nivel=None)
           self.assertIn(actual,palabras_temas["animales"])
      
+     def test_elegir_palabra_tema_comida(self):
+          actual = juego.elegir_palabra(tema='comida', nivel=None)
+          self.assertIn(actual,palabras_temas["comida"])
+     
+     def test_elegir_palabra_tema_deportes(self):
+          actual = juego.elegir_palabra(tema='deportes', nivel=None)
+          self.assertIn(actual,palabras_temas["deportes"])
+     
+     def test_elegir_palabra_tema_paises(self):
+          actual = juego.elegir_palabra(tema='paises', nivel=None)
+          self.assertIn(actual,palabras_temas["paises"])
+     
+     def test_elegir_palabra_tema_profesiones(self):
+          actual = juego.elegir_palabra(tema='profesiones', nivel=None)
+          self.assertIn(actual,palabras_temas["profesiones"])
+     
       ## Niveles
-     def test_elegir_palabra_nivel(self):
+     def test_elegir_palabra_nivel_facil(self):
           actual = juego.elegir_palabra(tema=None, nivel='facil')
           self.assertIn(actual,palabras_niveles["facil"])
 
-     def test_elegir_palabra_nivel(self):
+     def test_elegir_palabra_nivel_medio(self):
                actual = juego.elegir_palabra(tema=None, nivel='medio')
                self.assertIn(actual,palabras_niveles["medio"])
      
-     def test_elegir_palabra_nivel(self):
+     def test_elegir_palabra_nivel_dificil(self):
           actual = juego.elegir_palabra(tema=None, nivel='dificil')
           self.assertIn(actual,palabras_niveles["dificil"])
      
