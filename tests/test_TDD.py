@@ -49,14 +49,14 @@ class ArriesgarPalabraTest(unittest.TestCase):
      
      def test_no_repetir_palabras(self):
         juego.palabraAdivinar = "giacomo"
-        juego.palabrasIncorrectas.append("tirabuzones")
+        juego.palabras_incorrectas.append("tirabuzones")
         esperado = False 
         actual = juego.verificar_repeticion("giacomo2")
         self.assertEqual(actual, esperado)
 
      def test_repetir_palabras(self):
         juego.palabraAdivinar = "giacomo"
-        juego.palabrasIncorrectas.append("tirabuzones")
+        juego.palabras_incorrectas.append("tirabuzones")
         esperado = True 
         actual = juego.verificar_repeticion("tirabuzones")
         self.assertEqual(actual, esperado)
@@ -91,24 +91,24 @@ class ArriesgoLetra(unittest.TestCase):
 
      def test_no_repetir_letra(self):
           juego.palabraAdivinar = "giacomo"
-          juego.letrasAdivinadas = ["g", "a"]
-          juego.letrasIncorrectas = ["w"]
+          juego.letras_adivinadas = ["g", "a"]
+          juego.letras_incorrectas = ["w"]
           esperado = False
           actual = juego.verificar_repeticion_letra("z")
           self.assertEqual(actual, esperado)
     
      def test_repetir_letra_adivinada(self):
           juego.palabraAdivinar = "giacomo"
-          juego.letrasAdivinadas = ["g", "a"]
-          juego.letrasIncorrectas = ["w"]
+          juego.letras_adivinadas = ["g", "a"]
+          juego.letras_incorrectas = ["w"]
           esperado = True
           actual = juego.verificar_repeticion_letra("a")
           self.assertEqual(actual, esperado)
     
      def test_repetir_letra_incorrecta(self):
           juego.palabraAdivinar = "giacomo"
-          juego.letrasAdivinadas = ["g", "a"]
-          juego.letrasIncorrectas = ["w"]
+          juego.letras_adivinadas = ["g", "a"]
+          juego.letras_incorrectas = ["w"]
           esperado = True
           actual = juego.verificar_repeticion_letra("w")
           self.assertEqual(actual, esperado)     
@@ -172,7 +172,7 @@ class ValidoJuego(unittest.TestCase):
 class ImprimoPalabra(unittest.TestCase):
      def test_imprimo(self):
             juego.palabraAdivinar = "giacomo"
-            juego.letrasAdivinadas = ["a", "o"]
+            juego.letras_adivinadas = ["a", "o"]
             esperado = "_ _ a _ o _ o "
             actual = juego.imprimo_palabra()
             self.assertEqual(actual, esperado)
@@ -181,7 +181,7 @@ class ImprimoPalabra(unittest.TestCase):
      def test_mensaje_letra_incorrecta(self):
           letra = "w"
           juego.gano = 0
-          juego.letrasIncorrectas = ["a", "w"]
+          juego.letras_incorrectas = ["a", "w"]
           esperado = f"La letra {letra} es incorrecta. Perdiste 1 vida."
           actual = juego.obtener_mensaje_actual(letra)
           self.assertEqual(actual, esperado)
@@ -189,8 +189,8 @@ class ImprimoPalabra(unittest.TestCase):
      def test_mensaje_letra_repetida(self):
           letra = "w"
           juego.gano = 0
-          juego.letrasIncorrectas = ["m"]
-          juego.letrasAdivinadas = ["a", "w"]
+          juego.letras_incorrectas = ["m"]
+          juego.letras_adivinadas = ["a", "w"]
           esperado = f"La letra {letra} ya fue ingresada anteriormente."
           actual = juego.obtener_mensaje_actual(letra)
           self.assertEqual(actual, esperado)
@@ -198,8 +198,8 @@ class ImprimoPalabra(unittest.TestCase):
      def test_mensaje_perdio(self):
           letra = "n"
           juego.palabraAdivinar = "prueba"
-          juego.letrasIncorrectas = ["m"]
-          juego.letrasAdivinadas = ["a", "w"]
+          juego.letras_incorrectas = ["m"]
+          juego.letras_adivinadas = ["a", "w"]
           juego.vidas = 0
           esperado = f"Agotaste todas las vidas. La palabra a adivinar era: {juego.palabraAdivinar}"
           actual = juego.obtener_mensaje_actual(letra)
@@ -207,8 +207,8 @@ class ImprimoPalabra(unittest.TestCase):
      
      def test_mensaje_gano(self):
           letra = "w"
-          juego.letrasIncorrectas = ["m"]
-          juego.letrasAdivinadas = ["a"]
+          juego.letras_incorrectas = ["m"]
+          juego.letras_adivinadas = ["a"]
           juego.gano = 1
           esperado = "¡Felicidades! Ganaste."
           actual = juego.obtener_mensaje_actual(letra)

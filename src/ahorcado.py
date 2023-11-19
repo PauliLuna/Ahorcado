@@ -18,9 +18,9 @@ palabras_niveles = {
 class Ahorcado():
     def __init__(self, tema=None, nivel=None):
         self.vidas = 7
-        self.letrasAdivinadas = []
-        self.letrasIncorrectas = []
-        self.palabrasIncorrectas = []
+        self.letras_adivinadas = []
+        self.letras_incorrectas = []
+        self.palabras_incorrectas = []
         self.gano = 0
         self.tema = tema
         self.nivel = nivel
@@ -30,9 +30,9 @@ class Ahorcado():
     def to_dict(self):
         return {
             'vidas': self.vidas,
-            'letrasAdivinadas': self.letrasAdivinadas,
-            'letrasIncorrectas': self.letrasIncorrectas,
-            'palabrasIncorrectas': self.palabrasIncorrectas,
+            'letras_adivinadas': self.letras_adivinadas,
+            'letras_incorrectas': self.letras_incorrectas,
+            'palabras_incorrectas': self.palabras_incorrectas,
             'gano': self.gano,
             'tema': self.tema,
             'nivel': self.nivel,
@@ -51,7 +51,7 @@ class Ahorcado():
         if self.vidas > 0:
             palabra_mostrar = ""
             for letra in self.palabraAdivinar:
-                if letra in self.letrasAdivinadas:
+                if letra in self.letras_adivinadas:
                     palabra_mostrar += letra+" "
                 else:
                     palabra_mostrar += "_ "
@@ -78,7 +78,7 @@ class Ahorcado():
         repite = self.verificar_repeticion_letra(letra)
         if not repite:
             if letra in self.palabraAdivinar:
-                self.letrasAdivinadas.append(letra)
+                self.letras_adivinadas.append(letra)
                 if "_" in self.imprimo_palabra():
                     self.gano = 0
                 else:
@@ -86,11 +86,11 @@ class Ahorcado():
                 return True
             else:
                 self.descontar_vida()
-                self.letrasIncorrectas.append(letra)
+                self.letras_incorrectas.append(letra)
                 return False
 
     def verificar_repeticion_letra(self,letra):
-        if letra in self.letrasIncorrectas or letra in self.letrasAdivinadas:
+        if letra in self.letras_incorrectas or letra in self.letras_adivinadas:
             return True
         else:
             return False
@@ -104,7 +104,7 @@ class Ahorcado():
             else:
                 self.descontar_vida()
                 self.gano= 0
-                self.palabrasIncorrectas.append(word)
+                self.palabras_incorrectas.append(word)
                 return False
 
     def descontar_vida(self):
@@ -115,7 +115,7 @@ class Ahorcado():
             return 0
 
     def verificar_repeticion(self,A):
-        if A in self.palabrasIncorrectas:
+        if A in self.palabras_incorrectas:
             return True
         else:
             return False
@@ -141,9 +141,9 @@ class Ahorcado():
 
     def obtener_mensaje_actual(self, letra):
         letra = letra.lower()
-        if letra in self.letrasIncorrectas:
+        if letra in self.letras_incorrectas:
             return self.mensaje_letra_incorrecta(letra)
-        elif letra in self.letrasAdivinadas:
+        elif letra in self.letras_adivinadas:
             return self.mensaje_letra_repetida(letra)
         elif self.vidas == 0:
             return self.mensaje_perdio()
