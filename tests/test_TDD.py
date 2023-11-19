@@ -246,6 +246,16 @@ class ImprimoPalabra(unittest.TestCase):
           esperado = "¡Felicidades! Ganaste."
           actual = juego.obtener_mensaje_actual(letra)
           self.assertEqual(actual, esperado)
+     
+     def test_mensaje_vacio(self):
+          letra = "w"
+          juego.letras_incorrectas = ["m"]
+          juego.letras_adivinadas = ["a"]
+          juego.gano = 0
+          juego.vidas = 1
+          esperado = ""
+          actual = juego.obtener_mensaje_actual(letra)
+          self.assertEqual(actual, esperado)
 
 
 # HISTORIA DE USUARIO 4

@@ -6,6 +6,7 @@ from ahorcado import Ahorcado
 
 app = Flask(__name__)
 app.secret_key = 'mi_clave_secreta' #Sino da error
+juego_html = 'juego.html'
 
 # Ruta para servir archivos estáticos (CSS en este caso)
 @app.route('/ui/static/<path:filename>')
@@ -50,7 +51,7 @@ def jugar():
         'palabra_oculta': juego_actual.imprimo_palabra()
     }
 
-    return render_template('juego.html', resultado=resultado)
+    return render_template(juego_html, resultado=resultado)
 
 @app.route('/jugar_letra', methods=['POST'])
 def jugar_letra():
@@ -70,7 +71,7 @@ def jugar_letra():
             'gano': juego_actual_obj.gano
         }
 
-        return render_template('juego.html', resultado=resultado)
+        return render_template(juego_html, resultado=resultado)
 
     return redirect('/')
 
@@ -96,7 +97,7 @@ def jugar_nuevamente():
             'palabra_oculta': juego_nuevo.imprimo_palabra()
         }
 
-        return render_template('juego.html', resultado=resultado)
+        return render_template(juego_html, resultado=resultado)
 
     return redirect('/')
 
