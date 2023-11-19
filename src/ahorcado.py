@@ -108,7 +108,7 @@ class Ahorcado():
                 return False
 
     def descontar_vida(self):
-        if not self.vidas==0:
+        if self.vidas!=0:
             self.vidas -=1
             return self.vidas
         else:

@@ -134,6 +134,37 @@ class ValidoJuego(unittest.TestCase):
           esperado = False
           actual = juego.valida_entrada(entrada)
           self.assertEqual(actual, esperado)
+
+     # Validar objeto para Flask
+     def test_to_dict(self):
+        juego = Ahorcado(tema='comida', nivel=None)
+        expected_dict = {
+            'vidas': juego.vidas,
+            'letras_adivinadas': juego.letras_adivinadas,
+            'letras_incorrectas': juego.letras_incorrectas,
+            'palabras_incorrectas': juego.palabras_incorrectas,
+            'gano': juego.gano,
+            'tema': juego.tema,
+            'nivel': juego.nivel,
+            'palabra_adivinar': juego.palabra_adivinar
+        }
+        actual = juego.to_dict()
+        self.assertEqual(actual, expected_dict)
+
+     def test_to_dict_empty(self):
+        juego = Ahorcado(tema=None, nivel=None)
+        expected_dict = {
+            'vidas': juego.vidas,
+            'letras_adivinadas': juego.letras_adivinadas,
+            'letras_incorrectas': juego.letras_incorrectas,
+            'palabras_incorrectas': juego.palabras_incorrectas,
+            'gano': juego.gano,
+            'tema': juego.tema,
+            'nivel': juego.nivel,
+            'palabra_adivinar': juego.palabra_adivinar
+        }
+        actual = juego.to_dict()
+        self.assertEqual(actual, expected_dict)
      
      # Elegir palabras
       ## Temas
