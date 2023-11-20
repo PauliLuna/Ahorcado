@@ -64,7 +64,10 @@ class Ahorcado():
             if len(input) == 1:
                 self.arriesgo_letra(input.lower())
             else:
-                self.arriesgo_palabra(input.lower())
+                if self.arriesgo_palabra(input.lower()):
+                    return True
+                else:
+                    return False
 
     def valida_entrada(self,input):
     # Usamos una expresión regular para verificar si la cadena contiene solo letras
@@ -145,6 +148,10 @@ class Ahorcado():
 
     def obtener_mensaje_actual(self, letra):
         letra = letra.lower()
+
+        print(self.letras_adivinadas)
+        print(self.letras_incorrectas)
+        print(self.palabras_incorrectas)
 
         if letra in self.letras_incorrectas:
             return self.mensaje_letra_incorrecta(letra)
