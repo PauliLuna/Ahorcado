@@ -55,19 +55,28 @@ def jugar():
 
 @app.route('/jugar_letra', methods=['POST'])
 def jugar_letra():
-    letra = request.form['letra']
+    entrada = request.form['entrada']
     juego_actual = session.get('juego_actual')
 
     if juego_actual:
         juego_actual_obj = Ahorcado()
         juego_actual_obj.__dict__.update(juego_actual)  # Restaurar el objeto Ahorcado
-        juego_actual_obj.juega(letra)
+        #juego_actual_obj.juega(letra)
+
+        if len(entrada) == 1:
+            # El usuario ingresó una letra
+            juego_actual_obj.arriesgo_letra(entrada.lower())
+        else:
+            # El usuario ingresó una palabra
+            juego_actual_obj.arriesgo_palabra(entrada.lower())
+            
+
         session['juego_actual'] = juego_actual_obj.to_dict()  # Actualizar el juego en la sesión
 
         resultado = {
             'vidas_restantes': juego_actual_obj.vidas,
             'palabra_oculta': juego_actual_obj.imprimo_palabra(),
-            'mensaje': juego_actual_obj.obtener_mensaje_actual(letra),
+            'mensaje': juego_actual_obj.obtener_mensaje_actual(entrada),
             'gano': juego_actual_obj.gano
         }
 

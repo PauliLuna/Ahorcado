@@ -64,15 +64,13 @@ class Ahorcado():
             if len(input) == 1:
                 self.arriesgo_letra(input.lower())
             else:
-                if self.arriesgo_palabra(input.lower()):
-                    return True
-                else:
-                    return False
+                self.arriesgo_palabra(input.lower())
 
     def valida_entrada(self,input):
     # Usamos una expresión regular para verificar si la cadena contiene solo letras
-        patron = r'^[a-zA-Z]+$'
-        return bool(re.match(patron,input))
+        #patron = r'^[a-zA-Z]+$'
+        #return bool(re.match(patron,input))
+        return input.isalpha()
     
     def arriesgo_letra(self, letra):
         repite = self.verificar_repeticion_letra(letra)
@@ -100,12 +98,12 @@ class Ahorcado():
         if not repite:
             if word == self.palabra_adivinar:
                 self.gano= 1
-                return True
+                #return True
             else:
                 self.descontar_vida()
                 self.gano= 0
                 self.palabras_incorrectas.append(word)
-                return False
+                #return False
 
     def descontar_vida(self):
         if self.vidas!=0:
@@ -144,10 +142,6 @@ class Ahorcado():
 
     def obtener_mensaje_actual(self, letra):
         letra = letra.lower()
-
-        print(f"Letra ingresada: {letra}")
-        print(f"Letras adivinadas: {self.letras_adivinadas}")
-        print(f"Letras incorrectas: {self.letras_incorrectas}")
 
         if letra in self.letras_incorrectas:
             return self.mensaje_letra_incorrecta(letra)
