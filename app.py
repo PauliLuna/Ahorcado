@@ -61,28 +61,34 @@ def jugar_letra():
     if juego_actual:
         juego_actual_obj = Ahorcado()
         juego_actual_obj.__dict__.update(juego_actual)  # Restaurar el objeto Ahorcado
-        #juego_actual_obj.juega(letra)
 
-        if len(entrada) == 1:
-            # El usuario ingresó una letra
-            juego_actual_obj.arriesgo_letra(entrada.lower())
-        else:
-            # El usuario ingresó una palabra
-            juego_actual_obj.arriesgo_palabra(entrada.lower())
-            
+        if juego_actual_obj.vidas > 0 and '_' in juego_actual_obj.imprimo_palabra():
+            if not juego_actual_obj.valida_entrada(entrada):
+                mensaje = "La entrada debe contener solo letras."
+                resultado = {
+                    'vidas_restantes': juego_actual_obj.vidas,
+                    'palabra_oculta': juego_actual_obj.imprimo_palabra(),
+                    'mensaje': mensaje,
+                    'gano': juego_actual_obj.gano
+                }
+                return render_template(juego_html, resultado=resultado)
 
-        session['juego_actual'] = juego_actual_obj.to_dict()  # Actualizar el juego en la sesión
+            juego_actual_obj.juega(entrada.lower())
 
-        resultado = {
-            'vidas_restantes': juego_actual_obj.vidas,
-            'palabra_oculta': juego_actual_obj.imprimo_palabra(),
-            'mensaje': juego_actual_obj.obtener_mensaje_actual(entrada),
-            'gano': juego_actual_obj.gano
-        }
+            session['juego_actual'] = juego_actual_obj.to_dict()  # Actualizar el juego en la sesión
 
-        return render_template(juego_html, resultado=resultado)
+            resultado = {
+                'vidas_restantes': juego_actual_obj.vidas,
+                'palabra_oculta': juego_actual_obj.imprimo_palabra(),
+                'mensaje': juego_actual_obj.obtener_mensaje_actual(entrada),
+                'gano': juego_actual_obj.gano
+            }
 
-    return redirect('/')
+            if juego_actual_obj.gano == 1 or juego_actual_obj.vidas == 0:
+                # Redirigir a la página de juego nuevamente al ganar o perder
+                return render_template(juego_html, resultado=resultado)
+
+    return render_template(juego_html, resultado=resultado)  # Renderizar la plantilla nuevamente
 
 @app.route('/jugar_nuevamente', methods=['GET'])
 def jugar_nuevamente():

@@ -18,7 +18,7 @@
     {% endif %}
 
     {% if resultado.vidas_restantes > 0 and resultado.gano != 1 and '_' in resultado.palabra_oculta %}
-        <form action="/jugar_letra" method="post">
+        <form action="{{ url_for('jugar_letra') }}" method="post">
             <label for="letra">Ingresar letra o palabra:</label>
             <input type="text" name="entrada" required>
             <input type="hidden" name="opcion" value="1">
