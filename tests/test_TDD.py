@@ -19,7 +19,6 @@ palabras_niveles = {
 # Creo una instancia del Ahorcado
 juego = Ahorcado()
  
-
 # HISTORIA DE USUARIO 1
 class ArriesgarPalabraTest(unittest.TestCase):
 
@@ -89,7 +88,13 @@ class arriesgo_letra(unittest.TestCase):
         actual = juego.arriesgo_letra("x")
         self.assertEqual(actual, esperado)
 
-     
+     def test_juega_ultima_letra(self):
+          juego.palabra_adivinar= "giacomo"
+          juego.letras_incorrectas = "w"
+          juego.letras_adivinadas = ["g","i","c","o", "m"]
+          actual = juego.juega("a")
+          esperado = None
+          self.assertEqual(actual, esperado)
 
      def test_no_repetir_letra(self):
           juego.palabra_adivinar = "giacomo"
@@ -272,7 +277,6 @@ class Menu(unittest.TestCase):
           esperado = False
           actual = juego.valida_entrada(entrada)
           self.assertEqual(actual, esperado)
-
 
 # HISTORIA DE USUARIO 5
 class Vidas(unittest.TestCase):

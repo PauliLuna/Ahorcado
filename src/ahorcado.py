@@ -50,12 +50,17 @@ class Ahorcado():
     def imprimo_palabra(self):
         if self.vidas > 0:
             palabra_mostrar = ""
-            for letra in self.palabra_adivinar:
-                if letra in self.letras_adivinadas:
+            if self.gano == 1:
+                for letra in self.palabra_adivinar:
                     palabra_mostrar += letra+" "
-                else:
-                    palabra_mostrar += "_ "
-            return palabra_mostrar
+                return palabra_mostrar
+            else:
+                for letra in self.palabra_adivinar:
+                    if letra in self.letras_adivinadas:
+                        palabra_mostrar += letra+" "
+                    else:
+                        palabra_mostrar += "_ "
+                return palabra_mostrar
         else:
             return self.palabra_adivinar
 
