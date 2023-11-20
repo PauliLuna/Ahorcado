@@ -82,6 +82,14 @@ class arriesgo_letra(unittest.TestCase):
           actual = juego.arriesgo_letra("a")
           self.assertEqual(actual, esperado)
 
+     def test_adivino_ultima_letra(self):
+          juego.palabra_adivinar= "giacomo"
+          juego.letras_incorrectas = "w"
+          juego.letras_adivinadas = ["g","i","c","o", "m"]
+          esperado = True
+          actual = juego.arriesgo_letra("a")
+          self.assertEqual(actual, esperado)
+
      def test_pierdo_letra(self):
         juego.palabra_adivinar = "giacomo"
         esperado = False 

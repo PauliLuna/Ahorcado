@@ -84,9 +84,8 @@ class Ahorcado():
         if not repite:
             if letra in self.palabra_adivinar:
                 self.letras_adivinadas.append(letra)
-                if "_" in self.imprimo_palabra():
-                    self.gano = 0
-                else:
+                if all(letra in self.letras_adivinadas for letra in self.palabra_adivinar):
+                # Todas las letras han sido adivinadas, el jugador ha ganado
                     self.gano = 1
                 return True
             else:
