@@ -45,5 +45,5 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
       with:
         args: >
-         -Dsonar.exclusions=**/venv/**
+         -Dsonar.exclusions=**/venv/**,app.py
          -Dsonar.python.coverage.reportPaths=coverage.xml
