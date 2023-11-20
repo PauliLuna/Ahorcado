@@ -128,6 +128,9 @@ class Ahorcado():
             return False
 
 #Los siguientes metodos son para mostrar mensajes que flask consuma:
+    def mensaje_palabra_incorrecta(self, palabra):
+        return f"La palabra '{palabra}' es incorrecta. Perdiste 1 vida."
+
     def mensaje_letra_incorrecta(self, letra):
         return f"La letra {letra} es incorrecta. Perdiste 1 vida."
 
@@ -146,19 +149,17 @@ class Ahorcado():
     def mensaje_letra_correcta(self, letra):
         return f"La entrada {letra} es acertada."
 
-    def obtener_mensaje_actual(self, letra):
-        letra = letra.lower()
+    def obtener_mensaje_actual(self, entrada):
+        entrada = entrada.lower()
 
-        print(self.letras_adivinadas)
-        print(self.letras_incorrectas)
-        print(self.palabras_incorrectas)
-
-        if letra in self.letras_incorrectas:
-            return self.mensaje_letra_incorrecta(letra)
-        elif letra in self.palabra_adivinar:
-            return self.mensaje_letra_correcta(letra)
-        elif letra in self.letras_adivinadas:
-            return self.mensaje_letra_repetida(letra)
+        if entrada in self.palabras_incorrectas:
+            return self.mensaje_palabra_incorrecta(entrada)
+        elif entrada in self.letras_incorrectas:
+            return self.mensaje_letra_incorrecta(entrada)
+        elif entrada in self.palabra_adivinar:
+            return self.mensaje_letra_correcta(entrada)
+        elif entrada in self.letras_adivinadas:
+            return self.mensaje_letra_repetida(entrada)
         elif self.vidas == 0:
             return self.mensaje_perdio()
         elif self.gano == 1:
