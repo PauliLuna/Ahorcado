@@ -46,3 +46,19 @@ button {
 button:hover {
     background-color: #45a049;
 }
+
+.mensaje-advertencia {
+    color: red;
+    background-color: #ffebee; /* Color de fondo para un tono de rojo claro */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.mensaje-correcto {
+    color: green; /* Cambia el color a verde o el color deseado para mensajes felices */
+    background-color: #e6ffe6; /* Cambia el fondo a un tono claro de verde */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+} 

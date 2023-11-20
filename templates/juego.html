@@ -14,8 +14,9 @@
     <p>Vidas restantes: {{ resultado.vidas_restantes }}</p>
 
     {% if resultado.mensaje %}
-        <p>{{ resultado.mensaje }}</p>
+    <div class="{% if 'incorrecta' in resultado.mensaje or 'Advertencia' in resultado.mensaje %}mensaje-advertencia{% else %}mensaje-correcto{% endif %}">{{ resultado.mensaje }}</div>
     {% endif %}
+    
 
     {% if resultado.vidas_restantes > 0 and resultado.gano != 1 and '_' in resultado.palabra_oculta %}
         <form action="{{ url_for('jugar_letra') }}" method="post">
