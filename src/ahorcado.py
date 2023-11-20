@@ -51,16 +51,15 @@ class Ahorcado():
         if self.vidas > 0:
             palabra_mostrar = ""
             if self.gano == 1:
-                for letra in self.palabra_adivinar:
-                    palabra_mostrar += letra+" "
-                return palabra_mostrar
+                palabra_mostrar = " ".join(self.palabra_adivinar)
             else:
                 for letra in self.palabra_adivinar:
                     if letra in self.letras_adivinadas:
                         palabra_mostrar += letra+" "
                     else:
                         palabra_mostrar += "_ "
-                return palabra_mostrar
+            palabra_mostrar = palabra_mostrar.rstrip()
+            return palabra_mostrar
         else:
             return self.palabra_adivinar
 

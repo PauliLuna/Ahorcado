@@ -211,11 +211,27 @@ class ImprimoPalabra(unittest.TestCase):
      def test_imprimo(self):
             juego.palabra_adivinar = "giacomo"
             juego.letras_adivinadas = ["a", "o"]
-            esperado = "_ _ a _ o _ o "
+            esperado = "_ _ a _ o _ o"
+            actual = juego.imprimo_palabra()
+            self.assertEqual(actual, esperado)
+     
+     def test_imprimo_gano(self):
+            juego.vidas = 2
+            juego.gano=1
+            juego.palabra_adivinar = "giacomo"
+            juego.letras_adivinadas = ["a", "o"]
+            esperado = "g i a c o m o"
             actual = juego.imprimo_palabra()
             self.assertEqual(actual, esperado)
      
      # Mensajes para UI
+     def test_mensaje_palabra_incorrecta(self):
+          palabra = "mara"
+          juego.palabras_incorrectas = "mara"
+          esperado =  f"La palabra '{palabra}' es incorrecta. Perdiste 1 vida."
+          actual = juego.obtener_mensaje_actual(palabra)
+          self.assertEqual(actual, esperado)
+
      def test_mensaje_letra_incorrecta(self):
           letra = "w"
           juego.gano = 0
@@ -223,6 +239,16 @@ class ImprimoPalabra(unittest.TestCase):
           esperado = f"La letra {letra} es incorrecta. Perdiste 1 vida."
           actual = juego.obtener_mensaje_actual(letra)
           self.assertEqual(actual, esperado)
+     
+     def test_mensaje_letra_correcta(self):
+          juego.palabra_adivinar = "fideos"
+          letra = "i"
+          juego.gano = 0
+          juego.letras_incorrectas = ["a", "w"]
+          esperado = f"La entrada {letra} es acertada."
+          actual = juego.obtener_mensaje_actual(letra)
+          self.assertEqual(actual, esperado)
+
      
      def test_mensaje_letra_repetida(self):
           letra = "w"
