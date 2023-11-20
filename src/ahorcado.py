@@ -138,11 +138,21 @@ class Ahorcado():
 
     def mensaje_gano(self):
         return "¡Felicidades! Ganaste."
+    
+    def mensaje_letra_correcta(self, letra):
+        return f"La letra {letra} es correcta."
 
     def obtener_mensaje_actual(self, letra):
         letra = letra.lower()
+
+        print(f"Letra ingresada: {letra}")
+        print(f"Letras adivinadas: {self.letras_adivinadas}")
+        print(f"Letras incorrectas: {self.letras_incorrectas}")
+
         if letra in self.letras_incorrectas:
             return self.mensaje_letra_incorrecta(letra)
+        elif letra in self.palabra_adivinar:
+            return self.mensaje_letra_correcta(letra)
         elif letra in self.letras_adivinadas:
             return self.mensaje_letra_repetida(letra)
         elif self.vidas == 0:
