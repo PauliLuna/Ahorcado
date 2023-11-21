@@ -48,8 +48,8 @@ class Ahorcado():
             return "ahorcado"  # Palabra predeterminada para el ejemplo
     
     def imprimo_palabra(self):
+        palabra_mostrar = ""
         if self.vidas > 0:
-            palabra_mostrar = ""
             if self.gano == 1:
                 palabra_mostrar = " ".join(self.palabra_adivinar)
             else:
@@ -59,9 +59,9 @@ class Ahorcado():
                     else:
                         palabra_mostrar += "_ "
             palabra_mostrar = palabra_mostrar.rstrip()
-            return palabra_mostrar
         else:
-            return self.palabra_adivinar
+            palabra_mostrar = " ".join(self.palabra_adivinar)  
+        return palabra_mostrar
 
     def juega(self,input):
        if self.valida_entrada(input):

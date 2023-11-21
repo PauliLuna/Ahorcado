@@ -231,6 +231,15 @@ class ImprimoPalabra(unittest.TestCase):
             esperado = "g i a c o m o"
             actual = juego.imprimo_palabra()
             self.assertEqual(actual, esperado)
+
+     def test_imprimo_sin_vidas(self):
+            juego.vidas = 0
+            juego.gano=0
+            juego.palabra_adivinar = "giacomo"
+            juego.letras_adivinadas = ["a", "o"]
+            esperado = "g i a c o m o"
+            actual = juego.imprimo_palabra()
+            self.assertEqual(actual, esperado)
      
      # Mensajes para UI
      def test_mensaje_palabra_incorrecta(self):
@@ -257,7 +266,6 @@ class ImprimoPalabra(unittest.TestCase):
           actual = juego.obtener_mensaje_actual(letra)
           self.assertEqual(actual, esperado)
 
-     
      def test_mensaje_letra_repetida(self):
           letra = "w"
           juego.gano = 0
@@ -279,6 +287,7 @@ class ImprimoPalabra(unittest.TestCase):
      
      def test_mensaje_gano(self):
           letra = "w"
+          juego.vidas = 2
           juego.letras_incorrectas = ["m"]
           juego.letras_adivinadas = ["a"]
           juego.gano = 1
@@ -294,6 +303,11 @@ class ImprimoPalabra(unittest.TestCase):
           juego.vidas = 1
           esperado = ""
           actual = juego.obtener_mensaje_actual(letra)
+          self.assertEqual(actual, esperado)
+
+     def tets_mensaje_solo_letras(self):
+          esperado = "Advertencia: La entrada debe contener solo letras"
+          actual = juego.mensaje_solo_letras()
           self.assertEqual(actual, esperado)
 
 
