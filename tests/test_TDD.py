@@ -305,11 +305,10 @@ class ImprimoPalabra(unittest.TestCase):
           actual = juego.obtener_mensaje_actual(letra)
           self.assertEqual(actual, esperado)
 
-     def tets_mensaje_solo_letras(self):
+     def test_mensaje_solo_letras(self):
           esperado = "Advertencia: La entrada debe contener solo letras"
           actual = juego.mensaje_solo_letras()
           self.assertEqual(actual, esperado)
-
 
 # HISTORIA DE USUARIO 4
 class Menu(unittest.TestCase):
