@@ -9,11 +9,11 @@ on:
   #Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# A workflow contains one  or more jobs thaat can be run sequentially or in parallel
+# A workflow contains one  or more jobs that can be run sequentially or in parallel
 jobs:
   # this workflow comtains s single job called "build"
   build:
-    #The type of runner that the job will run on (maquinaa virtual donde se ejecutaria)
+    #The type of runner that the job will run on (maquina virtual donde se ejecutaria)
     runs-on: ubuntu-latest
 
     #Steps represent a sequence of tasks that will be executed as part of the job
