@@ -74,9 +74,6 @@ class Ahorcado():
                     return False
 
     def valida_entrada(self,input):
-    # Usamos una expresión regular para verificar si la cadena contiene solo letras
-        #patron = r'^[a-zA-Z]+$'
-        #return bool(re.match(patron,input))
         return input.isalpha()
     
     def arriesgo_letra(self, letra):
