@@ -5,6 +5,7 @@ on:
   push:
     branches:
       - main
+      - ATDD
 
   #Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -45,5 +46,5 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
       with:
         args: >
-         -Dsonar.exclusions=**/venv/**,app.py
+         -Dsonar.exclusions=**/venv/**,app.py,**/features/*,**/features/steps/ahorcado_steps.py
          -Dsonar.python.coverage.reportPaths=coverage.xml
