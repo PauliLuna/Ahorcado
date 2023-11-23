@@ -71,6 +71,7 @@ def jugar_letra():
                     'mensaje': mensaje,
                     'gano': juego_actual_obj.gano
                 }
+                print(f"Mensaje generado: {mensaje}")  # Agrega esta línea para depurar
                 return render_template(juego_html, resultado=resultado)
 
             juego_actual_obj.juega(entrada.lower())

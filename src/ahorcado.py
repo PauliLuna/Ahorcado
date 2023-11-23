@@ -64,14 +64,19 @@ class Ahorcado():
         return palabra_mostrar
 
     def juega(self,input):
-       if self.valida_entrada(input):
+        if self.valida_entrada(input):
             if len(input) == 1:
-                self.arriesgo_letra(input.lower())
+                if self.arriesgo_letra(input.lower()):
+                    return True
+                else:
+                    return False
             else:
                 if self.arriesgo_palabra(input.lower()):
                     return True
                 else:
                     return False
+        else:
+            return False
 
     def valida_entrada(self,input):
         return input.isalpha()
@@ -89,9 +94,14 @@ class Ahorcado():
                 self.descontar_vida()
                 self.letras_incorrectas.append(letra)
                 return False
+        else:
+        # La letra ya fue ingresada
+            return False
 
     def verificar_repeticion_letra(self,letra):
         if letra in self.letras_incorrectas or letra in self.letras_adivinadas:
+            print(self.letras_adivinadas)
+            print(f"Letra {letra} ya fue ingresada anteriormente.")  # Agrega esta línea para depurar
             return True
         else:
             return False
