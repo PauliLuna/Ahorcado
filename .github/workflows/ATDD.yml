@@ -1,8 +1,3 @@
-
-Aquí tienes una configuración completa para tu archivo YAML de GitHub Actions, asumiendo que tus pruebas Behave se encuentran en el directorio features y que necesitas Selenium con Chromedriver:
-
-yaml
-Copy code
 name: Python CI
 
 on:
