@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
 </head>
 <body>
-    <h1>Juego del Ahorcado</h1>
+    <h1 id="titulo_principal">Juego del Ahorcado</h1>
     
     <form action="/elegir_opcion" method="post">
         <label for="opcion">Elegir opción:</label>
@@ -16,7 +16,7 @@
             <option value="2">Jugar por nivel de dificultad</option>
         </select>
         <br>
-        <button type="submit">Continuar</button>
+        <button type="submit" id="btn_continuar">Continuar</button>
     </form>
 </body>
 </html>
