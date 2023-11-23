@@ -17,7 +17,7 @@ def obtener_opciones_dropdown(context, dropdown_id):
     select = Select(dropdown)
     return [option.text for option in select.options]
 
-
+# features/steps/ahorcado_steps.py
 @given('Que estoy en la página del Juego del Ahorcado')
 def step_given(context):
     context.driver = webdriver.Chrome()
