@@ -35,6 +35,13 @@ jobs:
         pip install coverage
         pip install behave
         pip install selenium
+        
+    - name: Download ChromeDriver
+      run: |
+        wget https://chromedriver.storage.googleapis.com/94.0.4606.61/chromedriver_linux64.zip
+        unzip chromedriver_linux64.zip
+        chmod +x chromedriver
+        sudo mv chromedriver /usr/local/bin/
 
     # Run set of commands 
     - name: Run tests with coverage
