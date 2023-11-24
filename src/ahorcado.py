@@ -140,15 +140,15 @@ class Ahorcado():
 #Los siguientes metodos son para mostrar mensajes que flask consuma:
     def mensaje_palabra_incorrecta(self, palabra):
         return f"La palabra '{palabra}' es incorrecta. Perdiste 1 vida."
+    
+    def mensaje_palabra_repetida(self, palabra):
+        return f"La palabra {palabra} ya fue ingresada anteriormente."
 
     def mensaje_letra_incorrecta(self, letra):
         return f"La letra {letra} es incorrecta. Perdiste 1 vida."
 
     def mensaje_letra_repetida(self, letra):
         return f"La letra {letra} ya fue ingresada anteriormente."
-    
-    def mensaje_palabra_repetida(self, palabra):
-        return f"La palabra {palabra} ya fue ingresada anteriormente."
     
     def mensaje_solo_letras(self):
         return "Advertencia: La entrada debe contener solo letras"

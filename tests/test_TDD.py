@@ -118,7 +118,32 @@ class arriesgo_letra(unittest.TestCase):
           juego.letras_incorrectas = ["w"]
           esperado = True
           actual = juego.verificar_repeticion_letra("w")
-          self.assertEqual(actual, esperado)     
+          self.assertEqual(actual, esperado)
+
+     def test_juega_letra_correcta(self):
+          juego.palabra_adivinar= "giacomo"
+          juego.letras_incorrectas = ["w"]
+          juego.letras_adivinadas = ["g","i","c","o", "m"]
+          esperado = True
+          actual = juego.juega("a")
+          self.assertEqual(actual, esperado)
+     
+     def test_juega_letra_incorrecta(self):
+          juego.palabra_adivinar= "giacomo"
+          juego.letras_incorrectas = ["w"]
+          juego.letras_adivinadas = ["g","i","c","o", "m"]
+          esperado = False
+          actual = juego.juega("p")
+          self.assertEqual(actual, esperado)
+     
+     def test_juega_letra_repetida(self):
+          juego.palabra_adivinar= "giacomo"
+          juego.letras_incorrectas = ["w"]
+          juego.letras_adivinadas = ["g","i","c","o", "m"]
+          esperado = False
+          actual = juego.juega("g")
+          self.assertEqual(actual, esperado)
+
 
 class ValidoJuego(unittest.TestCase):
      def test_entrada_letra(self):
@@ -138,6 +163,11 @@ class ValidoJuego(unittest.TestCase):
           entrada = "#hola"
           esperado = False
           actual = juego.valida_entrada(entrada)
+          self.assertEqual(actual, esperado)
+     
+     def test_juega_entrada_no_valida(self):
+          esperado = False
+          actual = juego.juega("1")
           self.assertEqual(actual, esperado)
 
      # Validar objeto para Flask
@@ -241,6 +271,13 @@ class ImprimoPalabra(unittest.TestCase):
           juego.palabras_incorrectas = "mara"
           esperado =  f"La palabra '{palabra}' es incorrecta. Perdiste 1 vida."
           actual = juego.obtener_mensaje_actual(palabra)
+          self.assertEqual(actual, esperado)
+
+     def test_mensaje_palabra_repetida(self):
+          palabra = "mara"
+          juego.palabras_incorrectas = ["mara"]
+          esperado = f"La palabra {palabra} ya fue ingresada anteriormente."
+          actual = juego.mensaje_palabra_repetida(palabra)
           self.assertEqual(actual, esperado)
 
      def test_mensaje_letra_incorrecta(self):
