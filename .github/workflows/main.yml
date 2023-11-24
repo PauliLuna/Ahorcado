@@ -1,4 +1,4 @@
-name: Tests and Sonar Scan
+name: Unit tests, Sonar Scan and ATDD
 
 on:
   # When the workflow is trigerred:
@@ -7,17 +7,17 @@ on:
       - main
       - ATDD
 
-  #Allows you to run this workflow manually from the Actions tab
+  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# A workflow contains one  or more jobs thaat can be run sequentially or in parallel
+# A workflow contains one or more jobs that can be run sequentially or in parallel
 jobs:
-  # this workflow comtains s single job called "build"
+  # This workflow contains a single job called "build"
   build:
-    #The type of runner that the job will run on (maquinaa virtual donde se ejecutaria)
+    # The type of runner that the job will run on (máquina virtual donde se ejecutaría)
     runs-on: ubuntu-latest
 
-    #Steps represent a sequence of tasks that will be executed as part of the job
+    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
 
       # Public repo with actions that can be used
@@ -29,22 +29,31 @@ jobs:
       with:
         python-version: 3.11.2
 
-     # Run set of commands 
-    - name: Run tests with coverage
+    # Install dependencies
+    - name: Install dependencies
       run: |
         pip install coverage
+        pip install behave
+        pip install selenium
+
+    # Run set of commands 
+    - name: Run tests with coverage
+      run: |
         coverage run -m unittest discover -s tests -p 'test_*.py'
         coverage xml -i -o coverage.xml
         
     - name: Test Report
       run: coverage report
-          
+
+    - name: Run Selenium tests
+      run: behave features/ahorcado.feature
+
     - name: SonarCloud Scan
       uses: SonarSource/sonarcloud-github-action@master
       env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
+        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
       with:
         args: >
-         -Dsonar.exclusions=app.py,**/features/*,**/features/steps/ahorcado_steps.py
-         -Dsonar.python.coverage.reportPaths=coverage.xml
+          -Dsonar.exclusions=app.py,**/features/*,**/features/steps/ahorcado_steps.py
+          -Dsonar.python.coverage.reportPaths=coverage.xml
