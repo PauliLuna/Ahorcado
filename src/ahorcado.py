@@ -111,12 +111,15 @@ class Ahorcado():
         if not repite:
             if word == self.palabra_adivinar:
                 self.gano= 1
+                self.mensaje = self.obtener_mensaje_actual(word)
                 return True
             else:
                 self.descontar_vida()
                 self.gano= 0
                 self.palabras_incorrectas.append(word)
+                self.mensaje = self.obtener_mensaje_actual(word)
                 return False
+        self.mensaje = self.mensaje_palabra_repetida(word)
 
     def descontar_vida(self):
         if self.vidas!=0:
@@ -126,10 +129,7 @@ class Ahorcado():
             return 0
 
     def verificar_repeticion(self,a):
-        if a in self.palabras_incorrectas:
-            return True
-        else:
-            return False
+        return a in self.palabras_incorrectas
     
     def definir_si_gano(self):
         if self.gano==1:
@@ -146,6 +146,9 @@ class Ahorcado():
 
     def mensaje_letra_repetida(self, letra):
         return f"La letra {letra} ya fue ingresada anteriormente."
+    
+    def mensaje_palabra_repetida(self, palabra):
+        return f"La palabra {palabra} ya fue ingresada anteriormente."
     
     def mensaje_solo_letras(self):
         return "Advertencia: La entrada debe contener solo letras"
