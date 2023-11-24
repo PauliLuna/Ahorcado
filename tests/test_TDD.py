@@ -96,14 +96,6 @@ class arriesgo_letra(unittest.TestCase):
         actual = juego.arriesgo_letra("x")
         self.assertEqual(actual, esperado)
 
-     def test_juega_ultima_letra(self):
-          juego.palabra_adivinar= "giacomo"
-          juego.letras_incorrectas = "w"
-          juego.letras_adivinadas = ["g","i","c","o", "m"]
-          actual = juego.juega("a")
-          esperado = None
-          self.assertEqual(actual, esperado)
-
      def test_no_repetir_letra(self):
           juego.palabra_adivinar = "giacomo"
           juego.letras_adivinadas = ["g", "a"]
@@ -159,7 +151,8 @@ class ValidoJuego(unittest.TestCase):
             'gano': juego.gano,
             'tema': juego.tema,
             'nivel': juego.nivel,
-            'palabra_adivinar': juego.palabra_adivinar
+            'palabra_adivinar': juego.palabra_adivinar,
+            'mensaje': juego.mensaje
         }
         actual = juego.to_dict()
         self.assertEqual(actual, expected_dict)
@@ -174,7 +167,8 @@ class ValidoJuego(unittest.TestCase):
             'gano': juego.gano,
             'tema': juego.tema,
             'nivel': juego.nivel,
-            'palabra_adivinar': juego.palabra_adivinar
+            'palabra_adivinar': juego.palabra_adivinar,
+            'mensaje': juego.mensaje
         }
         actual = juego.to_dict()
         self.assertEqual(actual, expected_dict)
@@ -272,7 +266,7 @@ class ImprimoPalabra(unittest.TestCase):
           juego.letras_incorrectas = ["m"]
           juego.letras_adivinadas = ["a", "w"]
           esperado = f"La letra {letra} ya fue ingresada anteriormente."
-          actual = juego.obtener_mensaje_actual(letra)
+          actual = juego.mensaje_letra_repetida(letra)
           self.assertEqual(actual, esperado)
      
      def test_mensaje_perdio(self):

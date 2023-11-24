@@ -1,5 +1,4 @@
 import random
-import re
 
 palabras_temas = {
     'animales': ["gato", "perro", "oso", "elefante", "jirafa", "tigre", "delfin"],
@@ -21,11 +20,11 @@ class Ahorcado():
         self.letras_adivinadas = []
         self.letras_incorrectas = []
         self.palabras_incorrectas = []
-        self.letras_arriesgadas = set()
         self.gano = 0
         self.tema = tema
         self.nivel = nivel
         self.palabra_adivinar = self.elegir_palabra(tema, nivel)
+        self.mensaje = ""
     
     #El siguiente codigo es para que flask pueda mandar el objeto al navegador
     def to_dict(self):
@@ -34,11 +33,11 @@ class Ahorcado():
             'letras_adivinadas': self.letras_adivinadas,
             'letras_incorrectas': self.letras_incorrectas,
             'palabras_incorrectas': self.palabras_incorrectas,
-            'letras_arriesgadas': list(self.letras_arriesgadas),
             'gano': self.gano,
             'tema': self.tema,
             'nivel': self.nivel,
-            'palabra_adivinar': self.palabra_adivinar
+            'palabra_adivinar': self.palabra_adivinar,
+            'mensaje': self.mensaje
         }
 
     def elegir_palabra(self, tema, nivel):
@@ -88,27 +87,24 @@ class Ahorcado():
         if not repite:
             if letra in self.palabra_adivinar:
                 self.letras_adivinadas.append(letra)
-                self.letras_arriesgadas.add(letra)
+                self.mensaje = self.obtener_mensaje_actual(letra)
                 if all(letra in self.letras_adivinadas for letra in self.palabra_adivinar):
                 # Todas las letras han sido adivinadas, el jugador ha ganado
                     self.gano = 1
+                    self.mensaje = self.obtener_mensaje_actual(letra)
                 return True
             else:
                 self.descontar_vida()
                 self.letras_incorrectas.append(letra)
-                self.letras_arriesgadas.add(letra)
+                self.mensaje = self.obtener_mensaje_actual(letra)
                 return False
         else:
         # La letra ya fue ingresada
+            self.mensaje = self.mensaje_letra_repetida(letra)
             return False
 
-    def verificar_repeticion_letra(self,letra):
-        if letra in self.letras_arriesgadas:
-            print(self.letras_arriesgadas)
-           # print(f"Letra {letra} ya fue ingresada anteriormente.")  # Agrega esta línea para depurar
-            return True
-        else:
-            return False
+    def verificar_repeticion_letra(self, letra):
+        return letra in self.letras_incorrectas or letra in self.letras_adivinadas
 
     def arriesgo_palabra(self, word):
         repite = self.verificar_repeticion(word)
@@ -172,8 +168,6 @@ class Ahorcado():
             return self.mensaje_letra_incorrecta(entrada)
         elif entrada in self.palabra_adivinar:
             return self.mensaje_letra_correcta(entrada)
-        elif entrada in self.letras_arriesgadas:
-            return self.mensaje_letra_repetida(entrada)
         elif self.vidas == 0:
             return self.mensaje_perdio()
         elif self.gano == 1:

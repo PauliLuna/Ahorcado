@@ -64,14 +64,12 @@ def jugar_letra():
 
         if juego_actual_obj.vidas > 0 and '_' in juego_actual_obj.imprimo_palabra():
             if not juego_actual_obj.valida_entrada(entrada):
-                mensaje = juego_actual_obj.mensaje_solo_letras()
                 resultado = {
                     'vidas_restantes': juego_actual_obj.vidas,
                     'palabra_oculta': juego_actual_obj.imprimo_palabra(),
-                    'mensaje': mensaje,
+                    'mensaje': juego_actual_obj.mensaje_solo_letras(),
                     'gano': juego_actual_obj.gano
                 }
-                print(f"Mensaje generado: {mensaje}")  # Agrega esta línea para depurar
                 return render_template(juego_html, resultado=resultado)
 
             juego_actual_obj.juega(entrada.lower())
@@ -81,7 +79,7 @@ def jugar_letra():
             resultado = {
                 'vidas_restantes': juego_actual_obj.vidas,
                 'palabra_oculta': juego_actual_obj.imprimo_palabra(),
-                'mensaje': juego_actual_obj.obtener_mensaje_actual(entrada),
+                'mensaje': juego_actual_obj.mensaje,
                 'gano': juego_actual_obj.gano
             }
 
