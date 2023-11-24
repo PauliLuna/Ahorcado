@@ -21,6 +21,7 @@ class Ahorcado():
         self.letras_adivinadas = []
         self.letras_incorrectas = []
         self.palabras_incorrectas = []
+        self.letras_arriesgadas = set()
         self.gano = 0
         self.tema = tema
         self.nivel = nivel
@@ -33,6 +34,7 @@ class Ahorcado():
             'letras_adivinadas': self.letras_adivinadas,
             'letras_incorrectas': self.letras_incorrectas,
             'palabras_incorrectas': self.palabras_incorrectas,
+            'letras_arriesgadas': list(self.letras_arriesgadas),
             'gano': self.gano,
             'tema': self.tema,
             'nivel': self.nivel,
@@ -86,6 +88,7 @@ class Ahorcado():
         if not repite:
             if letra in self.palabra_adivinar:
                 self.letras_adivinadas.append(letra)
+                self.letras_arriesgadas.add(letra)
                 if all(letra in self.letras_adivinadas for letra in self.palabra_adivinar):
                 # Todas las letras han sido adivinadas, el jugador ha ganado
                     self.gano = 1
@@ -93,15 +96,16 @@ class Ahorcado():
             else:
                 self.descontar_vida()
                 self.letras_incorrectas.append(letra)
+                self.letras_arriesgadas.add(letra)
                 return False
         else:
         # La letra ya fue ingresada
             return False
 
     def verificar_repeticion_letra(self,letra):
-        if letra in self.letras_incorrectas or letra in self.letras_adivinadas:
-            print(self.letras_adivinadas)
-            print(f"Letra {letra} ya fue ingresada anteriormente.")  # Agrega esta línea para depurar
+        if letra in self.letras_arriesgadas:
+            print(self.letras_arriesgadas)
+           # print(f"Letra {letra} ya fue ingresada anteriormente.")  # Agrega esta línea para depurar
             return True
         else:
             return False
@@ -168,7 +172,7 @@ class Ahorcado():
             return self.mensaje_letra_incorrecta(entrada)
         elif entrada in self.palabra_adivinar:
             return self.mensaje_letra_correcta(entrada)
-        elif entrada in self.letras_adivinadas:
+        elif entrada in self.letras_arriesgadas:
             return self.mensaje_letra_repetida(entrada)
         elif self.vidas == 0:
             return self.mensaje_perdio()
