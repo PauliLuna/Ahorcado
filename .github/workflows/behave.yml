@@ -1,4 +1,4 @@
-name: Tests and Sonar Scan
+name: Selenium
 
 on:
   push:
