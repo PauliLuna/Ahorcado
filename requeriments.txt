@@ -2,3 +2,4 @@ Flask
 Gunicorn
 behave==1.2.6
 selenium
+allure-behave
