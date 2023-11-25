@@ -1,1 +1,91 @@
-[{"buildOrder":11,"reportUrl":"https://PauliLuna.github.io/Ahorcado/11/","reportName":"Allure Report with history","data":{}},{"buildOrder":10,"reportUrl":"https://PauliLuna.github.io/Ahorcado/10/","reportName":"Allure Report with history","data":{}}]
+[ {
+  "buildOrder" : 11,
+  "reportUrl" : "https://PauliLuna.github.io/Ahorcado/11",
+  "reportName" : "Allure Report with history",
+  "data" : {
+    "duration" : 33329
+  }
+}, {
+  "buildOrder" : 10,
+  "reportUrl" : "https://PauliLuna.github.io/Ahorcado/10",
+  "reportName" : "Allure Report with history",
+  "data" : {
+    "duration" : 21808
+  }
+}, {
+  "buildOrder" : 9,
+  "reportUrl" : "https://PauliLuna.github.io/Ahorcado/9",
+  "reportName" : "Allure Report with history",
+  "data" : {
+    "duration" : 17127
+  }
+}, {
+  "buildOrder" : 8,
+  "reportUrl" : "https://PauliLuna.github.io/Ahorcado/8",
+  "reportName" : "Allure Report with history",
+  "data" : {
+    "duration" : 13521
+  }
+}, {
+  "buildOrder" : 7,
+  "reportUrl" : "https://PauliLuna.github.io/Ahorcado/7",
+  "reportName" : "Allure Report with history",
+  "data" : {
+    "duration" : 8169
+  }
+}, {
+  "buildOrder" : 6,
+  "reportUrl" : "https://PauliLuna.github.io/Ahorcado/6",
+  "reportName" : "Allure Report with history",
+  "data" : {
+    "duration" : 18305
+  }
+}, {
+  "buildOrder" : 5,
+  "reportUrl" : "https://PauliLuna.github.io/Ahorcado/5",
+  "reportName" : "Allure Report with history",
+  "data" : {
+    "duration" : 13721
+  }
+}, {
+  "buildOrder" : 4,
+  "reportUrl" : "https://PauliLuna.github.io/Ahorcado/4",
+  "reportName" : "Allure Report with history",
+  "data" : {
+    "duration" : 8923
+  }
+}, {
+  "buildOrder" : 3,
+  "reportUrl" : "https://PauliLuna.github.io/Ahorcado/3",
+  "reportName" : "Allure Report with history",
+  "data" : {
+    "duration" : 18074
+  }
+}, {
+  "buildOrder" : 2,
+  "reportUrl" : "https://PauliLuna.github.io/Ahorcado/2",
+  "reportName" : "Allure Report with history",
+  "data" : {
+    "duration" : 8339
+  }
+}, {
+  "buildOrder" : 1,
+  "reportUrl" : "https://PauliLuna.github.io/Ahorcado/1",
+  "reportName" : "Allure Report with history",
+  "data" : { }
+}, {
+  "buildOrder" : 12,
+  "reportUrl" : "https://PauliLuna.github.io/Ahorcado/12/",
+  "reportName" : "Allure Report with history",
+  "data" : { }
+}, {
+  "buildOrder" : 11,
+  "reportUrl" : "https://PauliLuna.github.io/Ahorcado/11/",
+  "reportName" : "Allure Report with history",
+  "data" : { }
+}, {
+  "buildOrder" : 10,
+  "reportUrl" : "https://PauliLuna.github.io/Ahorcado/10/",
+  "reportName" : "Allure Report with history",
+  "data" : { }
+} ]

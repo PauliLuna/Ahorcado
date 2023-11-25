@@ -1,1 +1,10 @@
-[{"name":"GitHub Actions","type":"github","url":"https://PauliLuna.github.io/Ahorcado","buildOrder":11,"buildName":"GitHub Actions Run #6991041844","buildUrl":"https://github.com/PauliLuna/Ahorcado/actions/runs/6991041844","reportName":"Allure Report with history","reportUrl":"https://PauliLuna.github.io/Ahorcado/11/"}]
+[ {
+  "name" : "GitHub Actions",
+  "type" : "github",
+  "url" : "https://PauliLuna.github.io/Ahorcado",
+  "buildOrder" : 11,
+  "buildName" : "GitHub Actions Run #6991575410",
+  "buildUrl" : "https://github.com/PauliLuna/Ahorcado/actions/runs/6991575410",
+  "reportName" : "Allure Report with history",
+  "reportUrl" : "https://PauliLuna.github.io/Ahorcado/11"
+} ]

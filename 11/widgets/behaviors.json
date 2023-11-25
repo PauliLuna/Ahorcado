@@ -1,1 +1,15 @@
-{"total":0,"items":[]}
+{
+  "total" : 1,
+  "items" : [ {
+    "uid" : "57fef9a3e20d3aa83c06039aa2bbe9a4",
+    "name" : "Juego del Ahorcado",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 12,
+      "unknown" : 0,
+      "total" : 12
+    }
+  } ]
+}
