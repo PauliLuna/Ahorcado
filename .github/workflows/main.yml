@@ -47,6 +47,7 @@ jobs:
 
     - name: Run Behave Tests
       run: |
+          export ALLURE_RESULTS_DIR=./allure-results
           behave -f allure_behave.formatter:AllureFormatter
       env:
           ALLURE_RESULTS_DIR: ./allure-results
