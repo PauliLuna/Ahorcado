@@ -1,0 +1,213 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x563cbe10b5e3 <unknown>\n#1 0x563cbddce0b7 <unknown>\n#2 0x563cbde04e55 <unknown>\n#3 0x563cbde01b81 <unknown>\n#4 0x563cbde4c47f <unknown>\n#5 0x563cbde42cc3 <unknown>\n#6 0x563cbde0e0e4 <unknown>\n#7 0x563cbde0f0ae <unknown>\n#8 0x563cbe0d1ce1 <unknown>\n#9 0x563cbe0d5b7e <unknown>\n#10 0x563cbe0bf4b5 <unknown>\n#11 0x563cbe0d67d6 <unknown>\n#12 0x563cbe0a2dbf <unknown>\n#13 0x563cbe0f9748 <unknown>\n#14 0x563cbe0f9917 <unknown>\n#15 0x563cbe10a773 <unknown>\n#16 0x7fc347894ac3 <unknown>\n\n",
+      "children" : [ {
+        "name" : "Elegir opcion elegir por tematica o por nivel -- @1.1 Opciones",
+        "uid" : "d30821679ef7e94d",
+        "parentUid" : "20b0a86c156febc42358efa3d6134ba2",
+        "status" : "broken",
+        "time" : {
+          "start" : 1700945424536,
+          "stop" : 1700945435539,
+          "duration" : 11003
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "Elegir temática:", "Jugar por temáticas" ]
+      } ],
+      "uid" : "20b0a86c156febc42358efa3d6134ba2"
+    }, {
+      "name" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x563fe5d035e3 <unknown>\n#1 0x563fe59c60b7 <unknown>\n#2 0x563fe59fce55 <unknown>\n#3 0x563fe59f9b81 <unknown>\n#4 0x563fe5a4447f <unknown>\n#5 0x563fe5a3acc3 <unknown>\n#6 0x563fe5a060e4 <unknown>\n#7 0x563fe5a070ae <unknown>\n#8 0x563fe5cc9ce1 <unknown>\n#9 0x563fe5ccdb7e <unknown>\n#10 0x563fe5cb74b5 <unknown>\n#11 0x563fe5cce7d6 <unknown>\n#12 0x563fe5c9adbf <unknown>\n#13 0x563fe5cf1748 <unknown>\n#14 0x563fe5cf1917 <unknown>\n#15 0x563fe5d02773 <unknown>\n#16 0x7f1b37c94ac3 <unknown>\n\n",
+      "children" : [ {
+        "name" : "Elegir opcion elegir por tematica o por nivel -- @1.2 Opciones",
+        "uid" : "391521b7d011cabf",
+        "parentUid" : "0ab06c951e114b15b748dc1a7a463ac2",
+        "status" : "broken",
+        "time" : {
+          "start" : 1700945435539,
+          "stop" : 1700945436204,
+          "duration" : 665
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "Elegir nivel:", "Jugar por nivel de dificultad" ]
+      } ],
+      "uid" : "0ab06c951e114b15b748dc1a7a463ac2"
+    }, {
+      "name" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x55b50cab65e3 <unknown>\n#1 0x55b50c7790b7 <unknown>\n#2 0x55b50c7afe55 <unknown>\n#3 0x55b50c7acb81 <unknown>\n#4 0x55b50c7f747f <unknown>\n#5 0x55b50c7edcc3 <unknown>\n#6 0x55b50c7b90e4 <unknown>\n#7 0x55b50c7ba0ae <unknown>\n#8 0x55b50ca7cce1 <unknown>\n#9 0x55b50ca80b7e <unknown>\n#10 0x55b50ca6a4b5 <unknown>\n#11 0x55b50ca817d6 <unknown>\n#12 0x55b50ca4ddbf <unknown>\n#13 0x55b50caa4748 <unknown>\n#14 0x55b50caa4917 <unknown>\n#15 0x55b50cab5773 <unknown>\n#16 0x7f99daa94ac3 <unknown>\n\n",
+      "children" : [ {
+        "name" : "Elegir diferentes tematicas o niveles -- @1.1 Tematicas",
+        "uid" : "e7ed1e5f2471b027",
+        "parentUid" : "6a316862779e44eaf12d887981a75ae5",
+        "status" : "broken",
+        "time" : {
+          "start" : 1700945436204,
+          "stop" : 1700945436868,
+          "duration" : 664
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "Jugar por temáticas", "Animales" ]
+      } ],
+      "uid" : "6a316862779e44eaf12d887981a75ae5"
+    }, {
+      "name" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x55f8a09e05e3 <unknown>\n#1 0x55f8a06a30b7 <unknown>\n#2 0x55f8a06d9e55 <unknown>\n#3 0x55f8a06d6b81 <unknown>\n#4 0x55f8a072147f <unknown>\n#5 0x55f8a0717cc3 <unknown>\n#6 0x55f8a06e30e4 <unknown>\n#7 0x55f8a06e40ae <unknown>\n#8 0x55f8a09a6ce1 <unknown>\n#9 0x55f8a09aab7e <unknown>\n#10 0x55f8a09944b5 <unknown>\n#11 0x55f8a09ab7d6 <unknown>\n#12 0x55f8a0977dbf <unknown>\n#13 0x55f8a09ce748 <unknown>\n#14 0x55f8a09ce917 <unknown>\n#15 0x55f8a09df773 <unknown>\n#16 0x7f0b50494ac3 <unknown>\n\n",
+      "children" : [ {
+        "name" : "Elegir diferentes tematicas o niveles -- @1.2 Tematicas",
+        "uid" : "db5f414879231308",
+        "parentUid" : "14575a9b50ddfb6210f91d37951d9dd8",
+        "status" : "broken",
+        "time" : {
+          "start" : 1700945436868,
+          "stop" : 1700945437533,
+          "duration" : 665
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "Jugar por temáticas", "Comida" ]
+      } ],
+      "uid" : "14575a9b50ddfb6210f91d37951d9dd8"
+    }, {
+      "name" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x55934dd115e3 <unknown>\n#1 0x55934d9d40b7 <unknown>\n#2 0x55934da0ae55 <unknown>\n#3 0x55934da07b81 <unknown>\n#4 0x55934da5247f <unknown>\n#5 0x55934da48cc3 <unknown>\n#6 0x55934da140e4 <unknown>\n#7 0x55934da150ae <unknown>\n#8 0x55934dcd7ce1 <unknown>\n#9 0x55934dcdbb7e <unknown>\n#10 0x55934dcc54b5 <unknown>\n#11 0x55934dcdc7d6 <unknown>\n#12 0x55934dca8dbf <unknown>\n#13 0x55934dcff748 <unknown>\n#14 0x55934dcff917 <unknown>\n#15 0x55934dd10773 <unknown>\n#16 0x7f7c1f694ac3 <unknown>\n\n",
+      "children" : [ {
+        "name" : "Elegir diferentes tematicas o niveles -- @1.3 Tematicas",
+        "uid" : "6a82a4fcfdb30603",
+        "parentUid" : "eeacf41577c6065880042706596b7ee1",
+        "status" : "broken",
+        "time" : {
+          "start" : 1700945437534,
+          "stop" : 1700945438197,
+          "duration" : 663
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "Jugar por temáticas", "Paises" ]
+      } ],
+      "uid" : "eeacf41577c6065880042706596b7ee1"
+    }, {
+      "name" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x564b43dd55e3 <unknown>\n#1 0x564b43a980b7 <unknown>\n#2 0x564b43acee55 <unknown>\n#3 0x564b43acbb81 <unknown>\n#4 0x564b43b1647f <unknown>\n#5 0x564b43b0ccc3 <unknown>\n#6 0x564b43ad80e4 <unknown>\n#7 0x564b43ad90ae <unknown>\n#8 0x564b43d9bce1 <unknown>\n#9 0x564b43d9fb7e <unknown>\n#10 0x564b43d894b5 <unknown>\n#11 0x564b43da07d6 <unknown>\n#12 0x564b43d6cdbf <unknown>\n#13 0x564b43dc3748 <unknown>\n#14 0x564b43dc3917 <unknown>\n#15 0x564b43dd4773 <unknown>\n#16 0x7fd7b3c94ac3 <unknown>\n\n",
+      "children" : [ {
+        "name" : "Elegir diferentes tematicas o niveles -- @1.4 Tematicas",
+        "uid" : "b94f33a5474c3767",
+        "parentUid" : "1fb116ad08193d028abcf71ee2aa6bed",
+        "status" : "broken",
+        "time" : {
+          "start" : 1700945438197,
+          "stop" : 1700945438861,
+          "duration" : 664
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "Jugar por temáticas", "Profesiones" ]
+      } ],
+      "uid" : "1fb116ad08193d028abcf71ee2aa6bed"
+    }, {
+      "name" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x55d0c8cae5e3 <unknown>\n#1 0x55d0c89710b7 <unknown>\n#2 0x55d0c89a7e55 <unknown>\n#3 0x55d0c89a4b81 <unknown>\n#4 0x55d0c89ef47f <unknown>\n#5 0x55d0c89e5cc3 <unknown>\n#6 0x55d0c89b10e4 <unknown>\n#7 0x55d0c89b20ae <unknown>\n#8 0x55d0c8c74ce1 <unknown>\n#9 0x55d0c8c78b7e <unknown>\n#10 0x55d0c8c624b5 <unknown>\n#11 0x55d0c8c797d6 <unknown>\n#12 0x55d0c8c45dbf <unknown>\n#13 0x55d0c8c9c748 <unknown>\n#14 0x55d0c8c9c917 <unknown>\n#15 0x55d0c8cad773 <unknown>\n#16 0x7ff17d094ac3 <unknown>\n\n",
+      "children" : [ {
+        "name" : "Elegir diferentes tematicas o niveles -- @1.5 Tematicas",
+        "uid" : "29a6e36b439193ee",
+        "parentUid" : "5ef78561380180340f5657a6834dc2d8",
+        "status" : "broken",
+        "time" : {
+          "start" : 1700945438861,
+          "stop" : 1700945439524,
+          "duration" : 663
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "Jugar por temáticas", "Deportes" ]
+      } ],
+      "uid" : "5ef78561380180340f5657a6834dc2d8"
+    }, {
+      "name" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x55fa3445a5e3 <unknown>\n#1 0x55fa3411d0b7 <unknown>\n#2 0x55fa34153e55 <unknown>\n#3 0x55fa34150b81 <unknown>\n#4 0x55fa3419b47f <unknown>\n#5 0x55fa34191cc3 <unknown>\n#6 0x55fa3415d0e4 <unknown>\n#7 0x55fa3415e0ae <unknown>\n#8 0x55fa34420ce1 <unknown>\n#9 0x55fa34424b7e <unknown>\n#10 0x55fa3440e4b5 <unknown>\n#11 0x55fa344257d6 <unknown>\n#12 0x55fa343f1dbf <unknown>\n#13 0x55fa34448748 <unknown>\n#14 0x55fa34448917 <unknown>\n#15 0x55fa34459773 <unknown>\n#16 0x7fd836694ac3 <unknown>\n\n",
+      "children" : [ {
+        "name" : "Elegir diferentes tematicas o niveles -- @1.6 Tematicas",
+        "uid" : "bbbc5ab40d570a55",
+        "parentUid" : "0db3f7e9c507fb6e9a3fdf149073eac5",
+        "status" : "broken",
+        "time" : {
+          "start" : 1700945439525,
+          "stop" : 1700945440188,
+          "duration" : 663
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "Jugar por nivel de dificultad", "Fácil" ]
+      } ],
+      "uid" : "0db3f7e9c507fb6e9a3fdf149073eac5"
+    }, {
+      "name" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x55fe8af775e3 <unknown>\n#1 0x55fe8ac3a0b7 <unknown>\n#2 0x55fe8ac70e55 <unknown>\n#3 0x55fe8ac6db81 <unknown>\n#4 0x55fe8acb847f <unknown>\n#5 0x55fe8acaecc3 <unknown>\n#6 0x55fe8ac7a0e4 <unknown>\n#7 0x55fe8ac7b0ae <unknown>\n#8 0x55fe8af3dce1 <unknown>\n#9 0x55fe8af41b7e <unknown>\n#10 0x55fe8af2b4b5 <unknown>\n#11 0x55fe8af427d6 <unknown>\n#12 0x55fe8af0edbf <unknown>\n#13 0x55fe8af65748 <unknown>\n#14 0x55fe8af65917 <unknown>\n#15 0x55fe8af76773 <unknown>\n#16 0x7fc70b494ac3 <unknown>\n\n",
+      "children" : [ {
+        "name" : "Elegir diferentes tematicas o niveles -- @1.7 Tematicas",
+        "uid" : "4eb60b09b383225",
+        "parentUid" : "330775a196d4649cf80904b051f16408",
+        "status" : "broken",
+        "time" : {
+          "start" : 1700945440188,
+          "stop" : 1700945440851,
+          "duration" : 663
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "Jugar por nivel de dificultad", "Medio" ]
+      } ],
+      "uid" : "330775a196d4649cf80904b051f16408"
+    }, {
+      "name" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x564999e9b5e3 <unknown>\n#1 0x564999b5e0b7 <unknown>\n#2 0x564999b94e55 <unknown>\n#3 0x564999b91b81 <unknown>\n#4 0x564999bdc47f <unknown>\n#5 0x564999bd2cc3 <unknown>\n#6 0x564999b9e0e4 <unknown>\n#7 0x564999b9f0ae <unknown>\n#8 0x564999e61ce1 <unknown>\n#9 0x564999e65b7e <unknown>\n#10 0x564999e4f4b5 <unknown>\n#11 0x564999e667d6 <unknown>\n#12 0x564999e32dbf <unknown>\n#13 0x564999e89748 <unknown>\n#14 0x564999e89917 <unknown>\n#15 0x564999e9a773 <unknown>\n#16 0x7f05ec894ac3 <unknown>\n\n",
+      "children" : [ {
+        "name" : "Elegir diferentes tematicas o niveles -- @1.8 Tematicas",
+        "uid" : "4568b6fe64421c88",
+        "parentUid" : "cf4e29ae91e582cfe4f2d239c7572dfc",
+        "status" : "broken",
+        "time" : {
+          "start" : 1700945440851,
+          "stop" : 1700945441513,
+          "duration" : 662
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "Jugar por nivel de dificultad", "Difícil" ]
+      } ],
+      "uid" : "cf4e29ae91e582cfe4f2d239c7572dfc"
+    }, {
+      "name" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x564178d845e3 <unknown>\n#1 0x564178a470b7 <unknown>\n#2 0x564178a7de55 <unknown>\n#3 0x564178a7ab81 <unknown>\n#4 0x564178ac547f <unknown>\n#5 0x564178abbcc3 <unknown>\n#6 0x564178a870e4 <unknown>\n#7 0x564178a880ae <unknown>\n#8 0x564178d4ace1 <unknown>\n#9 0x564178d4eb7e <unknown>\n#10 0x564178d384b5 <unknown>\n#11 0x564178d4f7d6 <unknown>\n#12 0x564178d1bdbf <unknown>\n#13 0x564178d72748 <unknown>\n#14 0x564178d72917 <unknown>\n#15 0x564178d83773 <unknown>\n#16 0x7fe6de494ac3 <unknown>\n\n",
+      "children" : [ {
+        "name" : "Ingresar letra incorrecta",
+        "uid" : "756c0badff11ee94",
+        "parentUid" : "c5a91dcf602e55c4251afa8cf4565523",
+        "status" : "broken",
+        "time" : {
+          "start" : 1700945441514,
+          "stop" : 1700945442177,
+          "duration" : 663
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "c5a91dcf602e55c4251afa8cf4565523"
+    }, {
+      "name" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x560ddf7225e3 <unknown>\n#1 0x560ddf3e50b7 <unknown>\n#2 0x560ddf41be55 <unknown>\n#3 0x560ddf418b81 <unknown>\n#4 0x560ddf46347f <unknown>\n#5 0x560ddf459cc3 <unknown>\n#6 0x560ddf4250e4 <unknown>\n#7 0x560ddf4260ae <unknown>\n#8 0x560ddf6e8ce1 <unknown>\n#9 0x560ddf6ecb7e <unknown>\n#10 0x560ddf6d64b5 <unknown>\n#11 0x560ddf6ed7d6 <unknown>\n#12 0x560ddf6b9dbf <unknown>\n#13 0x560ddf710748 <unknown>\n#14 0x560ddf710917 <unknown>\n#15 0x560ddf721773 <unknown>\n#16 0x7f678c094ac3 <unknown>\n\n",
+      "children" : [ {
+        "name" : "Ingresar letra repetida",
+        "uid" : "3ab5c8867091ef2c",
+        "parentUid" : "f9e779a93d499621e879fad4ec2f5a4f",
+        "status" : "broken",
+        "time" : {
+          "start" : 1700945442178,
+          "stop" : 1700945442841,
+          "duration" : 663
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "f9e779a93d499621e879fad4ec2f5a4f"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}

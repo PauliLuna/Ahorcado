@@ -1,0 +1,121 @@
+[ {
+  "uid" : "3ab5c8867091ef2c",
+  "name" : "Ingresar letra repetida",
+  "time" : {
+    "start" : 1700945442178,
+    "stop" : 1700945442841,
+    "duration" : 663
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "391521b7d011cabf",
+  "name" : "Elegir opcion elegir por tematica o por nivel -- @1.2 Opciones",
+  "time" : {
+    "start" : 1700945435539,
+    "stop" : 1700945436204,
+    "duration" : 665
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "4568b6fe64421c88",
+  "name" : "Elegir diferentes tematicas o niveles -- @1.8 Tematicas",
+  "time" : {
+    "start" : 1700945440851,
+    "stop" : 1700945441513,
+    "duration" : 662
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "b94f33a5474c3767",
+  "name" : "Elegir diferentes tematicas o niveles -- @1.4 Tematicas",
+  "time" : {
+    "start" : 1700945438197,
+    "stop" : 1700945438861,
+    "duration" : 664
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "e7ed1e5f2471b027",
+  "name" : "Elegir diferentes tematicas o niveles -- @1.1 Tematicas",
+  "time" : {
+    "start" : 1700945436204,
+    "stop" : 1700945436868,
+    "duration" : 664
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "4eb60b09b383225",
+  "name" : "Elegir diferentes tematicas o niveles -- @1.7 Tematicas",
+  "time" : {
+    "start" : 1700945440188,
+    "stop" : 1700945440851,
+    "duration" : 663
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "756c0badff11ee94",
+  "name" : "Ingresar letra incorrecta",
+  "time" : {
+    "start" : 1700945441514,
+    "stop" : 1700945442177,
+    "duration" : 663
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "29a6e36b439193ee",
+  "name" : "Elegir diferentes tematicas o niveles -- @1.5 Tematicas",
+  "time" : {
+    "start" : 1700945438861,
+    "stop" : 1700945439524,
+    "duration" : 663
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "bbbc5ab40d570a55",
+  "name" : "Elegir diferentes tematicas o niveles -- @1.6 Tematicas",
+  "time" : {
+    "start" : 1700945439525,
+    "stop" : 1700945440188,
+    "duration" : 663
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "6a82a4fcfdb30603",
+  "name" : "Elegir diferentes tematicas o niveles -- @1.3 Tematicas",
+  "time" : {
+    "start" : 1700945437534,
+    "stop" : 1700945438197,
+    "duration" : 663
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "db5f414879231308",
+  "name" : "Elegir diferentes tematicas o niveles -- @1.2 Tematicas",
+  "time" : {
+    "start" : 1700945436868,
+    "stop" : 1700945437533,
+    "duration" : 665
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "d30821679ef7e94d",
+  "name" : "Elegir opcion elegir por tematica o por nivel -- @1.1 Opciones",
+  "time" : {
+    "start" : 1700945424536,
+    "stop" : 1700945435539,
+    "duration" : 11003
+  },
+  "status" : "broken",
+  "severity" : "normal"
+} ]
