@@ -1,11 +1,11 @@
 name: Report ATDD tests
+
 on:
-  # When the workflow is trigerred:
+  # Ejecutar en el evento workflow_dispatch y en las ramas main y ATDD
   workflow_dispatch:
   push:
     branches:
       - main
-      - ATDD
 
 jobs:
   build:
@@ -38,7 +38,7 @@ jobs:
           path: gh-pages
 
       - name: Allure Report action from marketplace
-        uses: simple-elf/allure-report-action@v1.7
+        uses: simple-elf/allure-report-action@v1
         if: always()
         with:
           allure_results: reports
