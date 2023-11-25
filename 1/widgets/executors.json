@@ -1,0 +1,10 @@
+[ {
+  "name" : "GitHub Actions",
+  "type" : "github",
+  "url" : "https://PauliLuna.github.io/Ahorcado",
+  "buildOrder" : 1,
+  "buildName" : "GitHub Actions Run #6991112716",
+  "buildUrl" : "https://github.com/PauliLuna/Ahorcado/actions/runs/6991112716",
+  "reportName" : "Allure Report with history",
+  "reportUrl" : "https://PauliLuna.github.io/Ahorcado/1"
+} ]
