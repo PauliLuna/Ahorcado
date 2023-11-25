@@ -27,3 +27,9 @@ jobs:
         run: |
           behave -f allure_behave.formatter:AllureFormatter -o allure-results features/
           allure generate allure-results --clean -o allure-report
+
+      - name: Debug Results Directory
+        run: ls -R allure-results
+
+      - name: Debug Report Directory
+        run: ls -R allure-report
