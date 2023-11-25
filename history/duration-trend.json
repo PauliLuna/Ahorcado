@@ -1,1 +1,21 @@
-[{"buildOrder":12,"reportUrl":"https://PauliLuna.github.io/Ahorcado/12/","reportName":"Allure Report with history","data":{}},{"buildOrder":11,"reportUrl":"https://PauliLuna.github.io/Ahorcado/11/","reportName":"Allure Report with history","data":{}},{"buildOrder":10,"reportUrl":"https://PauliLuna.github.io/Ahorcado/10/","reportName":"Allure Report with history","data":{}}]
+[ {
+  "buildOrder" : 1,
+  "reportUrl" : "https://PauliLuna.github.io/Ahorcado/1",
+  "reportName" : "Allure Report with history",
+  "data" : { }
+}, {
+  "buildOrder" : 12,
+  "reportUrl" : "https://PauliLuna.github.io/Ahorcado/12/",
+  "reportName" : "Allure Report with history",
+  "data" : { }
+}, {
+  "buildOrder" : 11,
+  "reportUrl" : "https://PauliLuna.github.io/Ahorcado/11/",
+  "reportName" : "Allure Report with history",
+  "data" : { }
+}, {
+  "buildOrder" : 10,
+  "reportUrl" : "https://PauliLuna.github.io/Ahorcado/10/",
+  "reportName" : "Allure Report with history",
+  "data" : { }
+} ]
