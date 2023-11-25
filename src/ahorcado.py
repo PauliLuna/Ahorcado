@@ -1,5 +1,4 @@
 import random
-import re
 
 palabras_temas = {
     'animales': ["gato", "perro", "oso", "elefante", "jirafa", "tigre", "delfin"],
@@ -25,6 +24,7 @@ class Ahorcado():
         self.tema = tema
         self.nivel = nivel
         self.palabra_adivinar = self.elegir_palabra(tema, nivel)
+        self.mensaje = ""
     
     #El siguiente codigo es para que flask pueda mandar el objeto al navegador
     def to_dict(self):
@@ -36,7 +36,8 @@ class Ahorcado():
             'gano': self.gano,
             'tema': self.tema,
             'nivel': self.nivel,
-            'palabra_adivinar': self.palabra_adivinar
+            'palabra_adivinar': self.palabra_adivinar,
+            'mensaje': self.mensaje
         }
 
     def elegir_palabra(self, tema, nivel):
@@ -64,14 +65,19 @@ class Ahorcado():
         return palabra_mostrar
 
     def juega(self,input):
-       if self.valida_entrada(input):
+        if self.valida_entrada(input):
             if len(input) == 1:
-                self.arriesgo_letra(input.lower())
+                if self.arriesgo_letra(input.lower()):
+                    return True
+                else:
+                    return False
             else:
                 if self.arriesgo_palabra(input.lower()):
                     return True
                 else:
                     return False
+        else:
+            return False
 
     def valida_entrada(self,input):
         return input.isalpha()
@@ -81,32 +87,39 @@ class Ahorcado():
         if not repite:
             if letra in self.palabra_adivinar:
                 self.letras_adivinadas.append(letra)
+                self.mensaje = self.obtener_mensaje_actual(letra)
                 if all(letra in self.letras_adivinadas for letra in self.palabra_adivinar):
                 # Todas las letras han sido adivinadas, el jugador ha ganado
                     self.gano = 1
+                    self.mensaje = self.obtener_mensaje_actual(letra)
                 return True
             else:
                 self.descontar_vida()
                 self.letras_incorrectas.append(letra)
+                self.mensaje = self.obtener_mensaje_actual(letra)
                 return False
-
-    def verificar_repeticion_letra(self,letra):
-        if letra in self.letras_incorrectas or letra in self.letras_adivinadas:
-            return True
         else:
+        # La letra ya fue ingresada
+            self.mensaje = self.mensaje_letra_repetida(letra)
             return False
+
+    def verificar_repeticion_letra(self, letra):
+        return letra in self.letras_incorrectas or letra in self.letras_adivinadas
 
     def arriesgo_palabra(self, word):
         repite = self.verificar_repeticion(word)
         if not repite:
             if word == self.palabra_adivinar:
                 self.gano= 1
+                self.mensaje = self.obtener_mensaje_actual(word)
                 return True
             else:
                 self.descontar_vida()
                 self.gano= 0
                 self.palabras_incorrectas.append(word)
+                self.mensaje = self.obtener_mensaje_actual(word)
                 return False
+        self.mensaje = self.mensaje_palabra_repetida(word)
 
     def descontar_vida(self):
         if self.vidas!=0:
@@ -116,10 +129,7 @@ class Ahorcado():
             return 0
 
     def verificar_repeticion(self,a):
-        if a in self.palabras_incorrectas:
-            return True
-        else:
-            return False
+        return a in self.palabras_incorrectas
     
     def definir_si_gano(self):
         if self.gano==1:
@@ -130,6 +140,9 @@ class Ahorcado():
 #Los siguientes metodos son para mostrar mensajes que flask consuma:
     def mensaje_palabra_incorrecta(self, palabra):
         return f"La palabra '{palabra}' es incorrecta. Perdiste 1 vida."
+    
+    def mensaje_palabra_repetida(self, palabra):
+        return f"La palabra {palabra} ya fue ingresada anteriormente."
 
     def mensaje_letra_incorrecta(self, letra):
         return f"La letra {letra} es incorrecta. Perdiste 1 vida."
@@ -158,8 +171,6 @@ class Ahorcado():
             return self.mensaje_letra_incorrecta(entrada)
         elif entrada in self.palabra_adivinar:
             return self.mensaje_letra_correcta(entrada)
-        elif entrada in self.letras_adivinadas:
-            return self.mensaje_letra_repetida(entrada)
         elif self.vidas == 0:
             return self.mensaje_perdio()
         elif self.gano == 1:

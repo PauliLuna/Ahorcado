@@ -14,7 +14,9 @@
     <p>Vidas restantes: {{ resultado.vidas_restantes }}</p>
 
     {% if resultado.mensaje %}
-    <div class="{% if 'incorrecta' in resultado.mensaje or 'Advertencia' in resultado.mensaje %}mensaje-advertencia{% elif 'acertada' in resultado.mensaje %}mensaje-correcto{% endif %}">{{ resultado.mensaje }}</div>
+    <div class="{% if 'incorrecta' in resultado.mensaje or 'Advertencia' in resultado.mensaje %}mensaje-advertencia{% elif 'acertada' in resultado.mensaje %}mensaje-correcto{% elif 'ingresada' in resultado.mensaje %}mensaje-repetida{% endif %}">
+        {{ resultado.mensaje }}
+    </div>
     {% endif %}
     
 
