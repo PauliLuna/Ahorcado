@@ -1,0 +1,941 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "children" : [ {
+    "name" : "Elegir opcion elegir por tematica o por nivel -- @1.1 Opciones",
+    "uid" : "e11ffe4ebd52ea5a",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "broken",
+    "time" : {
+      "start" : 1700942982267,
+      "stop" : 1700942983305,
+      "duration" : 1038
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "Elegir temática:", "Jugar por temáticas" ]
+  }, {
+    "name" : "Elegir opcion elegir por tematica o por nivel -- @1.2 Opciones",
+    "uid" : "4fbcdaec3ffb6357",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "broken",
+    "time" : {
+      "start" : 1700945435539,
+      "stop" : 1700945436204,
+      "duration" : 665
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "Elegir nivel:", "Jugar por nivel de dificultad" ]
+  }, {
+    "name" : "Elegir diferentes tematicas o niveles -- @1.4 Tematicas",
+    "uid" : "9b705b0cc9cef581",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "broken",
+    "time" : {
+      "start" : 1700945059803,
+      "stop" : 1700945060466,
+      "duration" : 663
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "Jugar por temáticas", "Profesiones" ]
+  }, {
+    "name" : "Elegir diferentes tematicas o niveles -- @1.5 Tematicas",
+    "uid" : "b195d219521dbcd9",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "broken",
+    "time" : {
+      "start" : 1700943251978,
+      "stop" : 1700943252642,
+      "duration" : 664
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "Jugar por temáticas", "Deportes" ]
+  }, {
+    "name" : "Elegir diferentes tematicas o niveles -- @1.6 Tematicas",
+    "uid" : "ad60d8487da4d186",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "broken",
+    "time" : {
+      "start" : 1700945061130,
+      "stop" : 1700945061793,
+      "duration" : 663
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "Jugar por nivel de dificultad", "Fácil" ]
+  }, {
+    "name" : "Elegir diferentes tematicas o niveles -- @1.4 Tematicas",
+    "uid" : "1eeb2a49406dadc9",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "broken",
+    "time" : {
+      "start" : 1700944221606,
+      "stop" : 1700944222269,
+      "duration" : 663
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "Jugar por temáticas", "Profesiones" ]
+  }, {
+    "name" : "Elegir diferentes tematicas o niveles -- @1.2 Tematicas",
+    "uid" : "cdb0f807a782c599",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "broken",
+    "time" : {
+      "start" : 1700945058476,
+      "stop" : 1700945059139,
+      "duration" : 663
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "Jugar por temáticas", "Comida" ]
+  }, {
+    "name" : "Elegir diferentes tematicas o niveles -- @1.7 Tematicas",
+    "uid" : "23a318be0979a86e",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "broken",
+    "time" : {
+      "start" : 1700942987952,
+      "stop" : 1700942988615,
+      "duration" : 663
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "Jugar por nivel de dificultad", "Medio" ]
+  }, {
+    "name" : "Elegir diferentes tematicas o niveles -- @1.5 Tematicas",
+    "uid" : "b6f7fa12139e1f41",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "broken",
+    "time" : {
+      "start" : 1700945438861,
+      "stop" : 1700945439524,
+      "duration" : 663
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "Jugar por temáticas", "Deportes" ]
+  }, {
+    "name" : "Elegir diferentes tematicas o niveles -- @1.2 Tematicas",
+    "uid" : "e3d50b1f81d9da39",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "broken",
+    "time" : {
+      "start" : 1700943249982,
+      "stop" : 1700943250647,
+      "duration" : 665
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "Jugar por temáticas", "Comida" ]
+  }, {
+    "name" : "Elegir diferentes tematicas o niveles -- @1.1 Tematicas",
+    "uid" : "beeb71f4dd3830b3",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "broken",
+    "time" : {
+      "start" : 1700945436204,
+      "stop" : 1700945436868,
+      "duration" : 664
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "Jugar por temáticas", "Animales" ]
+  }, {
+    "name" : "Elegir diferentes tematicas o niveles -- @1.3 Tematicas",
+    "uid" : "b60b58e6a4982102",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "broken",
+    "time" : {
+      "start" : 1700945437534,
+      "stop" : 1700945438197,
+      "duration" : 663
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "Jugar por temáticas", "Paises" ]
+  }, {
+    "name" : "Ingresar letra repetida",
+    "uid" : "bbcc981f3d29ab0c",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "broken",
+    "time" : {
+      "start" : 1700942989943,
+      "stop" : 1700942990606,
+      "duration" : 663
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Elegir diferentes tematicas o niveles -- @1.1 Tematicas",
+    "uid" : "a7e7f13e5ddc4af1",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "broken",
+    "time" : {
+      "start" : 1700945057812,
+      "stop" : 1700945058475,
+      "duration" : 663
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "Jugar por temáticas", "Animales" ]
+  }, {
+    "name" : "Elegir diferentes tematicas o niveles -- @1.1 Tematicas",
+    "uid" : "297cb2ae93aab769",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "broken",
+    "time" : {
+      "start" : 1700944219613,
+      "stop" : 1700944220277,
+      "duration" : 664
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "Jugar por temáticas", "Animales" ]
+  }, {
+    "name" : "Elegir diferentes tematicas o niveles -- @1.8 Tematicas",
+    "uid" : "d2500d2ba6ce775a",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "broken",
+    "time" : {
+      "start" : 1700942988615,
+      "stop" : 1700942989278,
+      "duration" : 663
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "Jugar por nivel de dificultad", "Difícil" ]
+  }, {
+    "name" : "Elegir diferentes tematicas o niveles -- @1.8 Tematicas",
+    "uid" : "41cd4c1731927db9",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "broken",
+    "time" : {
+      "start" : 1700944224262,
+      "stop" : 1700944224926,
+      "duration" : 664
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "Jugar por nivel de dificultad", "Difícil" ]
+  }, {
+    "name" : "Ingresar letra incorrecta",
+    "uid" : "a3c1948e8914e0a",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "broken",
+    "time" : {
+      "start" : 1700945063170,
+      "stop" : 1700945063833,
+      "duration" : 663
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Elegir opcion elegir por tematica o por nivel -- @1.2 Opciones",
+    "uid" : "eb84a6b3399efc40",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "broken",
+    "time" : {
+      "start" : 1700943248600,
+      "stop" : 1700943249317,
+      "duration" : 717
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "Elegir nivel:", "Jugar por nivel de dificultad" ]
+  }, {
+    "name" : "Ingresar letra incorrecta",
+    "uid" : "30137e0bcf97b555",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "broken",
+    "time" : {
+      "start" : 1700943254636,
+      "stop" : 1700943255301,
+      "duration" : 665
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Elegir diferentes tematicas o niveles -- @1.4 Tematicas",
+    "uid" : "1c333112f5e8231d",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "broken",
+    "time" : {
+      "start" : 1700942985962,
+      "stop" : 1700942986625,
+      "duration" : 663
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "Jugar por temáticas", "Profesiones" ]
+  }, {
+    "name" : "Elegir opcion elegir por tematica o por nivel -- @1.1 Opciones",
+    "uid" : "9850d3e99bae64c8",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "broken",
+    "time" : {
+      "start" : 1700944217331,
+      "stop" : 1700944218946,
+      "duration" : 1615
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "Elegir temática:", "Jugar por temáticas" ]
+  }, {
+    "name" : "Elegir diferentes tematicas o niveles -- @1.3 Tematicas",
+    "uid" : "5f1be79183f633d7",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "broken",
+    "time" : {
+      "start" : 1700944220943,
+      "stop" : 1700944221606,
+      "duration" : 663
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "Jugar por temáticas", "Paises" ]
+  }, {
+    "name" : "Elegir opcion elegir por tematica o por nivel -- @1.1 Opciones",
+    "uid" : "9db5fb7c7df5e2a7",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "broken",
+    "time" : {
+      "start" : 1700943237890,
+      "stop" : 1700943248599,
+      "duration" : 10709
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "Elegir temática:", "Jugar por temáticas" ]
+  }, {
+    "name" : "Elegir diferentes tematicas o niveles -- @1.7 Tematicas",
+    "uid" : "b36186d9e5d62b87",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "broken",
+    "time" : {
+      "start" : 1700944223597,
+      "stop" : 1700944224261,
+      "duration" : 664
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "Jugar por nivel de dificultad", "Medio" ]
+  }, {
+    "name" : "Ingresar letra repetida",
+    "uid" : "3e522c8c08ca098c",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "broken",
+    "time" : {
+      "start" : 1700945063834,
+      "stop" : 1700945064496,
+      "duration" : 662
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Elegir diferentes tematicas o niveles -- @1.4 Tematicas",
+    "uid" : "4f25b4d9d017b224",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "broken",
+    "time" : {
+      "start" : 1700943251314,
+      "stop" : 1700943251978,
+      "duration" : 664
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "Jugar por temáticas", "Profesiones" ]
+  }, {
+    "name" : "Elegir diferentes tematicas o niveles -- @1.5 Tematicas",
+    "uid" : "45a013f686b76041",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "broken",
+    "time" : {
+      "start" : 1700942986626,
+      "stop" : 1700942987289,
+      "duration" : 663
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "Jugar por temáticas", "Deportes" ]
+  }, {
+    "name" : "Elegir diferentes tematicas o niveles -- @1.8 Tematicas",
+    "uid" : "aa47ebb840dab8fb",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "broken",
+    "time" : {
+      "start" : 1700945440851,
+      "stop" : 1700945441513,
+      "duration" : 662
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "Jugar por nivel de dificultad", "Difícil" ]
+  }, {
+    "name" : "Elegir diferentes tematicas o niveles -- @1.2 Tematicas",
+    "uid" : "2af5ddb86fedd241",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "broken",
+    "time" : {
+      "start" : 1700942984634,
+      "stop" : 1700942985298,
+      "duration" : 664
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "Jugar por temáticas", "Comida" ]
+  }, {
+    "name" : "Elegir diferentes tematicas o niveles -- @1.7 Tematicas",
+    "uid" : "d75493cc808c6366",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "broken",
+    "time" : {
+      "start" : 1700945440188,
+      "stop" : 1700945440851,
+      "duration" : 663
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "Jugar por nivel de dificultad", "Medio" ]
+  }, {
+    "name" : "Ingresar letra incorrecta",
+    "uid" : "19e914ba4607163b",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "broken",
+    "time" : {
+      "start" : 1700945441514,
+      "stop" : 1700945442177,
+      "duration" : 663
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Elegir diferentes tematicas o niveles -- @1.5 Tematicas",
+    "uid" : "1277e4086b98ad09",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "broken",
+    "time" : {
+      "start" : 1700944222270,
+      "stop" : 1700944222933,
+      "duration" : 663
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "Jugar por temáticas", "Deportes" ]
+  }, {
+    "name" : "Elegir diferentes tematicas o niveles -- @1.1 Tematicas",
+    "uid" : "39aa00e35e7bae71",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "broken",
+    "time" : {
+      "start" : 1700942983971,
+      "stop" : 1700942984633,
+      "duration" : 662
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "Jugar por temáticas", "Animales" ]
+  }, {
+    "name" : "Elegir diferentes tematicas o niveles -- @1.5 Tematicas",
+    "uid" : "f14ecad16813bfb6",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "broken",
+    "time" : {
+      "start" : 1700945060466,
+      "stop" : 1700945061129,
+      "duration" : 663
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "Jugar por temáticas", "Deportes" ]
+  }, {
+    "name" : "Elegir diferentes tematicas o niveles -- @1.6 Tematicas",
+    "uid" : "7e3b0bcc8b368127",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "broken",
+    "time" : {
+      "start" : 1700943252642,
+      "stop" : 1700943253306,
+      "duration" : 664
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "Jugar por nivel de dificultad", "Fácil" ]
+  }, {
+    "name" : "Elegir diferentes tematicas o niveles -- @1.4 Tematicas",
+    "uid" : "eb549d429a99b726",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "broken",
+    "time" : {
+      "start" : 1700945589508,
+      "stop" : 1700945590170,
+      "duration" : 662
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "Jugar por temáticas", "Profesiones" ]
+  }, {
+    "name" : "Elegir diferentes tematicas o niveles -- @1.2 Tematicas",
+    "uid" : "13b38d1c7f5e47c1",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "broken",
+    "time" : {
+      "start" : 1700945436868,
+      "stop" : 1700945437533,
+      "duration" : 665
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "Jugar por temáticas", "Comida" ]
+  }, {
+    "name" : "Elegir diferentes tematicas o niveles -- @1.6 Tematicas",
+    "uid" : "4a8372679cdfe3af",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "broken",
+    "time" : {
+      "start" : 1700945439525,
+      "stop" : 1700945440188,
+      "duration" : 663
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "Jugar por nivel de dificultad", "Fácil" ]
+  }, {
+    "name" : "Elegir diferentes tematicas o niveles -- @1.6 Tematicas",
+    "uid" : "fe5ae7b8df1d9e9c",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "broken",
+    "time" : {
+      "start" : 1700945590833,
+      "stop" : 1700945591495,
+      "duration" : 662
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "Jugar por nivel de dificultad", "Fácil" ]
+  }, {
+    "name" : "Elegir diferentes tematicas o niveles -- @1.7 Tematicas",
+    "uid" : "c82be80c0babc1f1",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "broken",
+    "time" : {
+      "start" : 1700945591495,
+      "stop" : 1700945592157,
+      "duration" : 662
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "Jugar por nivel de dificultad", "Medio" ]
+  }, {
+    "name" : "Elegir diferentes tematicas o niveles -- @1.7 Tematicas",
+    "uid" : "2c88c6f4ab19302",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "broken",
+    "time" : {
+      "start" : 1700945061793,
+      "stop" : 1700945062507,
+      "duration" : 714
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "Jugar por nivel de dificultad", "Medio" ]
+  }, {
+    "name" : "Elegir diferentes tematicas o niveles -- @1.8 Tematicas",
+    "uid" : "134714c35928e438",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "broken",
+    "time" : {
+      "start" : 1700945062507,
+      "stop" : 1700945063170,
+      "duration" : 663
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "Jugar por nivel de dificultad", "Difícil" ]
+  }, {
+    "name" : "Ingresar letra repetida",
+    "uid" : "66c5fa24ee2d71d2",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "broken",
+    "time" : {
+      "start" : 1700945442178,
+      "stop" : 1700945442841,
+      "duration" : 663
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Elegir diferentes tematicas o niveles -- @1.5 Tematicas",
+    "uid" : "981503aa72e7b6ad",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "broken",
+    "time" : {
+      "start" : 1700945590171,
+      "stop" : 1700945590832,
+      "duration" : 661
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "Jugar por temáticas", "Deportes" ]
+  }, {
+    "name" : "Elegir diferentes tematicas o niveles -- @1.7 Tematicas",
+    "uid" : "654a2cde8ca4f693",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "broken",
+    "time" : {
+      "start" : 1700943253306,
+      "stop" : 1700943253971,
+      "duration" : 665
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "Jugar por nivel de dificultad", "Medio" ]
+  }, {
+    "name" : "Ingresar letra incorrecta",
+    "uid" : "88e3ee94631677a",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "broken",
+    "time" : {
+      "start" : 1700942989278,
+      "stop" : 1700942989942,
+      "duration" : 664
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Elegir diferentes tematicas o niveles -- @1.2 Tematicas",
+    "uid" : "37b741d3dfca6dd8",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "broken",
+    "time" : {
+      "start" : 1700944220277,
+      "stop" : 1700944220942,
+      "duration" : 665
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "Jugar por temáticas", "Comida" ]
+  }, {
+    "name" : "Elegir diferentes tematicas o niveles -- @1.8 Tematicas",
+    "uid" : "117f5c69c96b3e71",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "broken",
+    "time" : {
+      "start" : 1700943253972,
+      "stop" : 1700943254636,
+      "duration" : 664
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "Jugar por nivel de dificultad", "Difícil" ]
+  }, {
+    "name" : "Elegir opcion elegir por tematica o por nivel -- @1.2 Opciones",
+    "uid" : "94ae84c7ad7cdbf3",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "broken",
+    "time" : {
+      "start" : 1700942983305,
+      "stop" : 1700942983971,
+      "duration" : 666
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "Elegir nivel:", "Jugar por nivel de dificultad" ]
+  }, {
+    "name" : "Elegir opcion elegir por tematica o por nivel -- @1.2 Opciones",
+    "uid" : "145cb55e11e4341",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "broken",
+    "time" : {
+      "start" : 1700945586854,
+      "stop" : 1700945587519,
+      "duration" : 665
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "Elegir nivel:", "Jugar por nivel de dificultad" ]
+  }, {
+    "name" : "Ingresar letra repetida",
+    "uid" : "668535c1d1baa5ea",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "broken",
+    "time" : {
+      "start" : 1700943255301,
+      "stop" : 1700943255964,
+      "duration" : 663
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Elegir diferentes tematicas o niveles -- @1.8 Tematicas",
+    "uid" : "89a78d88958ba64f",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "broken",
+    "time" : {
+      "start" : 1700945592157,
+      "stop" : 1700945592818,
+      "duration" : 661
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "Jugar por nivel de dificultad", "Difícil" ]
+  }, {
+    "name" : "Elegir diferentes tematicas o niveles -- @1.1 Tematicas",
+    "uid" : "e9aa298cbd10dfb1",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "broken",
+    "time" : {
+      "start" : 1700943249318,
+      "stop" : 1700943249982,
+      "duration" : 664
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "Jugar por temáticas", "Animales" ]
+  }, {
+    "name" : "Elegir diferentes tematicas o niveles -- @1.3 Tematicas",
+    "uid" : "c12662c033b57456",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "broken",
+    "time" : {
+      "start" : 1700943250647,
+      "stop" : 1700943251313,
+      "duration" : 666
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "Jugar por temáticas", "Paises" ]
+  }, {
+    "name" : "Elegir opcion elegir por tematica o por nivel -- @1.1 Opciones",
+    "uid" : "6a74f6514810c7b9",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "broken",
+    "time" : {
+      "start" : 1700945050775,
+      "stop" : 1700945057146,
+      "duration" : 6371
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "Elegir temática:", "Jugar por temáticas" ]
+  }, {
+    "name" : "Elegir diferentes tematicas o niveles -- @1.3 Tematicas",
+    "uid" : "99fad7a11a7bfcbf",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "broken",
+    "time" : {
+      "start" : 1700942985298,
+      "stop" : 1700942985962,
+      "duration" : 664
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "Jugar por temáticas", "Paises" ]
+  }, {
+    "name" : "Elegir diferentes tematicas o niveles -- @1.6 Tematicas",
+    "uid" : "e57a612d4080893b",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "broken",
+    "time" : {
+      "start" : 1700942987289,
+      "stop" : 1700942987952,
+      "duration" : 663
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "Jugar por nivel de dificultad", "Fácil" ]
+  }, {
+    "name" : "Ingresar letra repetida",
+    "uid" : "c5bc547a0dd73662",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "broken",
+    "time" : {
+      "start" : 1700944225591,
+      "stop" : 1700944226254,
+      "duration" : 663
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Elegir diferentes tematicas o niveles -- @1.6 Tematicas",
+    "uid" : "472b8d6d1cc9abfa",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "broken",
+    "time" : {
+      "start" : 1700944222934,
+      "stop" : 1700944223597,
+      "duration" : 663
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "Jugar por nivel de dificultad", "Fácil" ]
+  }, {
+    "name" : "Elegir opcion elegir por tematica o por nivel -- @1.2 Opciones",
+    "uid" : "4e35ec4e766786e0",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "broken",
+    "time" : {
+      "start" : 1700944218947,
+      "stop" : 1700944219613,
+      "duration" : 666
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "Elegir nivel:", "Jugar por nivel de dificultad" ]
+  }, {
+    "name" : "Elegir diferentes tematicas o niveles -- @1.4 Tematicas",
+    "uid" : "3558e0135e4127a",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "broken",
+    "time" : {
+      "start" : 1700945438197,
+      "stop" : 1700945438861,
+      "duration" : 664
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "Jugar por temáticas", "Profesiones" ]
+  }, {
+    "name" : "Ingresar letra repetida",
+    "uid" : "d7cfb45920728b5a",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "broken",
+    "time" : {
+      "start" : 1700945593481,
+      "stop" : 1700945594143,
+      "duration" : 662
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Elegir opcion elegir por tematica o por nivel -- @1.1 Opciones",
+    "uid" : "ce3b48b679dfe306",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "broken",
+    "time" : {
+      "start" : 1700945424536,
+      "stop" : 1700945435539,
+      "duration" : 11003
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "Elegir temática:", "Jugar por temáticas" ]
+  }, {
+    "name" : "Elegir diferentes tematicas o niveles -- @1.3 Tematicas",
+    "uid" : "116f59174787e395",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "broken",
+    "time" : {
+      "start" : 1700945588846,
+      "stop" : 1700945589507,
+      "duration" : 661
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "Jugar por temáticas", "Paises" ]
+  }, {
+    "name" : "Elegir diferentes tematicas o niveles -- @1.3 Tematicas",
+    "uid" : "12212f7daa8dc32c",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "broken",
+    "time" : {
+      "start" : 1700945059140,
+      "stop" : 1700945059803,
+      "duration" : 663
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "Jugar por temáticas", "Paises" ]
+  }, {
+    "name" : "Elegir opcion elegir por tematica o por nivel -- @1.2 Opciones",
+    "uid" : "8e29343c16fe2d8f",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "broken",
+    "time" : {
+      "start" : 1700945057147,
+      "stop" : 1700945057812,
+      "duration" : 665
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "Elegir nivel:", "Jugar por nivel de dificultad" ]
+  }, {
+    "name" : "Elegir opcion elegir por tematica o por nivel -- @1.1 Opciones",
+    "uid" : "c6ddd8a0d5581e7d",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "broken",
+    "time" : {
+      "start" : 1700945585974,
+      "stop" : 1700945586853,
+      "duration" : 879
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "Elegir temática:", "Jugar por temáticas" ]
+  }, {
+    "name" : "Ingresar letra incorrecta",
+    "uid" : "6bcdf49eb109ac4b",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "broken",
+    "time" : {
+      "start" : 1700944224927,
+      "stop" : 1700944225591,
+      "duration" : 664
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Elegir diferentes tematicas o niveles -- @1.1 Tematicas",
+    "uid" : "c3443e35cdaf25cf",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "broken",
+    "time" : {
+      "start" : 1700945587520,
+      "stop" : 1700945588182,
+      "duration" : 662
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "Jugar por temáticas", "Animales" ]
+  }, {
+    "name" : "Ingresar letra incorrecta",
+    "uid" : "642a91bd0d9db921",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "broken",
+    "time" : {
+      "start" : 1700945592819,
+      "stop" : 1700945593481,
+      "duration" : 662
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Elegir diferentes tematicas o niveles -- @1.2 Tematicas",
+    "uid" : "caa7b1a1da90102a",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "broken",
+    "time" : {
+      "start" : 1700945588182,
+      "stop" : 1700945588845,
+      "duration" : 663
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "Jugar por temáticas", "Comida" ]
+  } ],
+  "name" : "timeline"
+}
