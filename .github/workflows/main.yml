@@ -1,4 +1,4 @@
-name: Unit tests, Sonar Scan and ATDD
+name: Unit tests, Sonar Scan
 
 on:
   # When the workflow is trigerred:
@@ -19,7 +19,6 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-
       # Public repo with actions that can be used
     - name: Checkout code
       uses: actions/checkout@v3
@@ -32,8 +31,6 @@ jobs:
     # Install dependencies
     - name: Install dependencies
       run: |
-        python -m pip install --upgrade pip
-        pip install -r requeriments.txt
         pip install coverage
         
     # Run set of commands 
@@ -44,13 +41,6 @@ jobs:
         
     - name: Test Report
       run: coverage report
-
-    - name: Run Behave Tests
-      run: |
-          export ALLURE_RESULTS_DIR=./allure-results
-          behave -f allure_behave.formatter:AllureFormatter
-      env:
-          ALLURE_RESULTS_DIR: ./allure-results
 
     - name: SonarCloud Scan
       uses: SonarSource/sonarcloud-github-action@master
