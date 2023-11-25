@@ -47,7 +47,7 @@ Feature: Juego del Ahorcado
     When Ingreso la letra "X"
     And Hago clic en el boton Adivinar
     Then Deberia ver el mensaje de letra incorrecta
-    And Deberia ver que las vidas disminuyen en 1
+    And Deberia ver que las vidas es 6
   
   Scenario: Ingresar letra repetida
     Given Que estoy en la página del Juego del Ahorcado
@@ -71,5 +71,5 @@ Feature: Juego del Ahorcado
     Given Que estoy en la pagina Jugar
     When Ingreso la letra "X"
     And Hago clic en el boton Adivinar
-    #Then Deberia ver el mensaje de letra repetida
+    Then Deberia ver el mensaje de letra repetida
     Then Deberia ver que las vidas es 6

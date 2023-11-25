@@ -99,8 +99,8 @@ def step_ver_mensaje_letra_incorrecta(context):
 
 @then('Deberia ver el mensaje de letra repetida')
 def step_ver_mensaje_letra_incorrecta(context):
-    mensaje_letra_incorrecta = esperar_elemento(context, By.CLASS_NAME, "mensaje-advertencia")
-    assert "La letra x es incorrecta. Perdiste 1 vida." in mensaje_letra_incorrecta.text
+    mensaje_letra_incorrecta = esperar_elemento(context, By.CLASS_NAME, "mensaje-repetida")
+    assert "La letra x ya fue ingresada anteriormente." in mensaje_letra_incorrecta.text
 
 @then('Deberia ver que las vidas es 6')
 def step_ver_vidas_disminuyen(context):
