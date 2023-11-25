@@ -26,7 +26,7 @@ jobs:
 
       - name: Download ChromeDriver
         run: |
-          wget https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6045.105/linux64/chromedriver-linux64.zip
+          wget https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6045.159/linux64/chromedriver-linux64.zip
           unzip chromedriver-linux64.zip
 
       - name: Set Permissions for ChromeDriver
