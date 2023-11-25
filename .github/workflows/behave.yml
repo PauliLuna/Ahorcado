@@ -1,10 +1,10 @@
 name: Report ATDD tests
 on:
   # When the workflow is trigerred:
+  workflow_dispatch:
   push:
     branches:
       - ATDD
-  workflow_dispatch:
 
 jobs:
   build:
