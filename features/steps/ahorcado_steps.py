@@ -28,12 +28,10 @@ def obtener_numero_vidas(context):
 # features/steps/ahorcado_steps.py
 @given('Que estoy en la página del Juego del Ahorcado')
 def step_given(context):
-    #para que se ejecute sin cabeza, no de error en github actions
+    # Para que se ejecute sin cabeza, no de error en github actions
     options = webdriver.ChromeOptions()
     options.add_argument('--headless')
     context.driver = webdriver.Chrome(options=options)
-    # ------
-    #context.driver = webdriver.Chrome()
     context.driver.get(INDEX_URL)
 
 @when('Eligo "{opcion}"')
