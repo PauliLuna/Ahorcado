@@ -26,7 +26,7 @@ jobs:
 
       - name: Run Test
         if: always()
-        run: behave -f allure_behave.formatter:AllureFormatter -o automation/reports automation/features
+        run: behave -f allure_behave.formatter:AllureFormatter -o reports features
         continue-on-error: true
 
       - name: Get Allure history
