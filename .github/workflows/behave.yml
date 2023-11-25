@@ -1,0 +1,29 @@
+name: Tests and Sonar Scan
+
+on:
+  push:
+    branches:
+      - main
+      - ATDD
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: 3.11.2
+
+      - name: Install dependencies
+        run: |
+          pip install -r requeriments.txt
+
+      - name: Run Behave tests
+        run: |
+          behave -f allure_behave.formatter:AllureFormatter -o allure-results features/
+          allure generate allure-results --clean -o allure-report
