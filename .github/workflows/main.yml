@@ -32,6 +32,8 @@ jobs:
     # Install dependencies
     - name: Install dependencies
       run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
         pip install coverage
         
     # Run set of commands 
@@ -42,6 +44,12 @@ jobs:
         
     - name: Test Report
       run: coverage report
+
+    - name: Run Behave Tests
+      run: |
+          behave -f allure_behave.formatter:AllureFormatter
+      env:
+          ALLURE_RESULTS_DIR: ./allure-results
 
     - name: SonarCloud Scan
       uses: SonarSource/sonarcloud-github-action@master
