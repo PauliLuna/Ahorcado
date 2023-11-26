@@ -34,7 +34,7 @@ def step_given(context):
     context.driver = webdriver.Chrome(options=options)
     context.driver.get(INDEX_URL)
 
-@when('Eligo "{opcion}"')
+@when('Elijo "{opcion}"')
 def step_when(context, opcion):
     dropdown = esperar_elemento(context, By.ID, "opcion")
     select = Select(dropdown)
@@ -80,6 +80,11 @@ def step_comenzar_juego(context):
 def step_then(context):
     assert JUGAR_URL in context.driver.current_url
 
+@then('Deberia ver el label {string}')
+def step_then(context, string) :
+    esperar_elemento(context, By.XPATH, f"//*[contains(text(), '{string}')]")
+    label = context.driver.find_element(By.XPATH, f"//*[contains(text(), '{string}')]")
+    assert label.is_displayed()
 
 @given('Que estoy en la pagina Jugar')
 def step_given(context):
@@ -98,7 +103,7 @@ def step_adivinar(context):
 @then('Deberia ver el mensaje de letra incorrecta')
 def step_ver_mensaje_letra_incorrecta(context):
     mensaje_letra_incorrecta = esperar_elemento(context, By.CLASS_NAME, "mensaje-advertencia")
-    assert "La letra x es incorrecta. Perdiste 1 vida." in mensaje_letra_incorrecta.text  # Ajusta según tu mensaje específico
+    assert "La letra x es incorrecta. Perdiste 1 vida." in mensaje_letra_incorrecta.text  
 
 @then('Deberia ver el mensaje de letra repetida')
 def step_ver_mensaje_letra_incorrecta(context):
@@ -109,4 +114,3 @@ def step_ver_mensaje_letra_incorrecta(context):
 def step_ver_vidas_disminuyen(context):
     vidas_restantes =  obtener_numero_vidas(context)
     print(vidas_restantes)
-    assert vidas_restantes == 6

@@ -2,7 +2,7 @@ Feature: Juego del Ahorcado
 
    Scenario Outline: Elegir opcion elegir por tematica o por nivel
      Given Que estoy en la página del Juego del Ahorcado
-     When Eligo "<opcion>"
+     When Elijo "<opcion>"
      And Hago clic en el boton Continuar
      Then Deberia ser redirigido a la proxima pagina
      And Deberia ver el label "<eleccion>"
@@ -14,7 +14,7 @@ Feature: Juego del Ahorcado
 
    Scenario Outline: Elegir diferentes tematicas o niveles
      Given Que estoy en la página del Juego del Ahorcado
-     When Eligo "<opcion>"
+     When Elijo "<opcion>"
      And Hago clic en el boton Continuar
      Then Deberia ser redirigido a la proxima pagina
      And Deberia ver la opcion "<seleccion>"
@@ -32,7 +32,7 @@ Feature: Juego del Ahorcado
 
   Scenario: Ingresar letra incorrecta
     Given Que estoy en la página del Juego del Ahorcado
-    When Eligo "Jugar por temáticas"
+    When Elijo "Jugar por temáticas"
     And Hago clic en el boton Continuar
     Then Deberia ser redirigido a la proxima pagina
     And Deberia ver el label "Elegir temática:"
@@ -51,7 +51,7 @@ Feature: Juego del Ahorcado
   
   Scenario: Ingresar letra repetida
     Given Que estoy en la página del Juego del Ahorcado
-    When Eligo "Jugar por temáticas"
+    When Elijo "Jugar por temáticas"
     And Hago clic en el boton Continuar
     Then Deberia ser redirigido a la proxima pagina
     And Deberia ver el label "Elegir temática:"

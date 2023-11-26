@@ -1,7 +1,7 @@
 name: Report ATDD tests
 
 on:
-  # Ejecutar en el evento workflow_dispatch y en las ramas main y ATDD
+  # Ejecutar en el evento workflow_dispatch manualmente
   workflow_dispatch:
   push:
     branches:
