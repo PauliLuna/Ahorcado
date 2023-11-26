@@ -48,7 +48,7 @@ button:hover {
 }
 
 .mensaje-advertencia {
-    color: red;
+    color: #860808;
     background-color: #ffebee; /* Color de fondo para un tono de rojo claro */
     padding: 10px;
     border-radius: 5px;
@@ -56,14 +56,17 @@ button:hover {
 }
 
 .mensaje-correcto {
-    color: green; /* Cambia el color a verde o el color deseado para mensajes felices */
-    background-color: #e6ffe6; /* Cambia el fondo a un tono claro de verde */
+    color: #0E4E21; /* Cambia el color a verde o el color deseado para mensajes felices */
+    background-color: #96F583; /* Cambia el fondo a un tono claro de verde */
     padding: 10px;
     border-radius: 5px;
     margin-bottom: 10px;
 } 
 
 .mensaje-repetida {
-    color: #f39c12;  /* Color de la repetición de letras */
-    font-weight: bold;
+    color: #C35214;  /* Color de la repetición de letras */
+    background-color: #FFFFDD; /* Cambia el fondo a un tono claro de verde */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
 }
