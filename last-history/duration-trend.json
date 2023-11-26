@@ -1,4 +1,11 @@
 [ {
+  "buildOrder" : 12,
+  "reportUrl" : "https://PauliLuna.github.io/Ahorcado/12",
+  "reportName" : "Allure Report with history",
+  "data" : {
+    "duration" : 56549
+  }
+}, {
   "buildOrder" : 11,
   "reportUrl" : "https://PauliLuna.github.io/Ahorcado/11",
   "reportName" : "Allure Report with history",
