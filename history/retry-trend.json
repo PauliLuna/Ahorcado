@@ -1,4 +1,12 @@
 [ {
+  "buildOrder" : 13,
+  "reportUrl" : "https://PauliLuna.github.io/Ahorcado/13",
+  "reportName" : "Allure Report with history",
+  "data" : {
+    "run" : 12,
+    "retry" : 132
+  }
+}, {
   "buildOrder" : 12,
   "reportUrl" : "https://PauliLuna.github.io/Ahorcado/12",
   "reportName" : "Allure Report with history",
