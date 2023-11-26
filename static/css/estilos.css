@@ -6,7 +6,24 @@ body {
 }
 
 h1 {
+    color: #1a237e; /* Color del texto */
+    font-family: 'Arial', sans-serif; /* Fuente del texto */
+    font-size: 36px; /* Tamaño del texto */
+    text-align: center; /* Alineación del texto */
+    text-transform: uppercase; /* Convertir a mayúsculas */
+    letter-spacing: 2px; /* Espaciado entre letras */
+    margin-bottom: 20px; /* Margen inferior */
+    background-color: #E2E2E2; /* Color de fondo */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+h3 {
+    display: block;
+    margin-bottom: 12px;
     color: #333;
+    font-weight: bold;
 }
 
 form {
@@ -20,7 +37,7 @@ form {
 
 label {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 14px;
     color: #333;
 }
 
@@ -34,9 +51,10 @@ select {
 }
 
 button {
-    background-color: #4caf50;
+    background-color: #02850F;
     color: white;
     padding: 10px 20px;
+    font-weight: bold;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -54,6 +72,8 @@ button:hover {
     padding: 10px;
     border-radius: 5px;
     margin-bottom: 10px;
+    max-width: 400px;
+    margin: 0 auto;
 }
 
 .mensaje-correcto {
@@ -63,6 +83,8 @@ button:hover {
     padding: 10px;
     border-radius: 5px;
     margin-bottom: 10px;
+    max-width: 400px;
+    margin: 0 auto;
 } 
 
 .mensaje-repetida {
@@ -72,4 +94,6 @@ button:hover {
     padding: 10px;
     border-radius: 5px;
     margin-bottom: 10px;
+    max-width: 400px;
+    margin: 0 auto;
 }
