@@ -1,0 +1,417 @@
+{
+  "uid" : "5f8ee362456f91d8",
+  "name" : "Elegir diferentes tematicas o niveles -- @1.1 Tematicas",
+  "fullName" : "Juego del Ahorcado: Elegir diferentes tematicas o niveles",
+  "historyId" : "cd0773e1cc70a5c4c16682c19f0d94fa",
+  "time" : {
+    "start" : 1701043724210,
+    "stop" : 1701043725766,
+    "duration" : 1556
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Given Que estoy en la página del Juego del Ahorcado",
+      "time" : {
+        "start" : 1701043724210,
+        "stop" : 1701043725158,
+        "duration" : 948
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "When Elijo \"Jugar por temáticas\"",
+      "time" : {
+        "start" : 1701043725158,
+        "stop" : 1701043725190,
+        "duration" : 32
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "And Hago clic en el boton Continuar",
+      "time" : {
+        "start" : 1701043725190,
+        "stop" : 1701043725654,
+        "duration" : 464
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Then Deberia ser redirigido a la proxima pagina",
+      "time" : {
+        "start" : 1701043725654,
+        "stop" : 1701043725658,
+        "duration" : 4
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "And Deberia ver la opcion \"Animales\"",
+      "time" : {
+        "start" : 1701043725658,
+        "stop" : 1701043725711,
+        "duration" : 53
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 5
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "feature",
+    "value" : "Juego del Ahorcado"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "opcion",
+    "value" : "Jugar por temáticas"
+  }, {
+    "name" : "seleccion",
+    "value" : "Animales"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "b4613925fb3d5d6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1701010761331,
+        "stop" : 1701010762735,
+        "duration" : 1404
+      }
+    }, {
+      "uid" : "b783fae58e5a76a8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1701010187550,
+        "stop" : 1701010188975,
+        "duration" : 1425
+      }
+    }, {
+      "uid" : "b96697b4751bb0df",
+      "status" : "passed",
+      "time" : {
+        "start" : 1701008143106,
+        "stop" : 1701008144556,
+        "duration" : 1450
+      }
+    }, {
+      "uid" : "938efce737054a15",
+      "status" : "passed",
+      "time" : {
+        "start" : 1701007399110,
+        "stop" : 1701007400428,
+        "duration" : 1318
+      }
+    }, {
+      "uid" : "2035d83d95908a98",
+      "status" : "passed",
+      "time" : {
+        "start" : 1701005212291,
+        "stop" : 1701005213768,
+        "duration" : 1477
+      }
+    }, {
+      "uid" : "ff1da7bfdb4a7f1a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1700949221056,
+        "stop" : 1700949222665,
+        "duration" : 1609
+      }
+    }, {
+      "uid" : "afd3694df7cfff4f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1700948932767,
+        "stop" : 1700948934444,
+        "duration" : 1677
+      }
+    }, {
+      "uid" : "6870db66e448818",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x560fb1fc45e3 <unknown>\n#1 0x560fb1c870b7 <unknown>\n#2 0x560fb1cbde55 <unknown>\n#3 0x560fb1cbab81 <unknown>\n#4 0x560fb1d0547f <unknown>\n#5 0x560fb1cfbcc3 <unknown>\n#6 0x560fb1cc70e4 <unknown>\n#7 0x560fb1cc80ae <unknown>\n#8 0x560fb1f8ace1 <unknown>\n#9 0x560fb1f8eb7e <unknown>\n#10 0x560fb1f784b5 <unknown>\n#11 0x560fb1f8f7d6 <unknown>\n#12 0x560fb1f5bdbf <unknown>\n#13 0x560fb1fb2748 <unknown>\n#14 0x560fb1fb2917 <unknown>\n#15 0x560fb1fc3773 <unknown>\n#16 0x7fe7a9e94ac3 <unknown>\n\n",
+      "time" : {
+        "start" : 1700946091801,
+        "stop" : 1700946092465,
+        "duration" : 664
+      }
+    }, {
+      "uid" : "c5a14a7632fddd49",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x55a65853b5e3 <unknown>\n#1 0x55a6581fe0b7 <unknown>\n#2 0x55a658234e55 <unknown>\n#3 0x55a658231b81 <unknown>\n#4 0x55a65827c47f <unknown>\n#5 0x55a658272cc3 <unknown>\n#6 0x55a65823e0e4 <unknown>\n#7 0x55a65823f0ae <unknown>\n#8 0x55a658501ce1 <unknown>\n#9 0x55a658505b7e <unknown>\n#10 0x55a6584ef4b5 <unknown>\n#11 0x55a6585067d6 <unknown>\n#12 0x55a6584d2dbf <unknown>\n#13 0x55a658529748 <unknown>\n#14 0x55a658529917 <unknown>\n#15 0x55a65853a773 <unknown>\n#16 0x7fa66a694ac3 <unknown>\n\n",
+      "time" : {
+        "start" : 1700945755798,
+        "stop" : 1700945756460,
+        "duration" : 662
+      }
+    }, {
+      "uid" : "74ee2f8397af6d0d",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x5600777995e3 <unknown>\n#1 0x56007745c0b7 <unknown>\n#2 0x560077492e55 <unknown>\n#3 0x56007748fb81 <unknown>\n#4 0x5600774da47f <unknown>\n#5 0x5600774d0cc3 <unknown>\n#6 0x56007749c0e4 <unknown>\n#7 0x56007749d0ae <unknown>\n#8 0x56007775fce1 <unknown>\n#9 0x560077763b7e <unknown>\n#10 0x56007774d4b5 <unknown>\n#11 0x5600777647d6 <unknown>\n#12 0x560077730dbf <unknown>\n#13 0x560077787748 <unknown>\n#14 0x560077787917 <unknown>\n#15 0x560077798773 <unknown>\n#16 0x7f436e494ac3 <unknown>\n\n",
+      "time" : {
+        "start" : 1700945587520,
+        "stop" : 1700945588182,
+        "duration" : 662
+      }
+    }, {
+      "uid" : "9a843167fbaaa031",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x55b50cab65e3 <unknown>\n#1 0x55b50c7790b7 <unknown>\n#2 0x55b50c7afe55 <unknown>\n#3 0x55b50c7acb81 <unknown>\n#4 0x55b50c7f747f <unknown>\n#5 0x55b50c7edcc3 <unknown>\n#6 0x55b50c7b90e4 <unknown>\n#7 0x55b50c7ba0ae <unknown>\n#8 0x55b50ca7cce1 <unknown>\n#9 0x55b50ca80b7e <unknown>\n#10 0x55b50ca6a4b5 <unknown>\n#11 0x55b50ca817d6 <unknown>\n#12 0x55b50ca4ddbf <unknown>\n#13 0x55b50caa4748 <unknown>\n#14 0x55b50caa4917 <unknown>\n#15 0x55b50cab5773 <unknown>\n#16 0x7f99daa94ac3 <unknown>\n\n",
+      "time" : {
+        "start" : 1700945436204,
+        "stop" : 1700945436868,
+        "duration" : 664
+      }
+    }, {
+      "uid" : "d3e53047e7c88f60",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x560628b1d5e3 <unknown>\n#1 0x5606287e00b7 <unknown>\n#2 0x560628816e55 <unknown>\n#3 0x560628813b81 <unknown>\n#4 0x56062885e47f <unknown>\n#5 0x560628854cc3 <unknown>\n#6 0x5606288200e4 <unknown>\n#7 0x5606288210ae <unknown>\n#8 0x560628ae3ce1 <unknown>\n#9 0x560628ae7b7e <unknown>\n#10 0x560628ad14b5 <unknown>\n#11 0x560628ae87d6 <unknown>\n#12 0x560628ab4dbf <unknown>\n#13 0x560628b0b748 <unknown>\n#14 0x560628b0b917 <unknown>\n#15 0x560628b1c773 <unknown>\n#16 0x7f1be3694ac3 <unknown>\n\n",
+      "time" : {
+        "start" : 1700945057812,
+        "stop" : 1700945058475,
+        "duration" : 663
+      }
+    }, {
+      "uid" : "f7a6d48b4a537888",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x5588289f85e3 <unknown>\n#1 0x5588286bb0b7 <unknown>\n#2 0x5588286f1e55 <unknown>\n#3 0x5588286eeb81 <unknown>\n#4 0x55882873947f <unknown>\n#5 0x55882872fcc3 <unknown>\n#6 0x5588286fb0e4 <unknown>\n#7 0x5588286fc0ae <unknown>\n#8 0x5588289bece1 <unknown>\n#9 0x5588289c2b7e <unknown>\n#10 0x5588289ac4b5 <unknown>\n#11 0x5588289c37d6 <unknown>\n#12 0x55882898fdbf <unknown>\n#13 0x5588289e6748 <unknown>\n#14 0x5588289e6917 <unknown>\n#15 0x5588289f7773 <unknown>\n#16 0x7ff34aa94ac3 <unknown>\n\n",
+      "time" : {
+        "start" : 1700944219613,
+        "stop" : 1700944220277,
+        "duration" : 664
+      }
+    }, {
+      "uid" : "74ec73ec61a2d408",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x55f1da67b5e3 <unknown>\n#1 0x55f1da33e0b7 <unknown>\n#2 0x55f1da374e55 <unknown>\n#3 0x55f1da371b81 <unknown>\n#4 0x55f1da3bc47f <unknown>\n#5 0x55f1da3b2cc3 <unknown>\n#6 0x55f1da37e0e4 <unknown>\n#7 0x55f1da37f0ae <unknown>\n#8 0x55f1da641ce1 <unknown>\n#9 0x55f1da645b7e <unknown>\n#10 0x55f1da62f4b5 <unknown>\n#11 0x55f1da6467d6 <unknown>\n#12 0x55f1da612dbf <unknown>\n#13 0x55f1da669748 <unknown>\n#14 0x55f1da669917 <unknown>\n#15 0x55f1da67a773 <unknown>\n#16 0x7f4225a94ac3 <unknown>\n\n",
+      "time" : {
+        "start" : 1700943249318,
+        "stop" : 1700943249982,
+        "duration" : 664
+      }
+    }, {
+      "uid" : "2ea720bf7246c218",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x563d2bfc15e3 <unknown>\n#1 0x563d2bc840b7 <unknown>\n#2 0x563d2bcbae55 <unknown>\n#3 0x563d2bcb7b81 <unknown>\n#4 0x563d2bd0247f <unknown>\n#5 0x563d2bcf8cc3 <unknown>\n#6 0x563d2bcc40e4 <unknown>\n#7 0x563d2bcc50ae <unknown>\n#8 0x563d2bf87ce1 <unknown>\n#9 0x563d2bf8bb7e <unknown>\n#10 0x563d2bf754b5 <unknown>\n#11 0x563d2bf8c7d6 <unknown>\n#12 0x563d2bf58dbf <unknown>\n#13 0x563d2bfaf748 <unknown>\n#14 0x563d2bfaf917 <unknown>\n#15 0x563d2bfc0773 <unknown>\n#16 0x7fc223e94ac3 <unknown>\n\n",
+      "time" : {
+        "start" : 1700942983971,
+        "stop" : 1700942984633,
+        "duration" : 662
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 8,
+        "skipped" : 0,
+        "passed" : 8,
+        "unknown" : 0,
+        "total" : 16
+      },
+      "items" : [ {
+        "uid" : "9ad31861208beee5",
+        "reportUrl" : "https://PauliLuna.github.io/Ahorcado/16/#testresult/9ad31861208beee5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1701010761331,
+          "stop" : 1701010762735,
+          "duration" : 1404
+        }
+      }, {
+        "uid" : "1c1f0fcef4906fab",
+        "reportUrl" : "https://PauliLuna.github.io/Ahorcado/15/#testresult/1c1f0fcef4906fab",
+        "status" : "passed",
+        "time" : {
+          "start" : 1701010187550,
+          "stop" : 1701010188975,
+          "duration" : 1425
+        }
+      }, {
+        "uid" : "ffb4da3cf7b716f4",
+        "reportUrl" : "https://PauliLuna.github.io/Ahorcado/14/#testresult/ffb4da3cf7b716f4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1701008143106,
+          "stop" : 1701008144556,
+          "duration" : 1450
+        }
+      }, {
+        "uid" : "c57d45324e8d8cd8",
+        "reportUrl" : "https://PauliLuna.github.io/Ahorcado/13/#testresult/c57d45324e8d8cd8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1701007399110,
+          "stop" : 1701007400428,
+          "duration" : 1318
+        }
+      }, {
+        "uid" : "ae4c057820f60154",
+        "reportUrl" : "https://PauliLuna.github.io/Ahorcado/12/#testresult/ae4c057820f60154",
+        "status" : "passed",
+        "time" : {
+          "start" : 1701005212291,
+          "stop" : 1701005213768,
+          "duration" : 1477
+        }
+      }, {
+        "uid" : "1dc99ec84aa563d",
+        "reportUrl" : "https://PauliLuna.github.io/Ahorcado/11/#testresult/1dc99ec84aa563d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1700949221056,
+          "stop" : 1700949222665,
+          "duration" : 1609
+        }
+      }, {
+        "uid" : "9279f637365ca50b",
+        "reportUrl" : "https://PauliLuna.github.io/Ahorcado/10/#testresult/9279f637365ca50b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1700948932767,
+          "stop" : 1700948934444,
+          "duration" : 1677
+        }
+      }, {
+        "uid" : "860ce0b52efba117",
+        "reportUrl" : "https://PauliLuna.github.io/Ahorcado/9/#testresult/860ce0b52efba117",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x560fb1fc45e3 <unknown>\n#1 0x560fb1c870b7 <unknown>\n#2 0x560fb1cbde55 <unknown>\n#3 0x560fb1cbab81 <unknown>\n#4 0x560fb1d0547f <unknown>\n#5 0x560fb1cfbcc3 <unknown>\n#6 0x560fb1cc70e4 <unknown>\n#7 0x560fb1cc80ae <unknown>\n#8 0x560fb1f8ace1 <unknown>\n#9 0x560fb1f8eb7e <unknown>\n#10 0x560fb1f784b5 <unknown>\n#11 0x560fb1f8f7d6 <unknown>\n#12 0x560fb1f5bdbf <unknown>\n#13 0x560fb1fb2748 <unknown>\n#14 0x560fb1fb2917 <unknown>\n#15 0x560fb1fc3773 <unknown>\n#16 0x7fe7a9e94ac3 <unknown>\n\n",
+        "time" : {
+          "start" : 1700946091801,
+          "stop" : 1700946092465,
+          "duration" : 664
+        }
+      }, {
+        "uid" : "cdf99eeeae9aeb19",
+        "reportUrl" : "https://PauliLuna.github.io/Ahorcado/8/#testresult/cdf99eeeae9aeb19",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x55a65853b5e3 <unknown>\n#1 0x55a6581fe0b7 <unknown>\n#2 0x55a658234e55 <unknown>\n#3 0x55a658231b81 <unknown>\n#4 0x55a65827c47f <unknown>\n#5 0x55a658272cc3 <unknown>\n#6 0x55a65823e0e4 <unknown>\n#7 0x55a65823f0ae <unknown>\n#8 0x55a658501ce1 <unknown>\n#9 0x55a658505b7e <unknown>\n#10 0x55a6584ef4b5 <unknown>\n#11 0x55a6585067d6 <unknown>\n#12 0x55a6584d2dbf <unknown>\n#13 0x55a658529748 <unknown>\n#14 0x55a658529917 <unknown>\n#15 0x55a65853a773 <unknown>\n#16 0x7fa66a694ac3 <unknown>\n\n",
+        "time" : {
+          "start" : 1700945755798,
+          "stop" : 1700945756460,
+          "duration" : 662
+        }
+      }, {
+        "uid" : "c3443e35cdaf25cf",
+        "reportUrl" : "https://PauliLuna.github.io/Ahorcado/7/#testresult/c3443e35cdaf25cf",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x5600777995e3 <unknown>\n#1 0x56007745c0b7 <unknown>\n#2 0x560077492e55 <unknown>\n#3 0x56007748fb81 <unknown>\n#4 0x5600774da47f <unknown>\n#5 0x5600774d0cc3 <unknown>\n#6 0x56007749c0e4 <unknown>\n#7 0x56007749d0ae <unknown>\n#8 0x56007775fce1 <unknown>\n#9 0x560077763b7e <unknown>\n#10 0x56007774d4b5 <unknown>\n#11 0x5600777647d6 <unknown>\n#12 0x560077730dbf <unknown>\n#13 0x560077787748 <unknown>\n#14 0x560077787917 <unknown>\n#15 0x560077798773 <unknown>\n#16 0x7f436e494ac3 <unknown>\n\n",
+        "time" : {
+          "start" : 1700945587520,
+          "stop" : 1700945588182,
+          "duration" : 662
+        }
+      }, {
+        "uid" : "e7ed1e5f2471b027",
+        "reportUrl" : "https://PauliLuna.github.io/Ahorcado/6/#testresult/e7ed1e5f2471b027",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x55b50cab65e3 <unknown>\n#1 0x55b50c7790b7 <unknown>\n#2 0x55b50c7afe55 <unknown>\n#3 0x55b50c7acb81 <unknown>\n#4 0x55b50c7f747f <unknown>\n#5 0x55b50c7edcc3 <unknown>\n#6 0x55b50c7b90e4 <unknown>\n#7 0x55b50c7ba0ae <unknown>\n#8 0x55b50ca7cce1 <unknown>\n#9 0x55b50ca80b7e <unknown>\n#10 0x55b50ca6a4b5 <unknown>\n#11 0x55b50ca817d6 <unknown>\n#12 0x55b50ca4ddbf <unknown>\n#13 0x55b50caa4748 <unknown>\n#14 0x55b50caa4917 <unknown>\n#15 0x55b50cab5773 <unknown>\n#16 0x7f99daa94ac3 <unknown>\n\n",
+        "time" : {
+          "start" : 1700945436204,
+          "stop" : 1700945436868,
+          "duration" : 664
+        }
+      }, {
+        "uid" : "5fbd221d2aacd1f",
+        "reportUrl" : "https://PauliLuna.github.io/Ahorcado/5/#testresult/5fbd221d2aacd1f",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x560628b1d5e3 <unknown>\n#1 0x5606287e00b7 <unknown>\n#2 0x560628816e55 <unknown>\n#3 0x560628813b81 <unknown>\n#4 0x56062885e47f <unknown>\n#5 0x560628854cc3 <unknown>\n#6 0x5606288200e4 <unknown>\n#7 0x5606288210ae <unknown>\n#8 0x560628ae3ce1 <unknown>\n#9 0x560628ae7b7e <unknown>\n#10 0x560628ad14b5 <unknown>\n#11 0x560628ae87d6 <unknown>\n#12 0x560628ab4dbf <unknown>\n#13 0x560628b0b748 <unknown>\n#14 0x560628b0b917 <unknown>\n#15 0x560628b1c773 <unknown>\n#16 0x7f1be3694ac3 <unknown>\n\n",
+        "time" : {
+          "start" : 1700945057812,
+          "stop" : 1700945058475,
+          "duration" : 663
+        }
+      }, {
+        "uid" : "9926788158e3adb0",
+        "reportUrl" : "https://PauliLuna.github.io/Ahorcado/4/#testresult/9926788158e3adb0",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x5588289f85e3 <unknown>\n#1 0x5588286bb0b7 <unknown>\n#2 0x5588286f1e55 <unknown>\n#3 0x5588286eeb81 <unknown>\n#4 0x55882873947f <unknown>\n#5 0x55882872fcc3 <unknown>\n#6 0x5588286fb0e4 <unknown>\n#7 0x5588286fc0ae <unknown>\n#8 0x5588289bece1 <unknown>\n#9 0x5588289c2b7e <unknown>\n#10 0x5588289ac4b5 <unknown>\n#11 0x5588289c37d6 <unknown>\n#12 0x55882898fdbf <unknown>\n#13 0x5588289e6748 <unknown>\n#14 0x5588289e6917 <unknown>\n#15 0x5588289f7773 <unknown>\n#16 0x7ff34aa94ac3 <unknown>\n\n",
+        "time" : {
+          "start" : 1700944219613,
+          "stop" : 1700944220277,
+          "duration" : 664
+        }
+      }, {
+        "uid" : "e9c499d8cd8a64d7",
+        "reportUrl" : "https://PauliLuna.github.io/Ahorcado/3/#testresult/e9c499d8cd8a64d7",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x55f1da67b5e3 <unknown>\n#1 0x55f1da33e0b7 <unknown>\n#2 0x55f1da374e55 <unknown>\n#3 0x55f1da371b81 <unknown>\n#4 0x55f1da3bc47f <unknown>\n#5 0x55f1da3b2cc3 <unknown>\n#6 0x55f1da37e0e4 <unknown>\n#7 0x55f1da37f0ae <unknown>\n#8 0x55f1da641ce1 <unknown>\n#9 0x55f1da645b7e <unknown>\n#10 0x55f1da62f4b5 <unknown>\n#11 0x55f1da6467d6 <unknown>\n#12 0x55f1da612dbf <unknown>\n#13 0x55f1da669748 <unknown>\n#14 0x55f1da669917 <unknown>\n#15 0x55f1da67a773 <unknown>\n#16 0x7f4225a94ac3 <unknown>\n\n",
+        "time" : {
+          "start" : 1700943249318,
+          "stop" : 1700943249982,
+          "duration" : 664
+        }
+      }, {
+        "uid" : "38a98b9c904505ac",
+        "reportUrl" : "https://PauliLuna.github.io/Ahorcado/2/#testresult/38a98b9c904505ac",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x563d2bfc15e3 <unknown>\n#1 0x563d2bc840b7 <unknown>\n#2 0x563d2bcbae55 <unknown>\n#3 0x563d2bcb7b81 <unknown>\n#4 0x563d2bd0247f <unknown>\n#5 0x563d2bcf8cc3 <unknown>\n#6 0x563d2bcc40e4 <unknown>\n#7 0x563d2bcc50ae <unknown>\n#8 0x563d2bf87ce1 <unknown>\n#9 0x563d2bf8bb7e <unknown>\n#10 0x563d2bf754b5 <unknown>\n#11 0x563d2bf8c7d6 <unknown>\n#12 0x563d2bf58dbf <unknown>\n#13 0x563d2bfaf748 <unknown>\n#14 0x563d2bfaf917 <unknown>\n#15 0x563d2bfc0773 <unknown>\n#16 0x7fc223e94ac3 <unknown>\n\n",
+        "time" : {
+          "start" : 1700942983971,
+          "stop" : 1700942984633,
+          "duration" : 662
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "5f8ee362456f91d8.json",
+  "parameterValues" : [ "Jugar por temáticas", "Animales" ]
+}
