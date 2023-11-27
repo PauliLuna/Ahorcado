@@ -31,8 +31,19 @@ jobs:
     - name: Install dependencies
       run: |
         pip install coverage
+        python -m pip install --upgrade pip
+        pip install -r requeriments.txt
+    
+    - name: Download ChromeDriver
+      run: |
+        wget https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6045.159/linux64/chromedriver-linux64.zip
+        unzip chromedriver-linux64.zip
+    
+    - name: Set Permissions for ChromeDriver
+      run: |
+          chmod +x chromedriver-linux64
         
-    # Run set of commands 
+    # Run set of commands unit tests and sonar cloud
     - name: Run tests with coverage
       run: |
         coverage run -m unittest discover -s tests -p 'test_*.py'
@@ -50,3 +61,32 @@ jobs:
         args: >
           -Dsonar.exclusions=app.py,**/features/*,**/features/steps/ahorcado_steps.py
           -Dsonar.python.coverage.reportPaths=coverage.xml
+    
+    # Run Reports ATDD
+    - name: Run Test
+      if: always()
+      run: behave -f allure_behave.formatter:AllureFormatter -o reports -vv features
+      continue-on-error: true
+  
+    - name: Get Allure history
+      uses: actions/checkout@v3
+      if: always()
+      continue-on-error: true
+      with:
+        ref: gh-pages
+        path: gh-pages
+  
+    - name: Allure Report action from marketplace
+      uses: simple-elf/allure-report-action@v1
+      if: always()
+      with:
+        allure_results: reports
+        allure_history: reports
+  
+    - name: Deploy report to Github Pages
+      if: always()
+      uses: peaceiris/actions-gh-pages@v2
+      env:
+        PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
+        PUBLISH_BRANCH: gh-pages
+        PUBLISH_DIR: reports
