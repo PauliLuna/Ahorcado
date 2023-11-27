@@ -4,11 +4,20 @@
       "failed" : 0,
       "broken" : 8,
       "skipped" : 0,
-      "passed" : 8,
+      "passed" : 9,
       "unknown" : 0,
-      "total" : 16
+      "total" : 17
     },
     "items" : [ {
+      "uid" : "cad4ee9383a6e964",
+      "reportUrl" : "https://PauliLuna.github.io/Ahorcado/18/#testresult/cad4ee9383a6e964",
+      "status" : "passed",
+      "time" : {
+        "start" : 1701044550850,
+        "stop" : 1701044553029,
+        "duration" : 2179
+      }
+    }, {
       "uid" : "f6f76c1859a06d4a",
       "reportUrl" : "https://PauliLuna.github.io/Ahorcado/17/#testresult/f6f76c1859a06d4a",
       "status" : "passed",
@@ -167,11 +176,20 @@
       "failed" : 0,
       "broken" : 8,
       "skipped" : 0,
-      "passed" : 8,
+      "passed" : 9,
       "unknown" : 0,
-      "total" : 16
+      "total" : 17
     },
     "items" : [ {
+      "uid" : "e45708f9e3d13dff",
+      "reportUrl" : "https://PauliLuna.github.io/Ahorcado/18/#testresult/e45708f9e3d13dff",
+      "status" : "passed",
+      "time" : {
+        "start" : 1701044535407,
+        "stop" : 1701044536748,
+        "duration" : 1341
+      }
+    }, {
       "uid" : "56edffd9d25a2a06",
       "reportUrl" : "https://PauliLuna.github.io/Ahorcado/17/#testresult/56edffd9d25a2a06",
       "status" : "passed",
@@ -330,11 +348,20 @@
       "failed" : 0,
       "broken" : 8,
       "skipped" : 0,
-      "passed" : 8,
+      "passed" : 9,
       "unknown" : 0,
-      "total" : 16
+      "total" : 17
     },
     "items" : [ {
+      "uid" : "8f2b88d688ebb91c",
+      "reportUrl" : "https://PauliLuna.github.io/Ahorcado/18/#testresult/8f2b88d688ebb91c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1701044542796,
+        "stop" : 1701044544297,
+        "duration" : 1501
+      }
+    }, {
       "uid" : "c847791af49763da",
       "reportUrl" : "https://PauliLuna.github.io/Ahorcado/17/#testresult/c847791af49763da",
       "status" : "passed",
@@ -493,11 +520,20 @@
       "failed" : 0,
       "broken" : 8,
       "skipped" : 0,
-      "passed" : 8,
+      "passed" : 9,
       "unknown" : 0,
-      "total" : 16
+      "total" : 17
     },
     "items" : [ {
+      "uid" : "25f11c195c4203a4",
+      "reportUrl" : "https://PauliLuna.github.io/Ahorcado/18/#testresult/25f11c195c4203a4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1701044547308,
+        "stop" : 1701044548806,
+        "duration" : 1498
+      }
+    }, {
       "uid" : "daae41c1e57a629e",
       "reportUrl" : "https://PauliLuna.github.io/Ahorcado/17/#testresult/daae41c1e57a629e",
       "status" : "passed",
@@ -656,11 +692,20 @@
       "failed" : 0,
       "broken" : 8,
       "skipped" : 0,
-      "passed" : 8,
+      "passed" : 9,
       "unknown" : 0,
-      "total" : 16
+      "total" : 17
     },
     "items" : [ {
+      "uid" : "ec52c97b3b795178",
+      "reportUrl" : "https://PauliLuna.github.io/Ahorcado/18/#testresult/ec52c97b3b795178",
+      "status" : "passed",
+      "time" : {
+        "start" : 1701044548807,
+        "stop" : 1701044550849,
+        "duration" : 2042
+      }
+    }, {
       "uid" : "904d3713f1f4faa6",
       "reportUrl" : "https://PauliLuna.github.io/Ahorcado/17/#testresult/904d3713f1f4faa6",
       "status" : "passed",
@@ -819,11 +864,20 @@
       "failed" : 0,
       "broken" : 8,
       "skipped" : 0,
-      "passed" : 8,
+      "passed" : 9,
       "unknown" : 0,
-      "total" : 16
+      "total" : 17
     },
     "items" : [ {
+      "uid" : "da0b8c08dfc61206",
+      "reportUrl" : "https://PauliLuna.github.io/Ahorcado/18/#testresult/da0b8c08dfc61206",
+      "status" : "passed",
+      "time" : {
+        "start" : 1701044539870,
+        "stop" : 1701044541386,
+        "duration" : 1516
+      }
+    }, {
       "uid" : "16355f2208d081a0",
       "reportUrl" : "https://PauliLuna.github.io/Ahorcado/17/#testresult/16355f2208d081a0",
       "status" : "passed",
@@ -982,11 +1036,20 @@
       "failed" : 0,
       "broken" : 8,
       "skipped" : 0,
-      "passed" : 8,
+      "passed" : 9,
       "unknown" : 0,
-      "total" : 16
+      "total" : 17
     },
     "items" : [ {
+      "uid" : "fc0e12086f5f5862",
+      "reportUrl" : "https://PauliLuna.github.io/Ahorcado/18/#testresult/fc0e12086f5f5862",
+      "status" : "passed",
+      "time" : {
+        "start" : 1701044538461,
+        "stop" : 1701044539869,
+        "duration" : 1408
+      }
+    }, {
       "uid" : "bde3f457bb2a73f8",
       "reportUrl" : "https://PauliLuna.github.io/Ahorcado/17/#testresult/bde3f457bb2a73f8",
       "status" : "passed",
@@ -1145,11 +1208,20 @@
       "failed" : 0,
       "broken" : 8,
       "skipped" : 0,
-      "passed" : 8,
+      "passed" : 9,
       "unknown" : 0,
-      "total" : 16
+      "total" : 17
     },
     "items" : [ {
+      "uid" : "3583e11beddfe149",
+      "reportUrl" : "https://PauliLuna.github.io/Ahorcado/18/#testresult/3583e11beddfe149",
+      "status" : "passed",
+      "time" : {
+        "start" : 1701044544297,
+        "stop" : 1701044545838,
+        "duration" : 1541
+      }
+    }, {
       "uid" : "3d96e0bbed2bef7",
       "reportUrl" : "https://PauliLuna.github.io/Ahorcado/17/#testresult/3d96e0bbed2bef7",
       "status" : "passed",
@@ -1308,11 +1380,20 @@
       "failed" : 0,
       "broken" : 8,
       "skipped" : 0,
-      "passed" : 8,
+      "passed" : 9,
       "unknown" : 0,
-      "total" : 16
+      "total" : 17
     },
     "items" : [ {
+      "uid" : "97eca066c1090416",
+      "reportUrl" : "https://PauliLuna.github.io/Ahorcado/18/#testresult/97eca066c1090416",
+      "status" : "passed",
+      "time" : {
+        "start" : 1701044545838,
+        "stop" : 1701044547307,
+        "duration" : 1469
+      }
+    }, {
       "uid" : "419bc6ea73cbec6",
       "reportUrl" : "https://PauliLuna.github.io/Ahorcado/17/#testresult/419bc6ea73cbec6",
       "status" : "passed",
@@ -1471,11 +1552,20 @@
       "failed" : 0,
       "broken" : 8,
       "skipped" : 0,
-      "passed" : 8,
+      "passed" : 9,
       "unknown" : 0,
-      "total" : 16
+      "total" : 17
     },
     "items" : [ {
+      "uid" : "21a461683fccf68b",
+      "reportUrl" : "https://PauliLuna.github.io/Ahorcado/18/#testresult/21a461683fccf68b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1701044541387,
+        "stop" : 1701044542795,
+        "duration" : 1408
+      }
+    }, {
       "uid" : "6cdaea24132fd4e8",
       "reportUrl" : "https://PauliLuna.github.io/Ahorcado/17/#testresult/6cdaea24132fd4e8",
       "status" : "passed",
@@ -1634,11 +1724,20 @@
       "failed" : 0,
       "broken" : 8,
       "skipped" : 0,
-      "passed" : 8,
+      "passed" : 9,
       "unknown" : 0,
-      "total" : 16
+      "total" : 17
     },
     "items" : [ {
+      "uid" : "1414b225b1688ba8",
+      "reportUrl" : "https://PauliLuna.github.io/Ahorcado/18/#testresult/1414b225b1688ba8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1701044536748,
+        "stop" : 1701044538460,
+        "duration" : 1712
+      }
+    }, {
       "uid" : "5f8ee362456f91d8",
       "reportUrl" : "https://PauliLuna.github.io/Ahorcado/17/#testresult/5f8ee362456f91d8",
       "status" : "passed",
@@ -1797,11 +1896,20 @@
       "failed" : 0,
       "broken" : 8,
       "skipped" : 0,
-      "passed" : 8,
+      "passed" : 9,
       "unknown" : 0,
-      "total" : 16
+      "total" : 17
     },
     "items" : [ {
+      "uid" : "15f24e63f36db6a1",
+      "reportUrl" : "https://PauliLuna.github.io/Ahorcado/18/#testresult/15f24e63f36db6a1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1701044521666,
+        "stop" : 1701044535406,
+        "duration" : 13740
+      }
+    }, {
       "uid" : "331f28db561d7c00",
       "reportUrl" : "https://PauliLuna.github.io/Ahorcado/17/#testresult/331f28db561d7c00",
       "status" : "passed",

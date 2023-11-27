@@ -1,0 +1,277 @@
+{
+  "uid" : "f7ef9de987d43e1a",
+  "name" : "Ingresar letra incorrecta",
+  "fullName" : "Juego del Ahorcado: Ingresar letra incorrecta",
+  "historyId" : "95ae3ff98e078549087c92c2cb17d98d",
+  "time" : {
+    "start" : 1701010199803,
+    "stop" : 1701010201952,
+    "duration" : 2149
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Given Que estoy en la página del Juego del Ahorcado",
+      "time" : {
+        "start" : 1701010199804,
+        "stop" : 1701010200788,
+        "duration" : 984
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "When Elijo \"Jugar por temáticas\"",
+      "time" : {
+        "start" : 1701010200788,
+        "stop" : 1701010200821,
+        "duration" : 33
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "And Hago clic en el boton Continuar",
+      "time" : {
+        "start" : 1701010200821,
+        "stop" : 1701010201123,
+        "duration" : 302
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Then Deberia ser redirigido a la proxima pagina",
+      "time" : {
+        "start" : 1701010201123,
+        "stop" : 1701010201126,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "And Deberia ver el label \"Elegir temática:\"",
+      "time" : {
+        "start" : 1701010201126,
+        "stop" : 1701010201150,
+        "duration" : 24
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Given Que estoy en la pagina Elegir opcion",
+      "time" : {
+        "start" : 1701010201151,
+        "stop" : 1701010201153,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "When Selecciono la tematica \"Animales\"",
+      "time" : {
+        "start" : 1701010201153,
+        "stop" : 1701010201179,
+        "duration" : 26
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "And Hago clic en el boton Comenzar Juego",
+      "time" : {
+        "start" : 1701010201179,
+        "stop" : 1701010201492,
+        "duration" : 313
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Then Deberia ser redirigido a la proxima pagina de juego",
+      "time" : {
+        "start" : 1701010201492,
+        "stop" : 1701010201495,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "And Deberia ver el label \"Ingresar letra o palabra:\"",
+      "time" : {
+        "start" : 1701010201495,
+        "stop" : 1701010201516,
+        "duration" : 21
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Given Que estoy en la pagina Jugar",
+      "time" : {
+        "start" : 1701010201517,
+        "stop" : 1701010201519,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "When Ingreso la letra \"X\"",
+      "time" : {
+        "start" : 1701010201519,
+        "stop" : 1701010201563,
+        "duration" : 44
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "And Hago clic en el boton Adivinar",
+      "time" : {
+        "start" : 1701010201563,
+        "stop" : 1701010201866,
+        "duration" : 303
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Then Deberia ver el mensaje de letra incorrecta",
+      "time" : {
+        "start" : 1701010201866,
+        "stop" : 1701010201887,
+        "duration" : 21
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "And Deberia ver que las vidas es 6",
+      "time" : {
+        "start" : 1701010201887,
+        "stop" : 1701010201900,
+        "duration" : 13
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 15
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "feature",
+    "value" : "Juego del Ahorcado"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f7ef9de987d43e1a.json",
+  "parameterValues" : [ ]
+}
