@@ -1,0 +1,133 @@
+{
+  "uid" : "ec24c6878fa64e9e",
+  "name" : "Elegir diferentes tematicas o niveles -- @1.2 Tematicas",
+  "fullName" : "Juego del Ahorcado: Elegir diferentes tematicas o niveles",
+  "historyId" : "67b2db2db63e57229387451eed36b952",
+  "time" : {
+    "start" : 1700949222666,
+    "stop" : 1700949224647,
+    "duration" : 1981
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Given Que estoy en la página del Juego del Ahorcado",
+      "time" : {
+        "start" : 1700949222666,
+        "stop" : 1700949223941,
+        "duration" : 1275
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "When Eligo \"Jugar por temáticas\"",
+      "time" : {
+        "start" : 1700949223942,
+        "stop" : 1700949223973,
+        "duration" : 31
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "And Hago clic en el boton Continuar",
+      "time" : {
+        "start" : 1700949223973,
+        "stop" : 1700949224260,
+        "duration" : 287
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Then Deberia ser redirigido a la proxima pagina",
+      "time" : {
+        "start" : 1700949224260,
+        "stop" : 1700949224543,
+        "duration" : 283
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "And Deberia ver la opcion \"Comida\"",
+      "time" : {
+        "start" : 1700949224543,
+        "stop" : 1700949224595,
+        "duration" : 52
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 5,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "feature",
+    "value" : "Juego del Ahorcado"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "opcion",
+    "value" : "Jugar por temáticas"
+  }, {
+    "name" : "seleccion",
+    "value" : "Comida"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ec24c6878fa64e9e.json",
+  "parameterValues" : [ "Jugar por temáticas", "Comida" ]
+}

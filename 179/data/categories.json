@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n#0 0x563a9c9db5e3 <unknown>\n#1 0x563a9c69e0b7 <unknown>\n#2 0x563a9c6ebf53 <unknown>\n#3 0x563a9c6ec051 <unknown>\n#4 0x563a9c7319c4 <unknown>\n#5 0x563a9c712f1d <unknown>\n#6 0x563a9c72eb3d <unknown>\n#7 0x563a9c712cc3 <unknown>\n#8 0x563a9c6de0e4 <unknown>\n#9 0x563a9c6df0ae <unknown>\n#10 0x563a9c9a1ce1 <unknown>\n#11 0x563a9c9a5b7e <unknown>\n#12 0x563a9c98f4b5 <unknown>\n#13 0x563a9c9a67d6 <unknown>\n#14 0x563a9c972dbf <unknown>\n#15 0x563a9c9c9748 <unknown>\n#16 0x563a9c9c9917 <unknown>\n#17 0x563a9c9da773 <unknown>\n#18 0x7f0a69e94ac3 <unknown>\n\n",
+      "children" : [ {
+        "name" : "Ingresar letra incorrecta",
+        "uid" : "91475bcdf4ff60ea",
+        "parentUid" : "39ec2643609b13a5a33fcc43fe13ed79",
+        "status" : "broken",
+        "time" : {
+          "start" : 1701121102125,
+          "stop" : 1701121133484,
+          "duration" : 31359
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "39ec2643609b13a5a33fcc43fe13ed79"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}
