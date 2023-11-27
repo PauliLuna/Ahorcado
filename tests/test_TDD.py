@@ -1,7 +1,6 @@
 import unittest
-from src.ahorcado import Ahorcado
+from src.ahorcado import Ahorcado, palabras_temas, palabras_niveles
 from unittest.mock import patch
-from src.palabras import palabras_temas, palabras_niveles
 
 # Creo una instancia del Ahorcado
 juego = Ahorcado()
