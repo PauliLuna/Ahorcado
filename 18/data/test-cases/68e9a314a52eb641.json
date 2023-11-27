@@ -1,0 +1,139 @@
+{
+  "uid" : "68e9a314a52eb641",
+  "name" : "Elegir diferentes tematicas o niveles -- @1.1 Tematicas",
+  "fullName" : "Juego del Ahorcado: Elegir diferentes tematicas o niveles",
+  "historyId" : "cd0773e1cc70a5c4c16682c19f0d94fa",
+  "time" : {
+    "start" : 1700943249318,
+    "stop" : 1700943249982,
+    "duration" : 664
+  },
+  "status" : "broken",
+  "statusMessage" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x55f1da67b5e3 <unknown>\n#1 0x55f1da33e0b7 <unknown>\n#2 0x55f1da374e55 <unknown>\n#3 0x55f1da371b81 <unknown>\n#4 0x55f1da3bc47f <unknown>\n#5 0x55f1da3b2cc3 <unknown>\n#6 0x55f1da37e0e4 <unknown>\n#7 0x55f1da37f0ae <unknown>\n#8 0x55f1da641ce1 <unknown>\n#9 0x55f1da645b7e <unknown>\n#10 0x55f1da62f4b5 <unknown>\n#11 0x55f1da6467d6 <unknown>\n#12 0x55f1da612dbf <unknown>\n#13 0x55f1da669748 <unknown>\n#14 0x55f1da669917 <unknown>\n#15 0x55f1da67a773 <unknown>\n#16 0x7f4225a94ac3 <unknown>\n\n",
+  "statusTrace" : "  File \"/opt/hostedtoolcache/Python/3.11.2/x64/lib/python3.11/site-packages/behave/model.py\", line 1329, in run\n    match.run(runner.context)\n  File \"/opt/hostedtoolcache/Python/3.11.2/x64/lib/python3.11/site-packages/behave/matchers.py\", line 98, in run\n    self.func(context, *args, **kwargs)\n  File \"features/steps/ahorcado_steps.py\", line 31, in step_given\n    context.driver = webdriver.Chrome()\n                     ^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.2/x64/lib/python3.11/site-packages/selenium/webdriver/chrome/webdriver.py\", line 45, in __init__\n    super().__init__(\n  File \"/opt/hostedtoolcache/Python/3.11.2/x64/lib/python3.11/site-packages/selenium/webdriver/chromium/webdriver.py\", line 56, in __init__\n    super().__init__(\n  File \"/opt/hostedtoolcache/Python/3.11.2/x64/lib/python3.11/site-packages/selenium/webdriver/remote/webdriver.py\", line 208, in __init__\n    self.start_session(capabilities)\n  File \"/opt/hostedtoolcache/Python/3.11.2/x64/lib/python3.11/site-packages/selenium/webdriver/remote/webdriver.py\", line 292, in start_session\n    response = self.execute(Command.NEW_SESSION, caps)[\"value\"]\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.2/x64/lib/python3.11/site-packages/selenium/webdriver/remote/webdriver.py\", line 347, in execute\n    self.error_handler.check_response(response)\n  File \"/opt/hostedtoolcache/Python/3.11.2/x64/lib/python3.11/site-packages/selenium/webdriver/remote/errorhandler.py\", line 229, in check_response\n    raise exception_class(message, screen, stacktrace)\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x55f1da67b5e3 <unknown>\n#1 0x55f1da33e0b7 <unknown>\n#2 0x55f1da374e55 <unknown>\n#3 0x55f1da371b81 <unknown>\n#4 0x55f1da3bc47f <unknown>\n#5 0x55f1da3b2cc3 <unknown>\n#6 0x55f1da37e0e4 <unknown>\n#7 0x55f1da37f0ae <unknown>\n#8 0x55f1da641ce1 <unknown>\n#9 0x55f1da645b7e <unknown>\n#10 0x55f1da62f4b5 <unknown>\n#11 0x55f1da6467d6 <unknown>\n#12 0x55f1da612dbf <unknown>\n#13 0x55f1da669748 <unknown>\n#14 0x55f1da669917 <unknown>\n#15 0x55f1da67a773 <unknown>\n#16 0x7f4225a94ac3 <unknown>\n\n",
+    "statusTrace" : "  File \"/opt/hostedtoolcache/Python/3.11.2/x64/lib/python3.11/site-packages/behave/model.py\", line 1329, in run\n    match.run(runner.context)\n  File \"/opt/hostedtoolcache/Python/3.11.2/x64/lib/python3.11/site-packages/behave/matchers.py\", line 98, in run\n    self.func(context, *args, **kwargs)\n  File \"features/steps/ahorcado_steps.py\", line 31, in step_given\n    context.driver = webdriver.Chrome()\n                     ^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.2/x64/lib/python3.11/site-packages/selenium/webdriver/chrome/webdriver.py\", line 45, in __init__\n    super().__init__(\n  File \"/opt/hostedtoolcache/Python/3.11.2/x64/lib/python3.11/site-packages/selenium/webdriver/chromium/webdriver.py\", line 56, in __init__\n    super().__init__(\n  File \"/opt/hostedtoolcache/Python/3.11.2/x64/lib/python3.11/site-packages/selenium/webdriver/remote/webdriver.py\", line 208, in __init__\n    self.start_session(capabilities)\n  File \"/opt/hostedtoolcache/Python/3.11.2/x64/lib/python3.11/site-packages/selenium/webdriver/remote/webdriver.py\", line 292, in start_session\n    response = self.execute(Command.NEW_SESSION, caps)[\"value\"]\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.2/x64/lib/python3.11/site-packages/selenium/webdriver/remote/webdriver.py\", line 347, in execute\n    self.error_handler.check_response(response)\n  File \"/opt/hostedtoolcache/Python/3.11.2/x64/lib/python3.11/site-packages/selenium/webdriver/remote/errorhandler.py\", line 229, in check_response\n    raise exception_class(message, screen, stacktrace)\n",
+    "steps" : [ {
+      "name" : "Given Que estoy en la página del Juego del Ahorcado",
+      "time" : {
+        "start" : 1700943249318,
+        "stop" : 1700943249981,
+        "duration" : 663
+      },
+      "status" : "broken",
+      "statusMessage" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x55f1da67b5e3 <unknown>\n#1 0x55f1da33e0b7 <unknown>\n#2 0x55f1da374e55 <unknown>\n#3 0x55f1da371b81 <unknown>\n#4 0x55f1da3bc47f <unknown>\n#5 0x55f1da3b2cc3 <unknown>\n#6 0x55f1da37e0e4 <unknown>\n#7 0x55f1da37f0ae <unknown>\n#8 0x55f1da641ce1 <unknown>\n#9 0x55f1da645b7e <unknown>\n#10 0x55f1da62f4b5 <unknown>\n#11 0x55f1da6467d6 <unknown>\n#12 0x55f1da612dbf <unknown>\n#13 0x55f1da669748 <unknown>\n#14 0x55f1da669917 <unknown>\n#15 0x55f1da67a773 <unknown>\n#16 0x7f4225a94ac3 <unknown>\n\n",
+      "statusTrace" : "  File \"/opt/hostedtoolcache/Python/3.11.2/x64/lib/python3.11/site-packages/behave/model.py\", line 1329, in run\n    match.run(runner.context)\n  File \"/opt/hostedtoolcache/Python/3.11.2/x64/lib/python3.11/site-packages/behave/matchers.py\", line 98, in run\n    self.func(context, *args, **kwargs)\n  File \"features/steps/ahorcado_steps.py\", line 31, in step_given\n    context.driver = webdriver.Chrome()\n                     ^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.2/x64/lib/python3.11/site-packages/selenium/webdriver/chrome/webdriver.py\", line 45, in __init__\n    super().__init__(\n  File \"/opt/hostedtoolcache/Python/3.11.2/x64/lib/python3.11/site-packages/selenium/webdriver/chromium/webdriver.py\", line 56, in __init__\n    super().__init__(\n  File \"/opt/hostedtoolcache/Python/3.11.2/x64/lib/python3.11/site-packages/selenium/webdriver/remote/webdriver.py\", line 208, in __init__\n    self.start_session(capabilities)\n  File \"/opt/hostedtoolcache/Python/3.11.2/x64/lib/python3.11/site-packages/selenium/webdriver/remote/webdriver.py\", line 292, in start_session\n    response = self.execute(Command.NEW_SESSION, caps)[\"value\"]\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.2/x64/lib/python3.11/site-packages/selenium/webdriver/remote/webdriver.py\", line 347, in execute\n    self.error_handler.check_response(response)\n  File \"/opt/hostedtoolcache/Python/3.11.2/x64/lib/python3.11/site-packages/selenium/webdriver/remote/errorhandler.py\", line 229, in check_response\n    raise exception_class(message, screen, stacktrace)\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "hasContent" : true
+    }, {
+      "name" : "When Eligo \"Jugar por temáticas\"",
+      "time" : {
+        "start" : 1700943249982,
+        "stop" : 1700943249982,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "And Hago clic en el boton Continuar",
+      "time" : {
+        "start" : 1700943249982,
+        "stop" : 1700943249982,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Then Deberia ser redirigido a la proxima pagina",
+      "time" : {
+        "start" : 1700943249982,
+        "stop" : 1700943249982,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "And Deberia ver la opcion \"Animales\"",
+      "time" : {
+        "start" : 1700943249982,
+        "stop" : 1700943249982,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 5,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "feature",
+    "value" : "Juego del Ahorcado"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "opcion",
+    "value" : "Jugar por temáticas"
+  }, {
+    "name" : "seleccion",
+    "value" : "Animales"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "68e9a314a52eb641.json",
+  "parameterValues" : [ "Jugar por temáticas", "Animales" ]
+}
