@@ -42,9 +42,9 @@ class Ahorcado():
 
     def elegir_palabra(self, tema, nivel):
         if tema:
-            return random.choice(palabras_temas.get(tema, []))
+            return random.random(palabras_temas.get(tema, []))
         elif nivel:
-            return random.choice(palabras_niveles.get(nivel, []))
+            return random.random(palabras_niveles.get(nivel, []))
         else:
             return "ahorcado"  # Palabra predeterminada para el ejemplo
     
