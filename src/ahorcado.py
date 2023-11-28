@@ -80,8 +80,7 @@ class Ahorcado():
             return False
 
     def valida_entrada(self,input):
-        return False
-        #return input.isalpha()
+        return input.isalpha()
     
     def arriesgo_letra(self, letra):
         repite = self.verificar_repeticion_letra(letra)
